@@ -17,6 +17,12 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) stock-screen
 SP500_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 ASX200_URL = "https://en.wikipedia.org/wiki/S%26P/ASX_200"
 
+EXCHANGE_LABELS = {
+    "NMS": "NASDAQ", "NGM": "NASDAQ", "NCM": "NASDAQ",
+    "NYQ": "NYSE", "ASE": "NYSE American",
+    "ASX": "ASX",
+}
+
 
 def _read_html_tables(url):
     resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -138,19 +144,37 @@ def fetch_metrics(entry, retries=2, sleep_between_retries=1.5):
             if revenue_row is not None and len(revenue_row) >= 2:
                 revenue_yoy_pct = _pct_change(revenue_row.iloc[0], revenue_row.iloc[1])
 
+            current_ni = None
             if net_income_row is not None and len(net_income_row) >= 2:
                 current_ni, prior_ni = net_income_row.iloc[0], net_income_row.iloc[1]
                 net_income_yoy_pct = _pct_change(current_ni, prior_ni)
                 if prior_ni is not None and current_ni is not None:
                     net_income_turned_negative = prior_ni > 0 and current_ni < 0
 
+            fast_info = t.fast_info
+            market_cap = fast_info["market_cap"]
+            year_high = fast_info["year_high"]
+            exchange_raw = fast_info["exchange"]
+
+            pe_ratio = None
+            if market_cap and current_ni and current_ni > 0:
+                pe_ratio = market_cap / current_ni
+
+            pct_from_52wk_high = None
+            if year_high:
+                pct_from_52wk_high = (end_price - year_high) / year_high * 100.0
+
             return {
                 **entry,
+                "exchange": EXCHANGE_LABELS.get(exchange_raw, exchange_raw),
                 "current_price": round(end_price, 2),
                 "price_return_pct": round(price_return_pct, 1),
                 "revenue_yoy_pct": round(revenue_yoy_pct, 1) if revenue_yoy_pct is not None else None,
                 "net_income_yoy_pct": round(net_income_yoy_pct, 1) if net_income_yoy_pct is not None else None,
                 "net_income_turned_negative": net_income_turned_negative,
+                "market_cap": round(market_cap) if market_cap else None,
+                "pe_ratio": round(pe_ratio, 1) if pe_ratio is not None else None,
+                "pct_from_52wk_high": round(pct_from_52wk_high, 1) if pct_from_52wk_high is not None else None,
             }
         except Exception as e:  # yfinance/network calls are flaky; retry then give up
             last_error = e
@@ -191,9 +215,10 @@ def scan_all(markets, limit=None, workers=6, progress=None):
 
     if not results:
         return pd.DataFrame(columns=[
-            "code", "market", "company", "sector", "current_price",
+            "code", "market", "company", "sector", "exchange", "current_price",
             "price_return_pct", "revenue_yoy_pct", "net_income_yoy_pct",
-            "net_income_turned_negative", "ticker_yf",
+            "net_income_turned_negative", "market_cap", "pe_ratio",
+            "pct_from_52wk_high", "ticker_yf",
         ])
 
     df = pd.DataFrame(results)

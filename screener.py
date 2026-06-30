@@ -67,8 +67,9 @@ def run_screen(args):
         return
 
     columns = [
-        "code", "market", "company", "sector", "current_price",
+        "code", "market", "exchange", "company", "sector", "current_price",
         "price_return_pct", "revenue_yoy_pct", "net_income_yoy_pct",
+        "market_cap", "pe_ratio", "pct_from_52wk_high",
     ]
     df = df[columns]
 

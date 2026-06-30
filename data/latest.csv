@@ -1,701 +1,584 @@
-ticker_yf,code,market,company,sector,current_price,price_return_pct,revenue_yoy_pct,net_income_yoy_pct,net_income_turned_negative,last_updated_utc
-TTD,TTD,US,Trade Desk (The),Communication Services,18.65,-74.1,18.5,12.8,False,2026-06-30 11:36 UTC
-FISV,FISV,US,Fiserv,Financials,48.83,-71.7,3.6,11.1,False,2026-06-30 11:36 UTC
-WTC.AX,WTC,ASX,Wisetech Global,Information Technology,33.0,-69.6,,,False,2026-06-30 11:36 UTC
-IT,IT,US,Gartner,Information Technology,132.79,-67.1,3.7,-41.8,False,2026-06-30 11:36 UTC
-INTU,INTU,US,Intuit,Information Technology,266.4,-65.9,15.6,30.6,False,2026-06-30 11:36 UTC
-CHTR,CHTR,US,Charter Communications,Communication Services,146.17,-64.2,-0.6,-1.9,False,2026-06-30 11:36 UTC
-CSGP,CSGP,US,CoStar Group,Real Estate,29.32,-63.5,18.7,-95.0,False,2026-06-30 11:36 UTC
-TUA.AX,TUA,ASX,Tuas,Communication Services,2.27,-61.8,29.2,257.8,False,2026-06-30 11:36 UTC
-XRO.AX,XRO,ASX,Xero,Information Technology,72.22,-59.8,20.1,-32.6,False,2026-06-30 11:36 UTC
-BSX,BSX,US,Boston Scientific,Health Care,43.48,-59.5,19.9,56.3,False,2026-06-30 11:36 UTC
-COH.AX,COH,ASX,Cochlear,Healthcare,121.75,-58.7,4.8,9.0,False,2026-06-30 11:36 UTC
-ACN,ACN,US,Accenture,Information Technology,124.74,-57.7,7.4,5.7,False,2026-06-30 11:36 UTC
-COIN,COIN,US,Coinbase,Financials,151.65,-56.7,9.4,-51.1,False,2026-06-30 11:36 UTC
-GDDY,GDDY,US,GoDaddy,Information Technology,85.24,-52.7,8.3,-6.6,False,2026-06-30 11:36 UTC
-ZTS,ZTS,US,Zoetis,Health Care,73.25,-52.3,2.3,7.5,False,2026-06-30 11:36 UTC
-LULU,LULU,US,Lululemon Athletica,Consumer Discretionary,114.29,-51.9,4.9,-13.0,False,2026-06-30 11:36 UTC
-NOW,NOW,US,ServiceNow,Information Technology,99.97,-51.4,20.9,22.7,False,2026-06-30 11:36 UTC
-TYL,TYL,US,Tyler Technologies,Information Technology,290.75,-51.0,9.1,20.0,False,2026-06-30 11:36 UTC
-CSL.AX,CSL,ASX,CSL,Healthcare,114.74,-50.9,5.0,13.6,False,2026-06-30 11:36 UTC
-FIS,FIS,US,Fidelity National Information Services,Financials,38.69,-50.9,5.4,-73.7,False,2026-06-30 11:36 UTC
-EBO.AX,EBO,ASX,EBOS Group,Healthcare,17.07,-50.2,-8.3,-21.9,False,2026-06-30 11:36 UTC
-PODD,PODD,US,Insulet Corporation,Health Care,157.74,-49.8,30.7,-40.9,False,2026-06-30 11:36 UTC
-CTSH,CTSH,US,Cognizant,Information Technology,38.74,-49.3,7.0,-0.4,False,2026-06-30 11:36 UTC
-WDAY,WDAY,US,"Workday, Inc.",Information Technology,123.58,-48.5,13.1,31.7,False,2026-06-30 11:36 UTC
-FDS,FDS,US,FactSet,Financials,233.62,-46.9,5.4,11.2,False,2026-06-30 11:36 UTC
-ADBE,ADBE,US,Adobe Inc.,Information Technology,206.43,-46.6,10.5,28.2,False,2026-06-30 11:36 UTC
-NFLX,NFLX,US,Netflix,Communication Services,73.78,-44.9,15.9,26.1,False,2026-06-30 11:36 UTC
-BR,BR,US,Broadridge Financial Solutions,Industrials,135.44,-43.1,5.9,20.3,False,2026-06-30 11:36 UTC
-CPRT,CPRT,US,Copart,Industrials,28.1,-42.7,9.7,13.9,False,2026-06-30 11:36 UTC
-SEK.AX,SEK,ASX,Seek,Communication Services,13.45,-42.6,1.2,343.0,False,2026-06-30 11:36 UTC
-SMCI,SMCI,US,Supermicro,Information Technology,28.15,-42.6,46.6,-9.0,False,2026-06-30 11:36 UTC
-VRSK,VRSK,US,Verisk Analytics,Industrials,179.21,-41.9,6.6,-5.1,False,2026-06-30 11:36 UTC
-BRO,BRO,US,Brown & Brown,Financials,63.96,-41.8,22.5,6.1,False,2026-06-30 11:36 UTC
-CRM,CRM,US,Salesforce,Information Technology,157.93,-41.6,9.6,20.3,False,2026-06-30 11:36 UTC
-REA.AX,REA,ASX,REA Group,Communication Services,139.19,-41.4,13.5,123.9,False,2026-06-30 11:36 UTC
-CMG,CMG,US,Chipotle Mexican Grill,Consumer Discretionary,32.97,-41.3,5.4,0.1,False,2026-06-30 11:36 UTC
-ROP,ROP,US,Roper Technologies,Information Technology,334.8,-40.5,12.3,-0.8,False,2026-06-30 11:36 UTC
-NKE,NKE,US,"Nike, Inc.",Consumer Discretionary,41.48,-40.0,-9.8,-43.5,False,2026-06-30 11:36 UTC
-ARB.AX,ARB,ASX,ARB Corporation,Consumer Discretionary,18.92,-39.9,5.3,-5.0,False,2026-06-30 11:36 UTC
-PYPL,PYPL,US,PayPal,Financials,44.38,-39.8,4.3,26.2,False,2026-06-30 11:36 UTC
-TSCO,TSCO,US,Tractor Supply,Consumer Discretionary,31.2,-39.6,4.3,-0.5,False,2026-06-30 11:36 UTC
-VEEV,VEEV,US,Veeva Systems,Health Care,176.22,-38.8,16.3,27.3,False,2026-06-30 11:36 UTC
-AXON,AXON,US,Axon Enterprise,Industrials,510.6,-38.3,33.5,-66.9,False,2026-06-30 11:36 UTC
-EFX,EFX,US,Equifax,Industrials,158.57,-38.2,6.9,9.3,False,2026-06-30 11:36 UTC
-NWL.AX,NWL,ASX,Netwealth Group,Financials,20.56,-37.9,26.6,39.8,False,2026-06-30 11:36 UTC
-TWE.AX,TWE,ASX,Treasury Wine Estates,Consumer Staples,4.76,-37.5,7.2,341.8,False,2026-06-30 11:36 UTC
-LLC.AX,LLC,ASX,Lendlease,Real Estate,3.23,-37.2,-17.5,115.0,False,2026-06-30 11:36 UTC
-ADSK,ADSK,US,Autodesk,Information Technology,195.24,-36.9,17.5,1.1,False,2026-06-30 11:36 UTC
-MOS,MOS,US,Mosaic Company (The),Materials,22.44,-36.3,8.4,209.1,False,2026-06-30 11:36 UTC
-LDOS,LDOS,US,Leidos,Industrials,100.44,-35.7,3.1,15.5,False,2026-06-30 11:36 UTC
-FICO,FICO,US,Fair Isaac,Information Technology,1177.52,-35.6,15.9,27.1,False,2026-06-30 11:36 UTC
-ARES,ARES,US,Ares Management,Financials,107.6,-35.6,44.2,13.7,False,2026-06-30 11:36 UTC
-ASB.AX,ASB,ASX,Austal,Industrials,4.05,-35.5,24.1,503.2,False,2026-06-30 11:36 UTC
-GDG.AX,GDG,ASX,Generation Development Group,Financials,3.58,-34.6,88.6,554.9,False,2026-06-30 11:36 UTC
-PTC,PTC,US,PTC Inc.,Information Technology,113.89,-33.9,19.2,95.0,False,2026-06-30 11:36 UTC
-DPZ,DPZ,US,Domino's,Consumer Discretionary,294.05,-33.5,5.0,3.0,False,2026-06-30 11:36 UTC
-TRMB,TRMB,US,Trimble Inc.,Information Technology,50.77,-33.2,-2.6,-71.8,False,2026-06-30 11:36 UTC
-KKR,KKR,US,KKR & Co.,Financials,88.94,-32.7,-11.2,-22.9,False,2026-06-30 11:36 UTC
-SNZ.AX,SNZ,ASX,Summerset Group Holdings,Healthcare,6.91,-32.5,13.3,-23.6,False,2026-06-30 11:36 UTC
-ICE,ICE,US,Intercontinental Exchange,Financials,122.91,-32.2,7.5,20.4,False,2026-06-30 11:36 UTC
-TLX.AX,TLX,ASX,Telix Pharmaceuticals,Healthcare,16.58,-32.1,55.6,-121.2,True,2026-06-30 11:36 UTC
-ORCL,ORCL,US,Oracle Corporation,Information Technology,147.76,-31.7,17.3,37.3,False,2026-06-30 11:36 UTC
-BPT.AX,BPT,ASX,Beach Energy,Energy,0.86,-31.4,19.3,90.8,False,2026-06-30 11:36 UTC
-ABT,ABT,US,Abbott Laboratories,Health Care,92.71,-30.4,5.7,-51.3,False,2026-06-30 11:36 UTC
-ERIE,ERIE,US,Erie Indemnity,Financials,237.51,-30.2,7.4,-6.8,False,2026-06-30 11:36 UTC
-TPG.AX,TPG,ASX,TPG Telecom,Communication Services,3.6,-29.7,-8.7,530.8,False,2026-06-30 11:36 UTC
-MKC,MKC,US,McCormick & Company,Consumer Staples,52.06,-29.3,1.7,0.1,False,2026-06-30 11:36 UTC
-CAR.AX,CAR,ASX,CAR Group,Communication Services,25.76,-29.2,7.7,10.2,False,2026-06-30 11:36 UTC
-PAYX,PAYX,US,Paychex,Industrials,99.81,-28.6,,,False,2026-06-30 11:36 UTC
-PME.AX,PME,ASX,Pro Medicus,Healthcare,203.43,-28.4,31.9,39.2,False,2026-06-30 11:36 UTC
-AJG,AJG,US,Arthur J. Gallagher & Co.,Financials,227.12,-28.3,20.7,2.1,False,2026-06-30 11:36 UTC
-GQG.AX,GQG,ASX,GQG Partners,Financials,1.45,-27.3,4.9,7.3,False,2026-06-30 11:36 UTC
-TNE.AX,TNE,ASX,TechnologyOne,Information Technology,29.47,-27.2,18.2,16.6,False,2026-06-30 11:36 UTC
-BAX,BAX,US,Baxter International,Health Care,22.02,-26.7,5.7,-47.5,False,2026-06-30 11:36 UTC
-RMD.AX,RMD,ASX,ResMed,Healthcare,28.88,-26.1,9.8,37.2,False,2026-06-30 11:36 UTC
-GIS,GIS,US,General Mills,Consumer Staples,36.38,-25.8,-1.9,-8.1,False,2026-06-30 11:36 UTC
-SPK.AX,SPK,ASX,Spark New Zealand,Communication Services,1.54,-25.8,-3.6,-17.7,False,2026-06-30 11:36 UTC
-TMUS,TMUS,US,T-Mobile US,Communication Services,173.97,-25.6,8.5,-3.1,False,2026-06-30 11:36 UTC
-MSFT,MSFT,US,Microsoft,Information Technology,368.57,-25.3,14.9,15.5,False,2026-06-30 11:36 UTC
-ISRG,ISRG,US,Intuitive Surgical,Health Care,405.97,-25.3,20.5,23.0,False,2026-06-30 11:36 UTC
-LNW.AX,LNW,ASX,Light & Wonder,Consumer Discretionary,110.63,-25.0,4.0,-17.9,False,2026-06-30 11:36 UTC
-ADP,ADP,US,Automatic Data Processing,Industrials,224.97,-25.0,7.1,8.7,False,2026-06-30 11:36 UTC
-DASH,DASH,US,DoorDash,Consumer Discretionary,184.82,-25.0,27.9,660.2,False,2026-06-30 11:36 UTC
-PNR,PNR,US,Pentair,Industrials,76.3,-24.9,2.3,4.5,False,2026-06-30 11:36 UTC
-OTIS,OTIS,US,Otis Worldwide,Industrials,72.92,-24.9,1.2,-15.9,False,2026-06-30 11:36 UTC
-CMCSA,CMCSA,US,Comcast,Communication Services,24.22,-24.4,-0.0,23.5,False,2026-06-30 11:36 UTC
-PXA.AX,PXA,ASX,Pexa Group,Real Estate,10.3,-24.3,15.8,-322.4,False,2026-06-30 11:36 UTC
-ROL,ROL,US,"Rollins, Inc.",Industrials,42.28,-24.1,11.0,12.9,False,2026-06-30 11:36 UTC
-JBH.AX,JBH,ASX,JB Hi-Fi,Consumer Discretionary,80.48,-23.9,10.0,5.4,False,2026-06-30 11:36 UTC
-PMV.AX,PMV,ASX,Premier Investments,Consumer Discretionary,14.94,-23.6,-2.9,-4.9,False,2026-06-30 11:36 UTC
-META,META,US,Meta Platforms,Communication Services,562.6,-23.5,22.2,-3.1,False,2026-06-30 11:36 UTC
-CTAS,CTAS,US,Cintas,Industrials,169.08,-23.4,7.7,15.3,False,2026-06-30 11:36 UTC
-ORA.AX,ORA,ASX,Orora,Materials,1.38,-23.2,-55.5,425.4,False,2026-06-30 11:36 UTC
-LOV.AX,LOV,ASX,Lovisa,Consumer Discretionary,23.63,-23.1,,,False,2026-06-30 11:36 UTC
-JKHY,JKHY,US,Jack Henry & Associates,Financials,136.73,-23.0,7.2,19.4,False,2026-06-30 11:36 UTC
-RYM.AX,RYM,ASX,Ryman Healthcare,Healthcare,1.86,-22.8,9.7,-9248.3,True,2026-06-30 11:36 UTC
-EXE,EXE,US,Expand Energy,Energy,87.54,-22.7,188.8,354.8,False,2026-06-30 11:36 UTC
-PSKY,PSKY,US,Paramount Skydance Corporation,Communication Services,9.82,-22.6,-1.5,-918.1,False,2026-06-30 11:36 UTC
-BLDR,BLDR,US,Builders FirstSource,Industrials,90.51,-22.4,-7.4,-59.6,False,2026-06-30 11:36 UTC
-MRSH,MRSH,US,Marsh McLennan,Financials,166.71,-22.3,10.3,2.5,False,2026-06-30 11:36 UTC
-RMD,RMD,US,ResMed,Health Care,198.43,-22.3,9.8,37.2,False,2026-06-30 11:36 UTC
-SPGI,SPGI,US,S&P Global,Financials,408.56,-21.9,7.9,16.1,False,2026-06-30 11:36 UTC
-SBAC,SBAC,US,SBA Communications,Real Estate,179.5,-21.8,5.1,40.6,False,2026-06-30 11:36 UTC
-T,T,US,AT&T,Communication Services,21.82,-21.3,2.7,100.5,False,2026-06-30 11:36 UTC
-ASX.AX,ASX,ASX,ASX,Financials,53.32,-20.8,7.3,6.0,False,2026-06-30 11:36 UTC
-MTS.AX,MTS,ASX,Metcash,Consumer Staples,2.95,-20.7,,,False,2026-06-30 11:36 UTC
-AMT,AMT,US,American Tower,Real Estate,168.67,-20.7,5.1,12.2,False,2026-06-30 11:36 UTC
-BKNG,BKNG,US,Booking Holdings,Consumer Discretionary,182.41,-20.6,13.4,-8.1,False,2026-06-30 11:36 UTC
-KR,KR,US,Kroger,Consumer Staples,55.91,-20.4,0.4,-61.9,False,2026-06-30 11:36 UTC
-BX,BX,US,Blackstone Inc.,Financials,114.88,-20.4,13.5,8.7,False,2026-06-30 11:36 UTC
-EVT.AX,EVT,ASX,EVT,Communication Services,12.88,-20.3,0.5,593.4,False,2026-06-30 11:36 UTC
-CDW,CDW,US,CDW Corporation,Information Technology,139.82,-20.2,6.8,-1.0,False,2026-06-30 11:36 UTC
-DIS,DIS,US,Walt Disney Company (The),Communication Services,98.63,-19.9,3.4,149.5,False,2026-06-30 11:36 UTC
-ARE,ARE,US,Alexandria Real Estate Equities,Real Estate,55.59,-19.9,-3.4,-542.7,True,2026-06-30 11:36 UTC
-DXCM,DXCM,US,Dexcom,Health Care,69.98,-19.8,15.6,45.1,False,2026-06-30 11:36 UTC
-CCI,CCI,US,Crown Castle,Real Estate,78.63,-19.8,-4.4,111.4,False,2026-06-30 11:36 UTC
-SGP.AX,SGP,ASX,Stockland,Real Estate,4.08,-19.7,4.8,170.8,False,2026-06-30 11:36 UTC
-NWS.AX,NWS,ASX,News Corp Class B,Communication Services,41.55,-19.6,2.4,343.6,False,2026-06-30 11:36 UTC
-CEG,CEG,US,Constellation Energy,Utilities,259.32,-19.2,8.3,-38.1,False,2026-06-30 11:36 UTC
-UBER,UBER,US,Uber,Industrials,75.5,-19.1,18.3,2.0,False,2026-06-30 11:36 UTC
-SHL.AX,SHL,ASX,Sonic Healthcare,Healthcare,20.81,-18.7,7.7,0.5,False,2026-06-30 11:36 UTC
-UHS,UHS,US,Universal Health Services,Health Care,147.02,-18.5,9.7,30.4,False,2026-06-30 11:36 UTC
-APO,APO,US,Apollo Global Management,Financials,114.83,-17.8,22.7,-23.7,False,2026-06-30 11:36 UTC
-MGR.AX,MGR,ASX,Mirvac,Real Estate,1.72,-17.8,-17.2,108.4,False,2026-06-30 11:36 UTC
-HUB.AX,HUB,ASX,HUB24,Financials,72.72,-17.8,23.8,68.5,False,2026-06-30 11:36 UTC
-CME,CME,US,CME Group,Financials,218.58,-17.6,6.4,15.5,False,2026-06-30 11:36 UTC
-360.AX,360,ASX,Life360,Information Technology,26.7,-17.0,31.8,3411.4,False,2026-06-30 11:36 UTC
-ZBRA,ZBRA,US,Zebra Technologies,Information Technology,255.81,-17.0,8.3,-20.6,False,2026-06-30 11:36 UTC
-AUB.AX,AUB,ASX,AUB Group,Financials,28.64,-16.8,10.3,31.4,False,2026-06-30 11:36 UTC
-DYL.AX,DYL,ASX,Deep Yellow,Energy,1.39,-16.5,,,False,2026-06-30 11:36 UTC
-LEN,LEN,US,Lennar,Consumer Discretionary,90.85,-16.3,-3.5,-47.2,False,2026-06-30 11:36 UTC
-NWS,NWS,US,News Corp (Class B),Communication Services,28.56,-16.2,2.4,343.6,False,2026-06-30 11:36 UTC
-VST,VST,US,Vistra Corp.,Utilities,162.38,-15.8,3.0,-64.5,False,2026-06-30 11:36 UTC
-SYK,SYK,US,Stryker Corporation,Health Care,330.52,-15.8,11.2,8.5,False,2026-06-30 11:36 UTC
-CLX,CLX,US,Clorox,Consumer Staples,97.09,-15.5,0.2,189.3,False,2026-06-30 11:36 UTC
-ZIM.AX,ZIM,ASX,Zimplats Holdings,Materials,13.09,-15.5,7.8,392.6,False,2026-06-30 11:36 UTC
-EDV.AX,EDV,ASX,Endeavour Group,Consumer Staples,3.25,-15.3,-2.0,-16.8,False,2026-06-30 11:36 UTC
-REG.AX,REG,ASX,Regis Healthcare,Healthcare,6.49,-15.2,14.5,328.6,False,2026-06-30 11:36 UTC
-AMP,AMP,US,Ameriprise Financial,Financials,446.79,-15.2,7.0,4.8,False,2026-06-30 11:36 UTC
-PLTR,PLTR,US,Palantir Technologies,Information Technology,115.7,-15.1,56.2,251.6,False,2026-06-30 11:36 UTC
-AZO,AZO,US,AutoZone,Consumer Discretionary,3153.62,-15.0,2.4,-6.2,False,2026-06-30 11:36 UTC
-BXB.AX,BXB,ASX,Brambles,Industrials,19.48,-14.6,7.7,10.9,False,2026-06-30 11:36 UTC
-IP,IP,US,International Paper,Materials,38.23,-14.5,49.3,-731.2,True,2026-06-30 11:36 UTC
-NWSA,NWSA,US,News Corp (Class A),Communication Services,25.26,-14.4,2.4,343.6,False,2026-06-30 11:36 UTC
-PNI.AX,PNI,ASX,Pinnacle Investment Management,Financials,17.11,-14.1,44.1,48.8,False,2026-06-30 11:36 UTC
-BOQ.AX,BOQ,ASX,Bank of Queensland,Financials,6.31,-13.9,-9.0,129.8,False,2026-06-30 11:36 UTC
-DXS.AX,DXS,ASX,Dexus,Real Estate,5.4,-13.9,4.6,109.9,False,2026-06-30 11:36 UTC
-CI,CI,US,Cigna,Health Care,278.74,-13.8,11.3,73.5,False,2026-06-30 11:36 UTC
-TAP,TAP,US,Molson Coors Beverage Company,Consumer Staples,39.75,-13.8,-4.2,-290.6,True,2026-06-30 11:36 UTC
-APTV,APTV,US,Aptiv,Consumer Discretionary,59.23,-13.2,3.5,-90.8,False,2026-06-30 11:36 UTC
-GEN,GEN,US,Gen Digital,Information Technology,25.04,-13.2,27.1,51.3,False,2026-06-30 11:36 UTC
-NDAQ,NDAQ,US,"Nasdaq, Inc.",Financials,76.85,-13.0,11.6,60.1,False,2026-06-30 11:36 UTC
-WTW,WTW,US,Willis Towers Watson,Financials,264.7,-12.9,-2.2,1737.8,False,2026-06-30 11:36 UTC
-SNPS,SNPS,US,Synopsys,Information Technology,447.26,-12.8,15.1,-41.1,False,2026-06-30 11:36 UTC
-SGH.AX,SGH,ASX,SGH,Industrials,46.64,-12.6,1.2,12.6,False,2026-06-30 11:36 UTC
-PGR,PGR,US,Progressive Corporation,Financials,219.86,-12.3,16.3,33.3,False,2026-06-30 11:36 UTC
-VLTO,VLTO,US,Veralto,Industrials,88.32,-12.2,6.0,12.8,False,2026-06-30 11:36 UTC
-BEN.AX,BEN,ASX,Bendigo & Adelaide Bank,Financials,10.55,-12.1,-5.0,-117.8,True,2026-06-30 11:36 UTC
-RSG,RSG,US,Republic Services,Industrials,214.68,-12.0,3.5,4.7,False,2026-06-30 11:36 UTC
-WOR.AX,WOR,ASX,Worley,Energy,11.06,-12.0,-4.8,35.0,False,2026-06-30 11:36 UTC
-GEHC,GEHC,US,GE HealthCare,Health Care,65.05,-12.0,4.8,4.6,False,2026-06-30 11:36 UTC
-SDF.AX,SDF,ASX,Steadfast Group,Financials,5.1,-11.9,9.9,46.9,False,2026-06-30 11:36 UTC
-STZ,STZ,US,Constellation Brands,Consumer Staples,139.66,-11.8,-10.5,2172.1,False,2026-06-30 11:36 UTC
-VRSN,VRSN,US,Verisign,Information Technology,252.49,-11.5,6.4,5.1,False,2026-06-30 11:36 UTC
-CWY.AX,CWY,ASX,Cleanaway,Industrials,2.35,-11.4,2.4,0.2,False,2026-06-30 11:36 UTC
-VICI,VICI,US,Vici Properties,Real Estate,27.18,-11.2,4.1,3.6,False,2026-06-30 11:36 UTC
-KMB,KMB,US,Kimberly-Clark,Consumer Staples,109.91,-10.6,-2.1,-20.6,False,2026-06-30 11:36 UTC
-STE,STE,US,Steris,Health Care,213.24,-10.5,8.7,27.3,False,2026-06-30 11:36 UTC
-FOX,FOX,US,Fox Corporation (Class B),Communication Services,45.71,-10.5,16.6,50.8,False,2026-06-30 11:36 UTC
-AIG,AIG,US,American International Group,Financials,75.12,-10.1,-1.8,320.5,False,2026-06-30 11:36 UTC
-GPN,GPN,US,Global Payments,Financials,71.12,-10.0,-0.4,-10.8,False,2026-06-30 11:36 UTC
-EQT,EQT,US,EQT Corporation,Energy,52.0,-9.8,60.0,784.4,False,2026-06-30 11:36 UTC
-AGL.AX,AGL,ASX,AGL Energy,Utilities,8.35,-9.5,5.5,-113.8,True,2026-06-30 11:36 UTC
-FOXA,FOXA,US,Fox Corporation (Class A),Communication Services,50.39,-9.2,16.6,50.8,False,2026-06-30 11:36 UTC
-MCO,MCO,US,Moody's Corporation,Financials,452.73,-9.0,8.9,19.5,False,2026-06-30 11:36 UTC
-MA,MA,US,Mastercard,Financials,509.64,-8.8,16.4,16.3,False,2026-06-30 11:36 UTC
-HRL,HRL,US,Hormel Foods,Consumer Staples,26.31,-8.7,1.6,-40.6,False,2026-06-30 11:36 UTC
-PPT.AX,PPT,ASX,Perpetual,Financials,15.5,-8.7,3.4,87.7,False,2026-06-30 11:36 UTC
-XYL,XYL,US,Xylem Inc.,Industrials,116.73,-8.6,5.5,7.5,False,2026-06-30 11:36 UTC
-MDLZ,MDLZ,US,Mondelez International,Consumer Staples,60.15,-8.5,5.8,-46.8,False,2026-06-30 11:36 UTC
-ASK.AX,ASK,ASX,Abacus Storage King,Real Estate,1.35,-8.5,11.8,109.2,False,2026-06-30 11:36 UTC
-ALGN,ALGN,US,Align Technology,Health Care,173.43,-8.4,0.9,-2.6,False,2026-06-30 11:36 UTC
-JHX.AX,JHX,ASX,James Hardie,Materials,38.19,-8.4,24.7,-75.5,False,2026-06-30 11:36 UTC
-CBA.AX,CBA,ASX,Commonwealth Bank,Financials,164.62,-8.3,4.3,7.7,False,2026-06-30 11:36 UTC
-GMG.AX,GMG,ASX,Goodman Group,Real Estate,31.13,-8.2,7.6,1784.9,False,2026-06-30 11:36 UTC
-MEZ.AX,MEZ,ASX,Meridian Energy,Utilities,4.8,-7.9,-0.8,-205.4,True,2026-06-30 11:36 UTC
-AON,AON,US,Aon plc,Financials,327.57,-7.7,9.4,39.2,False,2026-06-30 11:36 UTC
-NVR,NVR,US,"NVR, Inc.",Consumer Discretionary,6821.03,-7.6,-1.9,-20.3,False,2026-06-30 11:36 UTC
-SUN.AX,SUN,ASX,Suncorp,Financials,19.29,-7.6,15.7,52.3,False,2026-06-30 11:36 UTC
-BLK,BLK,US,BlackRock,Financials,950.17,-7.5,18.7,-12.8,False,2026-06-30 11:36 UTC
-TDG,TDG,US,TransDigm Group,Industrials,1323.44,-7.0,11.2,21.0,False,2026-06-30 11:36 UTC
-SIG.AX,SIG,ASX,Sigma Healthcare,Healthcare,2.75,-7.0,23.7,3928.3,False,2026-06-30 11:36 UTC
-IAG.AX,IAG,ASX,Insurance Australia Group,Financials,8.09,-6.9,9.0,51.3,False,2026-06-30 11:36 UTC
-AMC.AX,AMC,ASX,Amcor,Materials,62.56,-6.4,10.0,-30.0,False,2026-06-30 11:36 UTC
-MCD,MCD,US,McDonald's,Consumer Discretionary,267.18,-6.3,3.7,4.1,False,2026-06-30 11:36 UTC
-NRG,NRG,US,NRG Energy,Utilities,149.11,-6.1,9.2,-23.2,False,2026-06-30 11:36 UTC
-COR,COR,US,Cencora,Health Care,281.65,-5.4,9.3,3.0,False,2026-06-30 11:36 UTC
-CVNA,CVNA,US,Carvana,Consumer Discretionary,63.72,-5.4,48.6,570.0,False,2026-06-30 11:36 UTC
-SWKS,SWKS,US,Skyworks Solutions,Information Technology,67.71,-5.3,-2.2,-19.9,False,2026-06-30 11:36 UTC
-A2M.AX,A2M,ASX,a2 Milk Company,Consumer Staples,7.48,-4.9,13.5,21.1,False,2026-06-30 11:36 UTC
-J,J,US,Jacobs Solutions,Industrials,123.81,-4.8,4.6,-64.1,False,2026-06-30 11:36 UTC
-AVY,AVY,US,Avery Dennison,Materials,163.32,-4.8,1.1,-2.4,False,2026-06-30 11:36 UTC
-KVUE,KVUE,US,Kenvue,Consumer Staples,19.07,-4.6,-2.1,42.7,False,2026-06-30 11:36 UTC
-CLW.AX,CLW,ASX,Charter Hall Long WALE REIT,Real Estate,3.65,-4.5,-16.7,123.2,False,2026-06-30 11:36 UTC
-ALL.AX,ALL,ASX,Aristocrat Leisure,Consumer Discretionary,61.27,-4.2,-4.6,25.8,False,2026-06-30 11:36 UTC
-MDT,MDT,US,Medtronic,Health Care,80.93,-4.1,8.4,3.0,False,2026-06-30 11:36 UTC
-PG,PG,US,Procter & Gamble,Consumer Staples,148.45,-4.1,0.3,7.4,False,2026-06-30 11:36 UTC
-AOS,AOS,US,A. O. Smith,Industrials,61.68,-4.0,0.3,2.4,False,2026-06-30 11:36 UTC
-HVN.AX,HVN,ASX,Harvey Norman,Consumer Discretionary,4.82,-4.0,5.1,47.0,False,2026-06-30 11:36 UTC
-COST,COST,US,Costco,Consumer Staples,946.68,-3.8,8.2,9.9,False,2026-06-30 11:36 UTC
-AMCR,AMCR,US,Amcor,Materials,42.94,-3.7,10.0,-30.0,False,2026-06-30 11:36 UTC
-CYL.AX,CYL,ASX,Catalyst Metals,Materials,5.03,-3.6,395.8,251.0,False,2026-06-30 11:36 UTC
-COF,COF,US,Capital One,Financials,202.28,-3.5,36.6,-48.4,False,2026-06-30 11:36 UTC
-CIA.AX,CIA,ASX,Champion Iron,Materials,3.92,-3.5,10.2,18.8,False,2026-06-30 11:36 UTC
-FPH.AX,FPH,ASX,Fisher & Paykel Healthcare,Healthcare,32.05,-3.4,80.3,24.2,False,2026-06-30 11:36 UTC
-IBM,IBM,US,IBM,Information Technology,278.0,-3.3,7.6,75.9,False,2026-06-30 11:36 UTC
-V,V,US,Visa Inc.,Financials,341.65,-3.0,11.3,1.6,False,2026-06-30 11:36 UTC
-RWC.AX,RWC,ASX,Reliance Worldwide Corporation,Industrials,3.91,-2.9,5.5,13.5,False,2026-06-30 11:36 UTC
-CBRE,CBRE,US,CBRE Group,Real Estate,136.09,-2.9,13.4,19.5,False,2026-06-30 11:36 UTC
-HPQ,HPQ,US,HP Inc.,Information Technology,22.64,-2.7,3.2,-8.9,False,2026-06-30 11:36 UTC
-DRI,DRI,US,Darden Restaurants,Consumer Discretionary,205.7,-2.7,6.0,2.1,False,2026-06-30 11:36 UTC
-INVH,INVH,US,Invitation Homes,Real Estate,30.59,-2.6,4.2,29.5,False,2026-06-30 11:36 UTC
-IR,IR,US,Ingersoll Rand,Industrials,80.98,-2.5,5.7,-30.7,False,2026-06-30 11:36 UTC
-CEN.AX,CEN,ASX,Contact Energy,Utilities,7.83,-2.5,20.1,40.9,False,2026-06-30 11:36 UTC
-AVB,AVB,US,AvalonBay Communities,Real Estate,192.64,-2.5,4.4,-2.8,False,2026-06-30 11:36 UTC
-ALLE,ALLE,US,Allegion,Industrials,139.65,-2.3,7.8,7.7,False,2026-06-30 11:36 UTC
-AWK,AWK,US,American Water Works,Utilities,132.5,-2.2,9.7,5.7,False,2026-06-30 11:36 UTC
-YAL.AX,YAL,ASX,Yancoal Australia,Materials,5.49,-2.2,-15.3,-63.8,False,2026-06-30 11:36 UTC
-SUL.AX,SUL,ASX,Super Retail Group,Consumer Discretionary,13.18,-2.0,4.8,-7.6,False,2026-06-30 11:36 UTC
-MSCI,MSCI,US,MSCI Inc.,Financials,558.0,-1.9,9.7,8.4,False,2026-06-30 11:36 UTC
-ULTA,ULTA,US,Ulta Beauty,Consumer Discretionary,459.12,-1.9,9.7,-4.0,False,2026-06-30 11:36 UTC
-HD,HD,US,Home Depot (The),Consumer Discretionary,350.81,-1.8,3.2,-4.4,False,2026-06-30 11:36 UTC
-DHR,DHR,US,Danaher Corporation,Health Care,192.78,-1.7,2.9,-7.3,False,2026-06-30 11:36 UTC
-DECK,DECK,US,Deckers Brands,Consumer Discretionary,101.28,-1.7,9.8,6.0,False,2026-06-30 11:36 UTC
-RJF,RJF,US,Raymond James Financial,Financials,149.08,-1.5,9.5,3.2,False,2026-06-30 11:36 UTC
-STO.AX,STO,ASX,Santos,Energy,7.21,-1.4,-8.4,-33.2,False,2026-06-30 11:36 UTC
-APD,APD,US,Air Products,Materials,271.35,-1.2,-0.5,-110.3,True,2026-06-30 11:36 UTC
-CPU.AX,CPU,ASX,Computershare,Information Technology,38.28,-1.2,5.1,72.1,False,2026-06-30 11:36 UTC
-VEA.AX,VEA,ASX,Viva Energy,Energy,2.07,-0.9,-5.2,-451.9,False,2026-06-30 11:36 UTC
-FDXF,FDXF,US,FedEx Freight,Industrials,149.69,-0.9,-5.7,-31.4,False,2026-06-30 11:36 UTC
-FLT.AX,FLT,ASX,Flight Centre Travel Group,Consumer Discretionary,11.96,-0.8,2.7,-21.6,False,2026-06-30 11:36 UTC
-WY,WY,US,Weyerhaeuser,Real Estate,24.62,-0.8,-3.1,-18.2,False,2026-06-30 11:36 UTC
-WM,WM,US,Waste Management,Industrials,223.37,-0.8,14.2,-1.4,False,2026-06-30 11:36 UTC
-MSI,MSI,US,Motorola Solutions,Information Technology,412.6,-0.8,8.0,36.6,False,2026-06-30 11:36 UTC
-WRB,WRB,US,W. R. Berkley Corporation,Financials,71.01,-0.7,6.9,1.3,False,2026-06-30 11:36 UTC
-VGN.AX,VGN,ASX,Virgin Australia Holdings,Industrials,3.07,-0.6,,,False,2026-06-30 11:36 UTC
-MAA,MAA,US,Mid-America Apartment Communities,Real Estate,140.65,-0.6,0.8,-15.3,False,2026-06-30 11:36 UTC
-CBOE,CBOE,US,Cboe Global Markets,Financials,231.51,-0.3,15.1,43.8,False,2026-06-30 11:36 UTC
-EL,EL,US,Estée Lauder Companies (The),Consumer Staples,79.37,-0.3,-8.2,-390.5,True,2026-06-30 11:36 UTC
-AIA.AX,AIA,ASX,Auckland International Airport Limited,Industrials,6.97,-0.2,11.1,7549.1,False,2026-06-30 11:36 UTC
-LYB,LYB,US,LyondellBasell,Materials,53.62,-0.2,-9.7,-154.8,True,2026-06-30 11:36 UTC
-IDXX,IDXX,US,Idexx Laboratories,Health Care,535.93,-0.1,10.4,19.3,False,2026-06-30 11:36 UTC
-ORLY,ORLY,US,O’Reilly Automotive,Consumer Discretionary,90.16,0.0,6.4,6.3,False,2026-06-30 11:36 UTC
-LII,LII,US,Lennox International,Industrials,568.83,0.0,-2.7,-0.7,False,2026-06-30 11:36 UTC
-KHC,KHC,US,Kraft Heinz,Consumer Staples,24.19,-0.0,-3.5,-313.0,True,2026-06-30 11:36 UTC
-GPC,GPC,US,Genuine Parts Company,Consumer Discretionary,117.18,0.1,3.5,-92.7,False,2026-06-30 11:36 UTC
-NAB.AX,NAB,ASX,National Australia Bank,Financials,37.86,0.2,,,False,2026-06-30 11:36 UTC
-COO,COO,US,Cooper Companies (The),Health Care,71.39,0.3,5.1,-4.4,False,2026-06-30 11:36 UTC
-SCHW,SCHW,US,Charles Schwab Corporation,Financials,90.55,0.5,22.0,49.0,False,2026-06-30 11:36 UTC
-AFI.AX,AFI,ASX,Australian Foundation Investment Company,Financials,7.05,0.5,-2.6,-3.8,False,2026-06-30 11:36 UTC
-NXT.AX,NXT,ASX,NextDC,Information Technology,14.58,0.6,5.7,-37.1,False,2026-06-30 11:36 UTC
-NOC,NOC,US,Northrop Grumman,Industrials,496.02,0.8,2.2,0.2,False,2026-06-30 11:36 UTC
-LOW,LOW,US,Lowe's,Consumer Discretionary,219.65,0.9,3.1,-4.4,False,2026-06-30 11:36 UTC
-CPAY,CPAY,US,Corpay,Financials,335.34,1.1,13.9,6.6,False,2026-06-30 11:36 UTC
-ZBH,ZBH,US,Zimmer Biomet,Health Care,91.24,1.1,7.2,-22.0,False,2026-06-30 11:36 UTC
-PEG,PEG,US,Public Service Enterprise Group,Utilities,82.43,1.2,18.3,19.1,False,2026-06-30 11:36 UTC
-MCY.AX,MCY,ASX,Mercury NZ,Utilities,5.42,1.2,2.0,-99.7,False,2026-06-30 11:36 UTC
-SHW,SHW,US,Sherwin-Williams,Materials,344.3,1.2,2.1,-4.2,False,2026-06-30 11:36 UTC
-TTWO,TTWO,US,Take-Two Interactive,Communication Services,247.15,1.8,18.2,93.3,False,2026-06-30 11:36 UTC
-CARR,CARR,US,Carrier Global,Industrials,73.43,1.8,-3.3,-73.5,False,2026-06-30 11:36 UTC
-ELV,ELV,US,Elevance Health,Health Care,388.03,1.9,12.6,-5.3,False,2026-06-30 11:36 UTC
-BRK-B,BRK.B,US,Berkshire Hathaway,Financials,496.0,2.1,-3.2,-24.8,False,2026-06-30 11:36 UTC
-MXT.AX,MXT,ASX,Metrics Master Income Trust,Financials,1.91,2.4,-2.7,-2.6,False,2026-06-30 11:36 UTC
-MPL.AX,MPL,ASX,Medibank,Financials,4.97,2.4,6.6,1.7,False,2026-06-30 11:36 UTC
-MCK,MCK,US,McKesson Corporation,Health Care,747.53,2.4,12.4,44.5,False,2026-06-30 11:36 UTC
-BA,BA,US,Boeing,Industrials,214.69,2.5,34.5,118.9,False,2026-06-30 11:36 UTC
-FBU.AX,FBU,ASX,Fletcher Building,Industrials,2.77,2.6,-9.0,-84.6,False,2026-06-30 11:36 UTC
-CIP.AX,CIP,ASX,Centuria Industrial REIT,Real Estate,3.04,2.7,5.5,176.4,False,2026-06-30 11:36 UTC
-BXP,BXP,US,"BXP, Inc.",Real Estate,67.07,2.8,2.2,1839.5,False,2026-06-30 11:36 UTC
-UDR,UDR,US,"UDR, Inc.",Real Estate,40.13,3.0,2.4,321.6,False,2026-06-30 11:36 UTC
-HCA,HCA,US,HCA Healthcare,Health Care,392.33,3.1,7.1,17.8,False,2026-06-30 11:36 UTC
-SOLV,SOLV,US,Solventum,Health Care,78.24,3.2,0.9,224.8,False,2026-06-30 11:36 UTC
-CHD,CHD,US,Church & Dwight,Consumer Staples,97.9,3.2,1.6,25.9,False,2026-06-30 11:36 UTC
-QAN.AX,QAN,ASX,Qantas,Industrials,10.62,3.7,8.3,27.9,False,2026-06-30 11:36 UTC
-PM,PM,US,Philip Morris International,Consumer Staples,182.87,4.0,7.3,60.8,False,2026-06-30 11:36 UTC
-NHF.AX,NHF,ASX,Nib,Financials,7.06,4.1,5.5,7.7,False,2026-06-30 11:36 UTC
-CL,CL,US,Colgate-Palmolive,Consumer Staples,92.4,4.2,1.4,-26.2,False,2026-06-30 11:36 UTC
-RCL,RCL,US,Royal Caribbean Group,Consumer Discretionary,321.44,4.4,8.8,48.3,False,2026-06-30 11:36 UTC
-ECL,ECL,US,Ecolab,Materials,278.6,4.5,2.2,-1.7,False,2026-06-30 11:36 UTC
-NST.AX,NST,ASX,Northern Star Resources,Materials,18.95,4.6,30.4,109.8,False,2026-06-30 11:36 UTC
-KDP,KDP,US,Keurig Dr Pepper,Consumer Staples,33.5,4.7,8.2,44.3,False,2026-06-30 11:36 UTC
-DG,DG,US,Dollar General,Consumer Staples,117.52,4.8,5.2,34.4,False,2026-06-30 11:36 UTC
-CCL,CCL,US,Carnival Corporation,Consumer Discretionary,29.19,4.9,6.4,44.1,False,2026-06-30 11:36 UTC
-WAM.AX,WAM,ASX,WAM Capital,Financials,1.49,4.9,-4.0,-4.2,False,2026-06-30 11:36 UTC
-EXR,EXR,US,Extra Space Storage,Real Estate,148.26,5.2,3.7,14.0,False,2026-06-30 11:36 UTC
-ZIP.AX,ZIP,ASX,Zip,Financials,3.24,5.5,23.5,2084.7,False,2026-06-30 11:36 UTC
-GPT.AX,GPT,ASX,GPT Group,Real Estate,4.88,5.6,4.4,588.8,False,2026-06-30 11:36 UTC
-WAT,WAT,US,Waters Corporation,Health Care,368.87,5.7,7.0,0.8,False,2026-06-30 11:36 UTC
-EQR,EQR,US,Equity Residential,Real Estate,68.34,5.8,3.8,8.1,False,2026-06-30 11:36 UTC
-ARG.AX,ARG,ASX,Argo Investments,Financials,9.29,5.9,3.1,2.7,False,2026-06-30 11:36 UTC
-DRO.AX,DRO,ASX,Droneshield,Industrials,2.42,6.1,276.4,366.7,False,2026-06-30 11:36 UTC
-GNE.AX,GNE,ASX,Genesis Energy,Utilities,2.09,6.3,22.7,29.0,False,2026-06-30 11:36 UTC
-MLM,MLM,US,Martin Marietta Materials,Materials,581.23,6.4,8.6,-43.0,False,2026-06-30 11:36 UTC
-IFF,IFF,US,International Flavors & Fragrances,Materials,76.5,6.5,-5.2,-237.3,True,2026-06-30 11:36 UTC
-BF-B,BF.B,US,Brown–Forman,Consumer Staples,27.72,6.5,-1.2,-17.7,False,2026-06-30 11:36 UTC
-WFC,WFC,US,Wells Fargo,Financials,83.51,6.5,1.7,8.2,False,2026-06-30 11:36 UTC
-CPT,CPT,US,Camden Property Trust,Real Estate,116.74,6.8,1.9,135.4,False,2026-06-30 11:36 UTC
-ORG.AX,ORG,ASX,Origin Energy,Utilities,10.98,6.8,7.1,5.9,False,2026-06-30 11:36 UTC
-OMC,OMC,US,Omnicom Group,Communication Services,73.93,6.9,10.1,-103.7,True,2026-06-30 11:36 UTC
-HIG,HIG,US,Hartford (The),Financials,133.49,7.1,6.4,23.3,False,2026-06-30 11:36 UTC
-WYNN,WYNN,US,Wynn Resorts,Consumer Discretionary,99.42,7.1,0.1,-34.7,False,2026-06-30 11:36 UTC
-PRU,PRU,US,Prudential Financial,Financials,109.2,7.2,-13.7,31.1,False,2026-06-30 11:36 UTC
-MTD,MTD,US,Mettler Toledo,Health Care,1258.82,7.2,4.0,0.7,False,2026-06-30 11:36 UTC
-ANN.AX,ANN,ASX,Ansell,Healthcare,31.74,7.3,23.7,32.8,False,2026-06-30 11:36 UTC
-EG,EG,US,Everest Group,Financials,360.79,7.5,0.8,15.9,False,2026-06-30 11:36 UTC
-LH,LH,US,Labcorp,Health Care,279.58,7.6,7.2,17.5,False,2026-06-30 11:36 UTC
-ESS,ESS,US,Essex Property Trust,Real Estate,295.93,7.6,6.4,-9.7,False,2026-06-30 11:36 UTC
-PFE,PFE,US,Pfizer,Health Care,24.37,7.6,-1.6,-3.2,False,2026-06-30 11:36 UTC
-ACGL,ACGL,US,Arch Capital Group,Financials,98.06,7.7,14.0,2.0,False,2026-06-30 11:36 UTC
-TCL.AX,TCL,ASX,Transurban,Industrials,14.38,7.8,-8.5,-59.2,False,2026-06-30 11:36 UTC
-AXP,AXP,US,American Express,Financials,340.88,8.0,9.5,7.0,False,2026-06-30 11:36 UTC
-NCLH,NCLH,US,Norwegian Cruise Line Holdings,Consumer Discretionary,21.92,8.1,3.7,-53.5,False,2026-06-30 11:36 UTC
-WBC.AX,WBC,ASX,Westpac,Financials,35.21,8.1,1.0,-2.8,False,2026-06-30 11:36 UTC
-TSN,TSN,US,Tyson Foods,Consumer Staples,58.65,8.5,2.1,-40.8,False,2026-06-30 11:36 UTC
-MMM,MMM,US,3M,Industrials,162.43,8.7,1.5,-22.1,False,2026-06-30 11:36 UTC
-LVS,LVS,US,Las Vegas Sands,Consumer Discretionary,46.37,8.7,15.2,12.5,False,2026-06-30 11:36 UTC
-CQR.AX,CQR,ASX,Charter Hall Retail REIT,Real Estate,3.92,8.8,-8.3,1143.0,False,2026-06-30 11:36 UTC
-HOOD,HOOD,US,Robinhood Markets,Financials,101.83,8.8,51.6,33.5,False,2026-06-30 11:36 UTC
-SO,SO,US,Southern Company,Utilities,96.75,8.8,10.6,-1.4,False,2026-06-30 11:36 UTC
-YUM,YUM,US,Yum! Brands,Consumer Discretionary,158.24,8.8,8.8,4.9,False,2026-06-30 11:36 UTC
-VZ,VZ,US,Verizon,Communication Services,44.1,8.8,2.5,-1.9,False,2026-06-30 11:36 UTC
-HDN.AX,HDN,ASX,HomeCo Daily Needs REIT,Real Estate,1.28,8.9,2.6,205.2,False,2026-06-30 11:36 UTC
-EMR,EMR,US,Emerson Electric,Industrials,142.82,8.9,3.0,16.5,False,2026-06-30 11:36 UTC
-ALX.AX,ALX,ASX,Atlas Arteria,Industrials,5.1,9.0,9.6,-22.7,False,2026-06-30 11:36 UTC
-PPG,PPG,US,PPG Industries,Materials,120.91,9.1,0.2,41.2,False,2026-06-30 11:36 UTC
-PEP,PEP,US,PepsiCo,Consumer Staples,138.68,9.2,2.3,-14.0,False,2026-06-30 11:36 UTC
-TLS.AX,TLS,ASX,Telstra,Communication Services,5.08,9.2,0.8,33.9,False,2026-06-30 11:36 UTC
-WES.AX,WES,ASX,Wesfarmers,Consumer Discretionary,90.4,9.3,3.5,14.4,False,2026-06-30 11:36 UTC
-AMZN,AMZN,US,Amazon,Consumer Discretionary,240.14,9.5,12.4,31.1,False,2026-06-30 11:36 UTC
-VCX.AX,VCX,ASX,Vicinity Centres,Real Estate,2.58,9.6,0.4,83.6,False,2026-06-30 11:36 UTC
-BFL.AX,BFL,ASX,BSP Financial Group,Financials,8.2,9.6,13.5,12.9,False,2026-06-30 11:36 UTC
-BGA.AX,BGA,ASX,Bega Cheese,Consumer Staples,5.88,10.1,0.5,-127.9,True,2026-06-30 11:36 UTC
-MET,MET,US,MetLife,Financials,85.99,10.1,7.9,-23.7,False,2026-06-30 11:36 UTC
-HONA,HONA,US,Honeywell Aerospace,Industrials,220.19,10.1,12.7,-36.8,False,2026-06-30 11:36 UTC
-ITW,ITW,US,Illinois Tool Works,Industrials,267.47,10.2,0.9,-12.1,False,2026-06-30 11:36 UTC
-HBAN,HBAN,US,Huntington Bancshares,Financials,17.82,10.3,10.1,14.0,False,2026-06-30 11:36 UTC
-SW,SW,US,Smurfit Westrock,Materials,46.17,10.3,47.7,119.1,False,2026-06-30 11:36 UTC
-LIN,LIN,US,Linde plc,Materials,511.06,10.4,3.0,5.1,False,2026-06-30 11:36 UTC
-TT,TT,US,Trane Technologies,Industrials,480.35,10.6,7.5,13.7,False,2026-06-30 11:36 UTC
-BRG.AX,BRG,ASX,Breville Group,Consumer Discretionary,32.26,10.8,10.9,14.6,False,2026-06-30 11:36 UTC
-DOW,DOW,US,Dow Inc.,Materials,27.92,11.0,-7.0,-335.0,True,2026-06-30 11:36 UTC
-CNU.AX,CNU,ASX,Chorus,Communication Services,8.22,11.0,-5.9,144.4,False,2026-06-30 11:36 UTC
-ABNB,ABNB,US,Airbnb,Consumer Discretionary,147.17,11.2,10.3,-5.2,False,2026-06-30 11:36 UTC
-LMT,LMT,US,Lockheed Martin,Industrials,502.07,11.3,5.6,-6.0,False,2026-06-30 11:36 UTC
-TLC.AX,TLC,ASX,The Lottery Corporation,Consumer Discretionary,5.76,11.3,-6.3,-11.7,False,2026-06-30 11:36 UTC
-PPL,PPL,US,PPL Corporation,Utilities,36.74,11.9,6.9,33.0,False,2026-06-30 11:36 UTC
-BALL,BALL,US,Ball Corporation,Materials,62.02,12.2,11.6,-77.2,False,2026-06-30 11:36 UTC
-VRTX,VRTX,US,Vertex Pharmaceuticals,Health Care,499.65,12.2,8.9,838.1,False,2026-06-30 11:36 UTC
-RGN.AX,RGN,ASX,Region Group,Real Estate,2.33,12.3,1.6,1128.3,False,2026-06-30 11:36 UTC
-TXT,TXT,US,Textron,Industrials,90.15,12.4,8.0,11.8,False,2026-06-30 11:36 UTC
-EXC,EXC,US,Exelon,Utilities,47.15,12.5,5.3,12.5,False,2026-06-30 11:36 UTC
-DLR,DLR,US,Digital Realty,Real Estate,190.58,12.5,10.0,117.2,False,2026-06-30 11:36 UTC
-DUK,DUK,US,Duke Energy,Utilities,128.33,12.6,6.2,9.8,False,2026-06-30 11:36 UTC
-HSY,HSY,US,Hershey Company (The),Consumer Staples,181.58,12.7,4.4,-60.2,False,2026-06-30 11:36 UTC
-SOL.AX,SOL,ASX,Soul Patts,Financials,46.15,12.7,4.1,-27.0,False,2026-06-30 11:36 UTC
-CTVA,CTVA,US,Corteva,Materials,83.37,12.9,2.9,20.6,False,2026-06-30 11:36 UTC
-MQG.AX,MQG,ASX,Macquarie Group,Financials,250.29,12.9,6.3,30.5,False,2026-06-30 11:36 UTC
-BWP.AX,BWP,ASX,BWP Trust,Real Estate,3.79,13.1,16.7,47.4,False,2026-06-30 11:36 UTC
-SYY,SYY,US,Sysco,Consumer Staples,83.4,13.3,3.2,-6.5,False,2026-06-30 11:36 UTC
-QBE.AX,QBE,ASX,QBE Insurance,Financials,25.19,13.4,4.1,21.2,False,2026-06-30 11:36 UTC
-SCG.AX,SCG,ASX,Scentre Group,Real Estate,3.86,13.5,1.8,69.4,False,2026-06-30 11:36 UTC
-A,A,US,Agilent Technologies,Health Care,132.83,13.5,6.7,1.1,False,2026-06-30 11:36 UTC
-GRMN,GRMN,US,Garmin,Consumer Discretionary,233.76,13.8,15.1,17.9,False,2026-06-30 11:36 UTC
-EOG,EOG,US,EOG Resources,Energy,131.93,14.2,-3.4,-22.2,False,2026-06-30 11:36 UTC
-KMI,KMI,US,Kinder Morgan,Energy,32.27,14.3,12.2,17.0,False,2026-06-30 11:36 UTC
-FRW.AX,FRW,ASX,Freightways Group,Industrials,11.41,14.4,6.6,12.9,False,2026-06-30 11:36 UTC
-UPS,UPS,US,United Parcel Service,Industrials,108.01,14.4,-2.6,-3.6,False,2026-06-30 11:36 UTC
-OKE,OKE,US,Oneok,Energy,88.73,14.7,55.0,11.8,False,2026-06-30 11:36 UTC
-XYZ,XYZ,US,"Block, Inc.",Financials,78.02,14.9,0.3,-54.9,False,2026-06-30 11:36 UTC
-PSA,PSA,US,Public Storage,Real Estate,324.45,15.2,2.7,-13.9,False,2026-06-30 11:36 UTC
-FAST,FAST,US,Fastenal,Industrials,47.4,15.2,8.7,9.4,False,2026-06-30 11:36 UTC
-PDN.AX,PDN,ASX,Paladin Energy,Energy,9.3,15.2,,-183.2,True,2026-06-30 11:36 UTC
-RVTY,RVTY,US,Revvity,Health Care,111.21,15.3,3.7,-10.8,False,2026-06-30 11:36 UTC
-HSIC,HSIC,US,Henry Schein,Health Care,84.29,15.4,4.0,2.1,False,2026-06-30 11:36 UTC
-O,O,US,Realty Income,Real Estate,63.04,15.5,9.1,23.0,False,2026-06-30 11:36 UTC
-ED,ED,US,Consolidated Edison,Utilities,112.29,15.6,10.9,11.2,False,2026-06-30 11:36 UTC
-ETN,ETN,US,Eaton Corporation,Industrials,408.26,15.7,10.3,7.7,False,2026-06-30 11:36 UTC
-JPM,JPM,US,JPMorgan Chase,Financials,329.39,15.8,7.3,-2.4,False,2026-06-30 11:36 UTC
-CMS,CMS,US,CMS Energy,Utilities,77.93,15.9,13.6,6.8,False,2026-06-30 11:36 UTC
-CTD.AX,CTD,ASX,Corporate Travel Management,Consumer Discretionary,16.07,16.0,8.8,8.9,False,2026-06-30 11:36 UTC
-ATO,ATO,US,Atmos Energy,Utilities,174.84,16.0,12.9,14.9,False,2026-06-30 11:36 UTC
-AFL,AFL,US,Aflac,Financials,120.08,16.3,-9.3,-33.0,False,2026-06-30 11:36 UTC
-SBUX,SBUX,US,Starbucks,Consumer Discretionary,104.06,16.6,2.8,-50.6,False,2026-06-30 11:36 UTC
-EW,EW,US,Edwards Lifesciences,Health Care,91.18,16.6,11.5,-74.3,False,2026-06-30 11:36 UTC
-HII,HII,US,Huntington Ingalls Industries,Industrials,277.39,16.8,8.2,10.0,False,2026-06-30 11:36 UTC
-GILD,GILD,US,Gilead Sciences,Health Care,126.33,16.9,2.4,1672.9,False,2026-06-30 11:36 UTC
-FTV,FTV,US,Fortive,Industrials,60.67,16.9,1.9,-30.5,False,2026-06-30 11:36 UTC
-CF,CF,US,CF Industries,Materials,105.4,17.0,19.3,19.5,False,2026-06-30 11:36 UTC
-LHX,LHX,US,L3Harris,Industrials,289.38,17.2,2.5,6.9,False,2026-06-30 11:36 UTC
-VMC,VMC,US,Vulcan Materials Company,Materials,303.82,17.3,7.1,18.1,False,2026-06-30 11:36 UTC
-BDX,BDX,US,Becton Dickinson,Health Care,155.19,17.4,8.2,-1.6,False,2026-06-30 11:36 UTC
-WEC,WEC,US,WEC Energy Group,Utilities,118.44,17.5,14.0,2.0,False,2026-06-30 11:36 UTC
-TKO,TKO,US,TKO Group Holdings,Communication Services,211.62,18.1,-3.1,1977.0,False,2026-06-30 11:36 UTC
-WAF.AX,WAF,ASX,West African Resources,Materials,2.68,18.1,111.7,111.7,False,2026-06-30 11:36 UTC
-MSB.AX,MSB,ASX,Mesoblast,Healthcare,1.96,18.1,191.4,-16.1,False,2026-06-30 11:36 UTC
-WMT,WMT,US,Walmart,Consumer Staples,114.6,18.2,4.7,12.6,False,2026-06-30 11:36 UTC
-HAS,HAS,US,Hasbro,Consumer Discretionary,84.44,18.2,13.7,-183.6,True,2026-06-30 11:36 UTC
-RMS.AX,RMS,ASX,Ramelius Resources,Materials,2.92,18.4,39.8,251.8,False,2026-06-30 11:36 UTC
-TEL,TEL,US,TE Connectivity,Information Technology,198.3,18.8,8.9,-42.3,False,2026-06-30 11:36 UTC
-REG,REG,US,Regency Centers,Real Estate,81.3,18.8,6.9,31.7,False,2026-06-30 11:36 UTC
-CNC,CNC,US,Centene Corporation,Health Care,64.54,18.9,19.4,-301.9,True,2026-06-30 11:36 UTC
-MFF.AX,MFF,ASX,MFF Capital Investments,Financials,5.06,19.1,-5.2,-3.4,False,2026-06-30 11:36 UTC
-CB,CB,US,Chubb Limited,Financials,343.29,19.2,6.7,11.2,False,2026-06-30 11:36 UTC
-OXY,OXY,US,Occidental Petroleum,Energy,49.09,19.3,-1.9,-23.9,False,2026-06-30 11:36 UTC
-CRH,CRH,US,CRH plc,Materials,108.87,19.4,5.3,7.9,False,2026-06-30 11:36 UTC
-SYF,SYF,US,Synchrony Financial,Financials,78.37,19.4,-0.5,1.5,False,2026-06-30 11:36 UTC
-TAH.AX,TAH,ASX,Tabcorp,Consumer Discretionary,0.83,19.7,11.8,102.7,False,2026-06-30 11:36 UTC
-COP,COP,US,ConocoPhillips,Energy,104.2,20.0,7.7,-13.6,False,2026-06-30 11:36 UTC
-TPL,TPL,US,Texas Pacific Land Corporation,Energy,419.98,20.0,13.1,6.0,False,2026-06-30 11:36 UTC
-DTE,DTE,US,DTE Energy,Utilities,154.02,20.1,26.9,4.1,False,2026-06-30 11:36 UTC
-KO,KO,US,Coca-Cola Company (The),Consumer Staples,82.65,20.1,1.9,23.3,False,2026-06-30 11:36 UTC
-DGX,DGX,US,Quest Diagnostics,Health Care,212.64,20.5,11.8,13.9,False,2026-06-30 11:36 UTC
-LYV,LYV,US,Live Nation Entertainment,Communication Services,182.56,20.7,8.8,-44.7,False,2026-06-30 11:36 UTC
-WLE.AX,WLE,ASX,WAM Leaders,Financials,1.34,20.8,132.9,185.8,False,2026-06-30 11:36 UTC
-COL.AX,COL,ASX,Coles Group,Consumer Staples,24.37,20.9,1.8,-3.5,False,2026-06-30 11:36 UTC
-REGN,REGN,US,Regeneron Pharmaceuticals,Health Care,631.81,21.0,1.0,2.1,False,2026-06-30 11:36 UTC
-CDNS,CDNS,US,Cadence Design Systems,Information Technology,372.72,21.0,14.1,5.1,False,2026-06-30 11:36 UTC
-QCOM,QCOM,US,Qualcomm,Information Technology,188.72,21.0,13.7,-45.4,False,2026-06-30 11:36 UTC
-GMD.AX,GMD,ASX,Genesis Minerals,Materials,5.21,21.2,109.8,163.3,False,2026-06-30 11:36 UTC
-UNP,UNP,US,Union Pacific Corporation,Industrials,272.7,21.2,1.1,5.8,False,2026-06-30 11:36 UTC
-ES,ES,US,Eversource Energy,Utilities,73.77,21.3,13.8,108.5,False,2026-06-30 11:36 UTC
-GD,GD,US,General Dynamics,Industrials,348.07,21.5,10.1,11.3,False,2026-06-30 11:36 UTC
-CHC.AX,CHC,ASX,Charter Hall,Real Estate,22.86,21.7,-11.1,247.5,False,2026-06-30 11:36 UTC
-REH.AX,REH,ASX,Reece Group,Industrials,17.23,21.8,-1.4,-24.4,False,2026-06-30 11:36 UTC
-QUB.AX,QUB,ASX,Qube Holdings,Industrials,5.1,22.1,27.1,-76.9,False,2026-06-30 11:36 UTC
-BBY,BBY,US,Best Buy,Consumer Discretionary,77.64,22.1,0.4,15.3,False,2026-06-30 11:36 UTC
-ALL,ALL,US,Allstate,Financials,241.38,22.3,5.6,120.3,False,2026-06-30 11:36 UTC
-NI,NI,US,NiSource,Utilities,48.15,22.5,21.8,22.2,False,2026-06-30 11:36 UTC
-RHC.AX,RHC,ASX,Ramsay Health Care,Healthcare,43.98,22.5,6.7,-97.3,False,2026-06-30 11:36 UTC
-CVX,CVX,US,Chevron Corporation,Energy,168.47,22.6,-4.6,-30.4,False,2026-06-30 11:36 UTC
-IQV,IQV,US,IQVIA,Health Care,193.28,22.6,5.9,-0.9,False,2026-06-30 11:36 UTC
-AEE,AEE,US,Ameren,Utilities,114.59,22.7,15.4,23.2,False,2026-06-30 11:36 UTC
-SJM,SJM,US,J.M. Smucker Company (The),Consumer Staples,115.89,22.9,3.7,88.7,False,2026-06-30 11:36 UTC
-TFC,TFC,US,Truist Financial,Financials,50.58,23.0,53.0,10.1,False,2026-06-30 11:36 UTC
-WMB,WMB,US,Williams Companies,Energy,75.06,23.3,13.8,17.7,False,2026-06-30 11:36 UTC
-MFG.AX,MFG,ASX,Magellan Financial Group,Financials,9.69,23.4,-27.6,-30.9,False,2026-06-30 11:36 UTC
-DOV,DOV,US,Dover Corporation,Industrials,224.0,23.5,4.5,-59.4,False,2026-06-30 11:36 UTC
-NVDA,NVDA,US,Nvidia,Information Technology,194.97,23.6,65.5,64.7,False,2026-06-30 11:36 UTC
-DLTR,DLTR,US,Dollar Tree,Consumer Staples,122.62,23.8,10.4,142.3,False,2026-06-30 11:36 UTC
-TJX,TJX,US,TJX Companies,Consumer Discretionary,151.23,24.0,7.1,13.0,False,2026-06-30 11:36 UTC
-XEL,XEL,US,Xcel Energy,Utilities,81.98,24.1,9.1,4.2,False,2026-06-30 11:36 UTC
-FE,FE,US,FirstEnergy,Utilities,48.06,24.2,12.0,4.3,False,2026-06-30 11:36 UTC
-L,L,US,Loews Corporation,Financials,113.69,24.3,5.4,17.9,False,2026-06-30 11:36 UTC
-DE,DE,US,Deere & Company,Industrials,626.63,24.5,-11.6,-29.2,False,2026-06-30 11:36 UTC
-VNT.AX,VNT,ASX,Ventia Services Group,Industrials,6.19,24.6,0.6,23.6,False,2026-06-30 11:36 UTC
-PCG,PCG,US,PG&E Corporation,Utilities,17.24,24.6,2.1,7.6,False,2026-06-30 11:36 UTC
-TROW,TROW,US,T. Rowe Price,Financials,114.38,24.7,3.1,-0.6,False,2026-06-30 11:36 UTC
-ORI.AX,ORI,ASX,Orica,Materials,23.68,24.7,5.9,-69.1,False,2026-06-30 11:36 UTC
-CNP,CNP,US,CenterPoint Energy,Utilities,44.79,24.7,8.3,3.2,False,2026-06-30 11:36 UTC
-BAC,BAC,US,Bank of America,Financials,57.88,25.0,6.8,13.1,False,2026-06-30 11:36 UTC
-HLT,HLT,US,Hilton Worldwide,Consumer Discretionary,332.54,25.1,7.7,-5.1,False,2026-06-30 11:36 UTC
-TDY,TDY,US,Teledyne Technologies,Information Technology,641.22,25.2,7.9,9.2,False,2026-06-30 11:36 UTC
-PNW,PNW,US,Pinnacle West Capital,Utilities,107.86,25.3,4.2,1.3,False,2026-06-30 11:36 UTC
-TMO,TMO,US,Thermo Fisher Scientific,Health Care,506.42,25.4,3.9,5.8,False,2026-06-30 11:36 UTC
-APE.AX,APE,ASX,Eagers Automotive,Consumer Discretionary,21.26,25.8,16.5,10.5,False,2026-06-30 11:36 UTC
-NSC,NSC,US,Norfolk Southern,Industrials,316.65,26.0,0.5,9.6,False,2026-06-30 11:36 UTC
-TRV,TRV,US,Travelers Companies (The),Financials,331.88,26.0,5.2,25.8,False,2026-06-30 11:36 UTC
-WDS.AX,WDS,ASX,Woodside Energy Group,Energy,28.21,26.5,-1.5,-23.9,False,2026-06-30 11:36 UTC
-ANZ.AX,ANZ,ASX,Australia & New Zealand Banking Group,Financials,35.35,26.7,9.6,-9.9,False,2026-06-30 11:36 UTC
-MTB,MTB,US,M&T Bank,Financials,239.2,27.0,4.3,10.2,False,2026-06-30 11:36 UTC
-MAS,MAS,US,Masco,Industrials,80.5,27.4,-3.4,-1.5,False,2026-06-30 11:36 UTC
-SRE,SRE,US,Sempra,Utilities,93.91,27.5,3.9,-35.8,False,2026-06-30 11:36 UTC
-HUBB,HUBB,US,Hubbell Incorporated,Industrials,514.71,27.5,3.8,13.9,False,2026-06-30 11:36 UTC
-CINF,CINF,US,Cincinnati Financial,Financials,186.16,27.8,11.4,4.4,False,2026-06-30 11:36 UTC
-D,D,US,Dominion Energy,Utilities,69.18,27.8,14.2,47.4,False,2026-06-30 11:36 UTC
-CGF.AX,CGF,ASX,Challenger,Financials,10.0,28.1,16.0,48.0,False,2026-06-30 11:36 UTC
-KIM,KIM,US,Kimco Realty,Real Estate,25.83,28.7,5.1,42.3,False,2026-06-30 11:36 UTC
-WAB,WAB,US,Wabtec,Industrials,268.3,28.8,7.5,10.8,False,2026-06-30 11:36 UTC
-EA,EA,US,Electronic Arts,Communication Services,205.05,28.9,0.9,-20.9,False,2026-06-30 11:36 UTC
-DHI,DHI,US,D. R. Horton,Consumer Discretionary,164.23,28.9,-6.9,-24.6,False,2026-06-30 11:36 UTC
-PCAR,PCAR,US,Paccar,Industrials,119.6,29.0,-15.5,-42.9,False,2026-06-30 11:36 UTC
-PKG,PKG,US,Packaging Corporation of America,Materials,237.65,29.2,7.2,-3.9,False,2026-06-30 11:36 UTC
-TSLA,TSLA,US,"Tesla, Inc.",Consumer Discretionary,411.84,29.6,-2.9,-46.8,False,2026-06-30 11:36 UTC
-NXPI,NXPI,US,NXP Semiconductors,Information Technology,278.37,29.7,-2.7,-19.5,False,2026-06-30 11:36 UTC
-MCHP,MCHP,US,Microchip Technology,Information Technology,89.06,30.0,7.1,46100.0,False,2026-06-30 11:36 UTC
-XOM,XOM,US,ExxonMobil,Energy,136.06,30.2,-4.5,-14.4,False,2026-06-30 11:36 UTC
-RTX,RTX,US,RTX Corporation,Industrials,187.33,30.3,9.7,41.0,False,2026-06-30 11:36 UTC
-SMR.AX,SMR,ASX,Stanmore Resources,Materials,2.33,30.5,-21.5,-124.6,True,2026-06-30 11:36 UTC
-IFT.AX,IFT,ASX,Infratil,Financials,12.61,30.6,-10.4,292.0,False,2026-06-30 11:36 UTC
-IEX,IEX,US,IDEX Corporation,Industrials,225.96,30.7,5.8,-4.3,False,2026-06-30 11:36 UTC
-AMP.AX,AMP,ASX,AMP,Financials,1.61,30.8,1.5,-11.3,False,2026-06-30 11:36 UTC
-EVRG,EVRG,US,Evergy,Utilities,87.01,30.8,2.0,-2.0,False,2026-06-30 11:36 UTC
-IRM,IRM,US,Iron Mountain,Real Estate,129.97,31.0,12.2,-19.7,False,2026-06-30 11:36 UTC
-GWW,GWW,US,W. W. Grainger,Industrials,1353.29,31.2,4.5,-10.6,False,2026-06-30 11:36 UTC
-NEE,NEE,US,NextEra Energy,Utilities,88.66,31.4,10.7,-1.6,False,2026-06-30 11:36 UTC
-SNA,SNA,US,Snap-on,Industrials,398.36,31.5,0.9,-2.6,False,2026-06-30 11:36 UTC
-LNT,LNT,US,Alliant Energy,Utilities,77.18,31.6,9.6,17.4,False,2026-06-30 11:36 UTC
-APA.AX,APA,ASX,APA Group,Utilities,10.14,31.6,5.0,-89.9,False,2026-06-30 11:36 UTC
-PHM,PHM,US,PulteGroup,Consumer Discretionary,137.94,31.8,-3.5,-28.0,False,2026-06-30 11:36 UTC
-NXG.AX,NXG,ASX,Nexgen Energy,Energy,14.0,32.0,,-299.3,False,2026-06-30 11:36 UTC
-DOW.AX,DOW,ASX,Downer Group,Industrials,8.05,32.1,-4.5,97.8,False,2026-06-30 11:36 UTC
-ALD.AX,ALD,ASX,Ampol,Energy,32.9,32.1,-10.1,-32.7,False,2026-06-30 11:36 UTC
-AME,AME,US,Ametek,Industrials,237.72,32.2,6.6,7.6,False,2026-06-30 11:36 UTC
-WOW.AX,WOW,ASX,Woolworths Group,Consumer Staples,40.03,32.3,1.7,791.7,False,2026-06-30 11:36 UTC
-DRR.AX,DRR,ASX,Deterra Royalties,Materials,4.7,32.6,9.5,0.5,False,2026-06-30 11:36 UTC
-BMY,BMY,US,Bristol Myers Squibb,Health Care,58.56,32.8,-0.2,178.8,False,2026-06-30 11:36 UTC
-CMM.AX,CMM,ASX,Capricorn Metals,Materials,12.64,32.9,12.2,1880.9,False,2026-06-30 11:36 UTC
-AMGN,AMGN,US,Amgen,Health Care,360.55,33.0,10.0,88.5,False,2026-06-30 11:36 UTC
-FMG.AX,FMG,ASX,Fortescue,Materials,19.15,33.3,-14.8,-40.6,False,2026-06-30 11:36 UTC
-DOC,DOC,US,Healthpeak Properties,Real Estate,21.87,33.8,4.5,-70.7,False,2026-06-30 11:36 UTC
-JCI,JCI,US,Johnson Controls,Industrials,140.47,33.8,2.8,93.0,False,2026-06-30 11:36 UTC
-RF,RF,US,Regions Financial Corporation,Financials,30.27,33.9,6.3,13.9,False,2026-06-30 11:36 UTC
-FANG,FANG,US,Diamondback Energy,Energy,180.54,34.8,35.4,-50.1,False,2026-06-30 11:36 UTC
-MO,MO,US,Altria,Consumer Staples,74.05,34.9,-1.5,-38.3,False,2026-06-30 11:36 UTC
-BGL.AX,BGL,ASX,Bellevue Gold,Materials,1.22,35.0,69.5,-160.8,True,2026-06-30 11:36 UTC
-DVN,DVN,US,Devon Energy,Energy,41.99,35.4,7.8,-8.6,False,2026-06-30 11:36 UTC
-F,F,US,Ford Motor Company,Consumer Discretionary,14.02,35.6,1.2,-239.2,True,2026-06-30 11:36 UTC
-AVGO,AVGO,US,Broadcom,Information Technology,372.45,36.1,23.9,292.3,False,2026-06-30 11:36 UTC
-ODFL,ODFL,US,Old Dominion,Industrials,219.69,36.2,-5.5,-13.7,False,2026-06-30 11:36 UTC
-PLD,PLD,US,Prologis,Real Estate,138.89,36.4,7.2,-10.8,False,2026-06-30 11:36 UTC
-NIC.AX,NIC,ASX,Nickel Industries,Materials,0.95,36.7,-5.5,66.2,False,2026-06-30 11:36 UTC
-PNC,PNC,US,PNC Financial Services,Financials,246.73,36.8,10.9,17.8,False,2026-06-30 11:36 UTC
-AEP,AEP,US,American Electric Power,Utilities,137.97,37.2,10.9,20.7,False,2026-06-30 11:36 UTC
-S32.AX,S32,ASX,South32,Materials,3.9,37.7,17.4,204.9,False,2026-06-30 11:36 UTC
-AIZ,AIZ,US,Assurant,Financials,267.98,37.8,7.9,14.8,False,2026-06-30 11:36 UTC
-ALQ.AX,ALQ,ASX,ALS,Industrials,22.84,37.8,10.7,24.4,False,2026-06-30 11:36 UTC
-OBM.AX,OBM,ASX,Ora Banda Mining,Materials,1.05,37.9,57.7,162.5,False,2026-06-30 11:36 UTC
-AAPL,AAPL,US,Apple Inc.,Information Technology,281.74,37.9,6.4,19.5,False,2026-06-30 11:36 UTC
-FRT,FRT,US,Federal Realty Investment Trust,Real Estate,125.42,38.1,6.4,39.2,False,2026-06-30 11:36 UTC
-UNH,UNH,US,UnitedHealth Group,Health Care,419.82,38.2,11.8,-16.3,False,2026-06-30 11:36 UTC
-MAR,MAR,US,Marriott International,Consumer Discretionary,374.88,38.4,4.3,9.5,False,2026-06-30 11:36 UTC
-KEY,KEY,US,KeyCorp,Financials,23.15,38.5,65.7,1236.0,False,2026-06-30 11:36 UTC
-TECH,TECH,US,Bio-Techne,Health Care,70.9,38.6,5.2,-56.3,False,2026-06-30 11:36 UTC
-PH,PH,US,Parker Hannifin,Industrials,963.79,39.2,-0.4,24.2,False,2026-06-30 11:36 UTC
-EQIX,EQIX,US,Equinix,Real Estate,1085.17,39.5,5.4,65.6,False,2026-06-30 11:36 UTC
-FFIV,FFIV,US,"F5, Inc.",Information Technology,410.56,39.5,9.7,22.2,False,2026-06-30 11:36 UTC
-USB,USB,US,U.S. Bancorp,Financials,61.28,39.6,4.4,20.2,False,2026-06-30 11:36 UTC
-BG,BG,US,Bunge Global,Consumer Staples,109.1,39.7,32.4,-28.2,False,2026-06-30 11:36 UTC
-EMR.AX,EMR,ASX,Emerald Resources,Materials,5.49,40.1,17.6,8.6,False,2026-06-30 11:36 UTC
-FSLR,FSLR,US,First Solar,Information Technology,232.8,40.6,24.1,18.3,False,2026-06-30 11:36 UTC
-SLB,SLB,US,Schlumberger,Energy,46.38,41.0,-1.6,-24.4,False,2026-06-30 11:36 UTC
-NTRS,NTRS,US,Northern Trust,Financials,174.91,41.1,-2.5,-14.5,False,2026-06-30 11:36 UTC
-RRL.AX,RRL,ASX,Regis Resources,Materials,6.03,41.3,30.5,236.7,False,2026-06-30 11:36 UTC
-TXN,TXN,US,Texas Instruments,Information Technology,285.48,41.4,13.0,4.2,False,2026-06-30 11:36 UTC
-ABBV,ABBV,US,AbbVie,Health Care,254.31,41.5,8.6,-1.2,False,2026-06-30 11:36 UTC
-PFG,PFG,US,Principal Financial Group,Financials,108.51,41.6,-3.1,-24.6,False,2026-06-30 11:36 UTC
-TGT,TGT,US,Target Corporation,Consumer Staples,133.92,41.7,-1.7,-9.4,False,2026-06-30 11:36 UTC
-FITB,FITB,US,Fifth Third Bancorp,Financials,56.78,41.7,6.6,9.0,False,2026-06-30 11:36 UTC
-CSC.AX,CSC,ASX,Capstone Copper,Materials,13.38,42.0,47.6,281.0,False,2026-06-30 11:36 UTC
-CAH,CAH,US,Cardinal Health,Health Care,236.22,42.2,-1.9,83.2,False,2026-06-30 11:36 UTC
-APP,APP,US,AppLovin,Information Technology,498.76,42.5,70.0,111.0,False,2026-06-30 11:36 UTC
-DBI.AX,DBI,ASX,Dalrymple Bay Infrastructure,Industrials,5.75,42.5,-2.9,-64.2,False,2026-06-30 11:36 UTC
-WHC.AX,WHC,ASX,Whitehaven Coal,Energy,7.63,42.5,52.5,82.8,False,2026-06-30 11:36 UTC
-AKAM,AKAM,US,Akamai Technologies,Information Technology,113.8,42.7,5.4,-10.5,False,2026-06-30 11:36 UTC
-NDSN,NDSN,US,Nordson Corporation,Industrials,302.16,42.8,3.8,3.7,False,2026-06-30 11:36 UTC
-EXPD,EXPD,US,Expeditors International,Industrials,161.97,43.2,4.4,0.0,False,2026-06-30 11:36 UTC
-PRN.AX,PRN,ASX,Perenti,Materials,2.25,43.5,4.4,26.3,False,2026-06-30 11:36 UTC
-ETR,ETR,US,Entergy,Utilities,116.33,43.5,9.0,67.1,False,2026-06-30 11:36 UTC
-FCX,FCX,US,Freeport-McMoRan,Materials,61.62,43.8,1.8,16.7,False,2026-06-30 11:36 UTC
-PRU.AX,PRU,ASX,Perseus Mining,Materials,4.8,44.1,21.7,14.4,False,2026-06-30 11:36 UTC
-VTR,VTR,US,Ventas,Real Estate,89.3,44.2,18.5,209.8,False,2026-06-30 11:36 UTC
-MGM,MGM,US,MGM Resorts,Consumer Discretionary,49.69,44.5,1.7,-72.4,False,2026-06-30 11:36 UTC
-SWK,SWK,US,Stanley Black & Decker,Industrials,93.65,44.5,-1.5,36.6,False,2026-06-30 11:36 UTC
-HWM,HWM,US,Howmet Aerospace,Industrials,268.57,44.6,11.1,30.6,False,2026-06-30 11:36 UTC
-AZJ.AX,AZJ,ASX,Aurizon,Industrials,4.18,45.2,3.0,-25.4,False,2026-06-30 11:36 UTC
-GL,GL,US,Globe Life,Financials,179.25,45.4,3.7,8.4,False,2026-06-30 11:36 UTC
-CRWD,CRWD,US,CrowdStrike,Information Technology,742.91,45.9,21.7,-966.2,False,2026-06-30 11:36 UTC
-GE,GE,US,GE Aerospace,Industrials,373.71,46.0,18.5,32.8,False,2026-06-30 11:36 UTC
-AES,AES,US,AES Corporation,Utilities,14.63,46.2,-0.4,-45.8,False,2026-06-30 11:36 UTC
-RL,RL,US,Ralph Lauren Corporation,Consumer Discretionary,397.61,46.5,14.6,26.7,False,2026-06-30 11:36 UTC
-BEN,BEN,US,Franklin Resources,Financials,33.17,46.5,3.5,12.9,False,2026-06-30 11:36 UTC
-FTNT,FTNT,US,Fortinet,Information Technology,155.42,47.0,14.2,6.2,False,2026-06-30 11:36 UTC
-GS,GS,US,Goldman Sachs,Financials,1020.21,47.1,8.9,20.3,False,2026-06-30 11:36 UTC
-ROK,ROK,US,Rockwell Automation,Industrials,482.33,47.3,0.9,-8.8,False,2026-06-30 11:36 UTC
-BSL.AX,BSL,ASX,BlueScope,Materials,31.87,47.6,-4.4,-89.6,False,2026-06-30 11:36 UTC
-SPG,SPG,US,Simon Property Group,Real Estate,227.56,48.3,6.7,95.2,False,2026-06-30 11:36 UTC
-NTAP,NTAP,US,NetApp,Information Technology,155.06,48.3,5.4,7.6,False,2026-06-30 11:36 UTC
-CRL,CRL,US,Charles River Laboratories,Health Care,225.57,48.7,-0.9,-1501.7,True,2026-06-30 11:36 UTC
-WSM,WSM,US,"Williams-Sonoma, Inc.",Consumer Discretionary,240.17,49.2,1.2,-3.3,False,2026-06-30 11:36 UTC
-CSX,CSX,US,CSX Corporation,Industrials,48.01,49.2,-3.1,-16.7,False,2026-06-30 11:36 UTC
-BKR,BKR,US,Baker Hughes,Energy,56.31,49.4,-0.3,-13.1,False,2026-06-30 11:36 UTC
-ADM,ADM,US,Archer Daniels Midland,Consumer Staples,76.87,50.2,-6.2,-40.1,False,2026-06-30 11:36 UTC
-URI,URI,US,United Rentals,Industrials,1122.67,50.3,4.9,-3.1,False,2026-06-30 11:36 UTC
-WELL,WELL,US,Welltower,Real Estate,227.73,50.4,35.8,-1.6,False,2026-06-30 11:36 UTC
-EBAY,EBAY,US,eBay Inc.,Consumer Discretionary,110.8,50.7,7.9,2.8,False,2026-06-30 11:36 UTC
-PSX,PSX,US,Phillips 66,Energy,174.05,50.9,-7.5,108.0,False,2026-06-30 11:36 UTC
-DNL.AX,DNL,ASX,Dyno Nobel,Materials,3.92,51.7,-29.7,82.9,False,2026-06-30 11:36 UTC
-IMD.AX,IMD,ASX,IMDEX,Materials,4.1,51.8,-3.1,70.3,False,2026-06-30 11:36 UTC
-NHC.AX,NHC,ASX,New Hope,Energy,5.34,52.2,-0.8,-7.7,False,2026-06-30 11:36 UTC
-EME,EME,US,Emcor,Industrials,814.41,52.5,16.6,26.4,False,2026-06-30 11:36 UTC
-CASY,CASY,US,Casey's,Consumer Staples,780.24,53.5,10.2,30.7,False,2026-06-30 11:36 UTC
-MS,MS,US,Morgan Stanley,Financials,211.72,53.9,14.5,25.9,False,2026-06-30 11:36 UTC
-DVA,DVA,US,DaVita,Health Care,219.7,54.2,6.5,-20.2,False,2026-06-30 11:36 UTC
-EVN.AX,EVN,ASX,Evolution Mining,Materials,11.75,54.8,,,False,2026-06-30 11:36 UTC
-RSG.AX,RSG,ASX,Resolute Mining,Materials,0.94,54.9,8.1,555.2,False,2026-06-30 11:36 UTC
-VAU.AX,VAU,ASX,Vault Minerals,Materials,4.17,54.9,,,False,2026-06-30 11:36 UTC
-EIX,EIX,US,Edison International,Utilities,75.46,54.9,9.8,204.1,False,2026-06-30 11:36 UTC
-NEM.AX,NEM,ASX,Newmont,Materials,134.52,55.2,21.3,111.6,False,2026-06-30 11:36 UTC
-CVS,CVS,US,CVS Health,Health Care,103.58,55.7,7.8,-61.7,False,2026-06-30 11:36 UTC
-MNST,MNST,US,Monster Beverage,Consumer Staples,97.64,55.9,10.7,26.3,False,2026-06-30 11:36 UTC
-EXPE,EXPE,US,Expedia Group,Consumer Discretionary,265.28,58.5,7.6,4.9,False,2026-06-30 11:36 UTC
-GM,GM,US,General Motors,Consumer Discretionary,77.34,58.6,-1.3,-55.1,False,2026-06-30 11:36 UTC
-LLY,LLY,US,Lilly (Eli),Health Care,1229.93,58.9,44.7,94.9,False,2026-06-30 11:36 UTC
-MPC,MPC,US,Marathon Petroleum,Energy,259.22,59.1,-4.4,17.5,False,2026-06-30 11:36 UTC
-TRGP,TRGP,US,Targa Resources,Energy,271.35,59.4,3.9,46.6,False,2026-06-30 11:36 UTC
-IBKR,IBKR,US,Interactive Brokers,Financials,88.2,59.9,9.7,30.3,False,2026-06-30 11:36 UTC
-ANET,ANET,US,Arista Networks,Information Technology,164.1,60.4,28.6,23.1,False,2026-06-30 11:36 UTC
-DD,DD,US,DuPont,Materials,135.74,60.6,1.9,-210.8,True,2026-06-30 11:36 UTC
-BNY,BNY,US,BNY Mellon,Financials,143.8,60.8,8.2,22.5,False,2026-06-30 11:36 UTC
-GGP.AX,GGP,ASX,Greatland Resources,Materials,11.45,61.0,,,False,2026-06-30 11:36 UTC
-HUM,HUM,US,Humana,Health Care,388.9,61.4,10.1,-1.6,False,2026-06-30 11:36 UTC
-LUV,LUV,US,Southwest Airlines,Industrials,51.6,62.1,2.1,-5.2,False,2026-06-30 11:36 UTC
-PANW,PANW,US,Palo Alto Networks,Information Technology,332.0,62.2,14.9,-56.0,False,2026-06-30 11:36 UTC
-CFG,CFG,US,Citizens Financial Group,Financials,70.43,62.5,5.6,21.3,False,2026-06-30 11:36 UTC
-WST,WST,US,West Pharmaceutical Services,Health Care,354.68,62.6,6.3,0.2,False,2026-06-30 11:36 UTC
-NEM,NEM,US,Newmont,Materials,94.51,63.9,21.3,111.6,False,2026-06-30 11:36 UTC
-STT,STT,US,State Street Corporation,Financials,170.18,64.5,8.1,9.6,False,2026-06-30 11:36 UTC
-WGX.AX,WGX,ASX,Westgold Resources,Materials,4.7,65.1,9.5,852.0,False,2026-06-30 11:36 UTC
-L1G.AX,L1G,ASX,L1 Group,Financials,1.13,65.2,-26.6,-86.1,False,2026-06-30 11:36 UTC
-ROST,ROST,US,Ross Stores,Consumer Discretionary,208.83,65.2,7.7,2.6,False,2026-06-30 11:36 UTC
-Q,Q,US,Qnity Electronics,Information Technology,158.23,66.3,9.7,-0.1,False,2026-06-30 11:36 UTC
-ADI,ADI,US,Analog Devices,Information Technology,391.78,66.8,16.9,38.7,False,2026-06-30 11:36 UTC
-RIO.AX,RIO,ASX,Rio Tinto,Materials,172.51,67.9,7.4,-13.7,False,2026-06-30 11:36 UTC
-BHP.AX,BHP,ASX,BHP,Materials,59.4,68.4,-7.9,14.2,False,2026-06-30 11:36 UTC
-INCY,INCY,US,Incyte,Health Care,114.66,68.4,21.2,3845.0,False,2026-06-30 11:36 UTC
-MRK,MRK,US,Merck & Co.,Health Care,129.38,68.9,1.3,6.6,False,2026-06-30 11:36 UTC
-ON,ON,US,ON Semiconductor,Information Technology,88.57,69.0,-15.3,-92.3,False,2026-06-30 11:36 UTC
-TPR,TPR,US,"Tapestry, Inc.",Consumer Discretionary,146.56,69.1,5.1,-77.5,False,2026-06-30 11:36 UTC
-HST,HST,US,Host Hotels & Resorts,Real Estate,24.92,69.1,7.6,9.8,False,2026-06-30 11:36 UTC
-APH,APH,US,Amphenol,Information Technology,166.42,69.7,51.7,76.2,False,2026-06-30 11:36 UTC
-UAL,UAL,US,United Airlines Holdings,Industrials,135.19,69.8,3.5,6.5,False,2026-06-30 11:36 UTC
-LSF.AX,LSF,ASX,L1 Long Short Fund,Financials,4.72,70.5,,,False,2026-06-30 11:36 UTC
-SFR.AX,SFR,ASX,Sandfire Resources,Materials,19.19,71.0,28.6,637.5,False,2026-06-30 11:36 UTC
-C,C,US,Citigroup,Financials,142.49,71.2,5.6,12.8,False,2026-06-30 11:36 UTC
-HAL,HAL,US,Halliburton,Energy,34.09,71.2,-3.3,-48.7,False,2026-06-30 11:36 UTC
-JBL,JBL,US,Jabil,Information Technology,373.58,71.5,3.2,-52.7,False,2026-06-30 11:36 UTC
-BIIB,BIIB,US,Biogen,Health Care,216.63,72.5,2.2,-20.8,False,2026-06-30 11:36 UTC
-IVZ,IVZ,US,Invesco,Financials,26.3,72.6,5.1,-136.4,True,2026-06-30 11:36 UTC
-AAI.AX,AAI,ASX,Alcoa,Materials,77.38,73.0,7.9,1828.3,False,2026-06-30 11:36 UTC
-JNJ,JNJ,US,Johnson & Johnson,Health Care,258.51,73.5,6.0,90.6,False,2026-06-30 11:36 UTC
-CSCO,CSCO,US,Cisco,Information Technology,117.7,73.6,5.3,-1.4,False,2026-06-30 11:36 UTC
-PDI.AX,PDI,ASX,Predictive Discovery,Materials,0.68,76.6,,22.8,False,2026-06-30 11:36 UTC
-IGO.AX,IGO,ASX,IGO,Materials,7.37,76.7,-37.7,-34192.9,True,2026-06-30 11:36 UTC
-NUE,NUE,US,Nucor,Materials,228.58,78.4,5.7,-14.0,False,2026-06-30 11:36 UTC
-MPWR,MPWR,US,Monolithic Power Systems,Information Technology,1312.77,80.5,26.4,-61.0,False,2026-06-30 11:36 UTC
-FDX,FDX,US,FedEx,Industrials,325.4,81.1,0.3,-5.5,False,2026-06-30 11:36 UTC
-SGM.AX,SGM,ASX,Sims Metal,Materials,27.56,82.6,4.1,67.1,False,2026-06-30 11:36 UTC
-MND.AX,MND,ASX,Monadelphous Group,Industrials,30.99,82.6,16.7,16.2,False,2026-06-30 11:36 UTC
-STLD,STLD,US,Steel Dynamics,Materials,234.22,84.7,3.6,-22.9,False,2026-06-30 11:36 UTC
-DDOG,DDOG,US,Datadog,Information Technology,248.57,85.0,27.7,-41.4,False,2026-06-30 11:36 UTC
-ILU.AX,ILU,ASX,Iluka Resources,Materials,7.07,87.5,-13.2,-224.7,True,2026-06-30 11:36 UTC
-APA,APA,US,APA Corporation,Energy,32.96,87.7,-8.4,78.4,False,2026-06-30 11:36 UTC
-VTRS,VTRS,US,Viatris,Health Care,16.23,88.9,-3.0,-454.2,False,2026-06-30 11:36 UTC
-PWR,PWR,US,Quanta Services,Industrials,714.45,89.2,20.3,13.7,False,2026-06-30 11:36 UTC
-ALK.AX,ALK,ASX,Alkane Resources,Materials,1.37,91.6,-9.2,-58.4,False,2026-06-30 11:36 UTC
-DAL,DAL,US,Delta Air Lines,Industrials,93.17,91.7,2.8,44.8,False,2026-06-30 11:36 UTC
-RDX.AX,RDX,ASX,Redox,Industrials,3.97,92.3,9.4,-14.6,False,2026-06-30 11:36 UTC
-CHRW,CHRW,US,C.H. Robinson,Industrials,184.75,95.6,-8.4,26.1,False,2026-06-30 11:36 UTC
-GNRC,GNRC,US,Generac,Industrials,283.81,98.2,-2.0,-50.9,False,2026-06-30 11:36 UTC
-GOOG,GOOG,US,Alphabet Inc. (Class C),Communication Services,351.28,98.6,15.1,32.0,False,2026-06-30 11:36 UTC
-GOOGL,GOOGL,US,Alphabet Inc. (Class A),Communication Services,353.65,101.2,15.1,32.0,False,2026-06-30 11:36 UTC
-JBHT,JBHT,US,J.B. Hunt,Industrials,287.89,102.4,-0.7,4.8,False,2026-06-30 11:36 UTC
-VLO,VLO,US,Valero Energy,Energy,266.32,103.2,-5.5,-15.2,False,2026-06-30 11:36 UTC
-KEYS,KEYS,US,Keysight Technologies,Information Technology,340.13,107.6,8.0,38.4,False,2026-06-30 11:36 UTC
-GEV,GEV,US,GE Vernova,Industrials,1102.51,108.9,9.0,214.7,False,2026-06-30 11:36 UTC
-ALB,ALB,US,Albemarle Corporation,Materials,129.72,109.8,-4.4,56.7,False,2026-06-30 11:36 UTC
-LYC.AX,LYC,ASX,Lynas Rare Earths,Materials,18.06,109.8,16.8,-90.5,False,2026-06-30 11:36 UTC
-CMI,CMI,US,Cummins,Industrials,691.09,114.4,-1.3,-28.0,False,2026-06-30 11:36 UTC
-HPE,HPE,US,Hewlett Packard Enterprise,Information Technology,44.41,121.7,13.8,-97.8,False,2026-06-30 11:36 UTC
-CDA.AX,CDA,ASX,Codan,Information Technology,44.14,121.9,22.5,27.2,False,2026-06-30 11:36 UTC
-WBD,WBD,US,Warner Bros. Discovery,Communication Services,27.13,136.7,-5.1,106.4,False,2026-06-30 11:36 UTC
-VRT,VRT,US,Vertiv,Industrials,306.97,139.3,27.7,168.8,False,2026-06-30 11:36 UTC
-LTR.AX,LTR,ASX,Liontown Resources,Materials,1.68,140.7,,-197.7,False,2026-06-30 11:36 UTC
-MRNA,MRNA,US,Moderna,Health Care,69.7,152.6,-39.9,20.8,False,2026-06-30 11:36 UTC
-NWH.AX,NWH,ASX,NRW Holdings,Industrials,7.44,158.1,12.2,-73.7,False,2026-06-30 11:36 UTC
-CAT,CAT,US,Caterpillar Inc.,Industrials,1033.19,169.0,4.3,-17.7,False,2026-06-30 11:36 UTC
-MIN.AX,MIN,ASX,Mineral Resources,Materials,62.07,187.9,10.0,-48.6,False,2026-06-30 11:36 UTC
-KLAC,KLAC,US,KLA Corporation,Information Technology,278.39,212.8,23.9,47.1,False,2026-06-30 11:36 UTC
-FLEX,FLEX,US,Flex Ltd.,Information Technology,159.56,219.6,8.1,5.0,False,2026-06-30 11:36 UTC
-DELL,DELL,US,Dell Technologies,Information Technology,414.61,243.3,18.8,29.3,False,2026-06-30 11:36 UTC
-MRVL,MRVL,US,Marvell Technology,Information Technology,277.75,259.8,42.1,401.7,False,2026-06-30 11:36 UTC
-EOS.AX,EOS,ASX,Electro Optic Systems Holdings,Industrials,10.3,261.4,-27.2,199.4,False,2026-06-30 11:36 UTC
-ECHO,ECHO,US,EchoStar,Communication Services,100.84,264.0,-5.2,-12026.9,False,2026-06-30 11:36 UTC
-FIX,FIX,US,Comfort Systems USA,Industrials,1948.69,264.2,29.5,95.7,False,2026-06-30 11:36 UTC
-PLS.AX,PLS,ASX,PLS Group,Materials,5.02,276.0,-50.4,-176.2,True,2026-06-30 11:36 UTC
-AMD,AMD,US,Advanced Micro Devices,Information Technology,539.49,280.2,34.3,164.2,False,2026-06-30 11:36 UTC
-AMAT,AMAT,US,Applied Materials,Information Technology,694.64,282.2,4.4,-2.5,False,2026-06-30 11:36 UTC
-LRCX,LRCX,US,Lam Research,Information Technology,410.91,324.5,23.7,40.0,False,2026-06-30 11:36 UTC
-COHR,COHR,US,Coherent Corp.,Information Technology,391.22,338.5,23.4,131.6,False,2026-06-30 11:36 UTC
-GLW,GLW,US,Corning Inc.,Information Technology,255.69,391.5,19.1,215.4,False,2026-06-30 11:36 UTC
-TER,TER,US,Teradyne,Information Technology,463.21,416.5,13.1,2.2,False,2026-06-30 11:36 UTC
-INTC,INTC,US,Intel,Information Technology,131.72,488.0,-0.5,98.6,False,2026-06-30 11:36 UTC
-CIEN,CIEN,US,Ciena,Information Technology,478.93,488.9,18.8,46.9,False,2026-06-30 11:36 UTC
-STX,STX,US,Seagate Technology,Information Technology,968.53,576.6,38.9,338.5,False,2026-06-30 11:36 UTC
-LITE,LITE,US,Lumentum,Information Technology,851.4,795.6,21.0,104.7,False,2026-06-30 11:36 UTC
-MU,MU,US,Micron Technology,Information Technology,1145.28,831.5,48.9,997.6,False,2026-06-30 11:36 UTC
-WDC,WDC,US,Western Digital,Information Technology,651.88,921.5,50.7,333.2,False,2026-06-30 11:36 UTC
-4DX.AX,4DX,ASX,4DMedical,Healthcare,4.53,1787.5,89.5,16.4,False,2026-06-30 11:36 UTC
-SNDK,SNDK,US,Sandisk,Information Technology,2050.39,4421.3,10.4,-144.2,False,2026-06-30 11:36 UTC
-HON,HON,US,Honeywell Technologies,Industrials,,,7.8,-17.1,False,2026-06-30 11:36 UTC
+ticker_yf,code,market,company,sector,exchange,current_price,price_return_pct,revenue_yoy_pct,net_income_yoy_pct,net_income_turned_negative,market_cap,pe_ratio,pct_from_52wk_high,last_updated_utc
+TTD,TTD,US,Trade Desk (The),Communication Services,NASDAQ,18.65,-74.1,18.5,12.8,False,8767520753,19.8,-79.6,2026-06-30 12:11 UTC
+FISV,FISV,US,Fiserv,Financials,NASDAQ,48.83,-71.7,3.6,11.1,False,26038793113,7.5,-72.2,2026-06-30 12:11 UTC
+IT,IT,US,Gartner,Information Technology,NYSE,132.79,-67.1,3.7,-41.8,False,8890540891,12.2,-67.6,2026-06-30 12:11 UTC
+INTU,INTU,US,Intuit,Information Technology,NASDAQ,266.4,-65.9,15.6,30.6,False,72870255130,18.8,-67.3,2026-06-30 12:11 UTC
+CHTR,CHTR,US,Charter Communications,Communication Services,NASDAQ,146.17,-64.2,-0.6,-1.9,False,20636042084,4.1,-65.4,2026-06-30 12:11 UTC
+CSGP,CSGP,US,CoStar Group,Real Estate,NASDAQ,29.32,-63.5,18.7,-95.0,False,11972989439,1710.4,-69.9,2026-06-30 12:11 UTC
+BSX,BSX,US,Boston Scientific,Health Care,NYSE,43.48,-59.5,19.9,56.3,False,64626722503,22.3,-60.3,2026-06-30 12:11 UTC
+COH.AX,COH,ASX,Cochlear,Healthcare,ASX,121.75,-58.7,4.8,9.0,False,7962318145,20.5,-61.9,2026-06-30 12:11 UTC
+ACN,ACN,US,Accenture,Information Technology,NYSE,124.74,-57.7,7.4,5.7,False,76333657369,9.9,-59.5,2026-06-30 12:11 UTC
+COIN,COIN,US,Coinbase,Financials,NASDAQ,151.65,-56.7,9.4,-51.1,False,39953823556,31.7,-65.9,2026-06-30 12:11 UTC
+GDDY,GDDY,US,GoDaddy,Information Technology,NYSE,85.24,-52.7,8.3,-6.6,False,11286615075,12.9,-52.9,2026-06-30 12:11 UTC
+ZTS,ZTS,US,Zoetis,Health Care,NYSE,73.25,-52.3,2.3,7.5,False,30708459644,11.5,-54.7,2026-06-30 12:11 UTC
+LULU,LULU,US,Lululemon Athletica,Consumer Discretionary,NASDAQ,114.29,-51.9,4.9,-13.0,False,12978077392,8.2,-54.7,2026-06-30 12:11 UTC
+NOW,NOW,US,ServiceNow,Information Technology,NYSE,99.97,-51.4,20.9,22.7,False,103099862019,59.0,-52.7,2026-06-30 12:11 UTC
+TYL,TYL,US,Tyler Technologies,Information Technology,NYSE,290.75,-51.0,9.1,20.0,False,11961616366,37.9,-53.2,2026-06-30 12:11 UTC
+CSL.AX,CSL,ASX,CSL,Healthcare,ASX,114.74,-50.9,5.0,13.6,False,54950359447,18.3,-58.4,2026-06-30 12:11 UTC
+FIS,FIS,US,Fidelity National Information Services,Financials,NYSE,38.69,-50.9,5.4,-73.7,False,19998053642,52.4,-53.2,2026-06-30 12:11 UTC
+EBO.AX,EBO,ASX,EBOS Group,Healthcare,ASX,17.07,-50.2,-8.3,-21.9,False,3500010905,15.1,-55.3,2026-06-30 12:11 UTC
+PODD,PODD,US,Insulet Corporation,Health Care,NASDAQ,157.74,-49.8,30.7,-40.9,False,10925810057,44.2,-55.6,2026-06-30 12:11 UTC
+CTSH,CTSH,US,Cognizant,Information Technology,NASDAQ,38.74,-49.3,7.0,-0.4,False,18324020794,8.2,-55.5,2026-06-30 12:11 UTC
+WDAY,WDAY,US,"Workday, Inc.",Information Technology,NASDAQ,123.58,-48.5,13.1,31.7,False,30520982987,44.0,-50.5,2026-06-30 12:11 UTC
+FDS,FDS,US,FactSet,Financials,NYSE,233.62,-46.9,5.4,11.2,False,8511039712,14.3,-48.5,2026-06-30 12:11 UTC
+ADBE,ADBE,US,Adobe Inc.,Information Technology,NASDAQ,206.43,-46.6,10.5,28.2,False,82055922089,11.5,-47.4,2026-06-30 12:11 UTC
+NFLX,NFLX,US,Netflix,Communication Services,NASDAQ,73.78,-44.9,15.9,26.1,False,310672710256,28.3,-44.9,2026-06-30 12:11 UTC
+BR,BR,US,Broadridge Financial Solutions,Industrials,NYSE,135.44,-43.1,5.9,20.3,False,15664760028,18.7,-50.2,2026-06-30 12:11 UTC
+CPRT,CPRT,US,Copart,Industrials,NASDAQ,28.1,-42.7,9.7,13.9,False,26015302997,16.8,-43.9,2026-06-30 12:11 UTC
+SMCI,SMCI,US,Supermicro,Information Technology,NASDAQ,28.15,-42.6,46.6,-9.0,False,18209475463,17.4,-54.9,2026-06-30 12:11 UTC
+VRSK,VRSK,US,Verisk Analytics,Industrials,NASDAQ,179.21,-41.9,6.6,-5.1,False,23480424826,25.9,-43.1,2026-06-30 12:11 UTC
+BRO,BRO,US,Brown & Brown,Financials,NYSE,63.96,-41.8,22.5,6.1,False,21679103600,20.6,-42.4,2026-06-30 12:11 UTC
+CRM,CRM,US,Salesforce,Information Technology,NYSE,157.93,-41.6,9.6,20.3,False,129344664001,17.3,-42.9,2026-06-30 12:11 UTC
+CMG,CMG,US,Chipotle Mexican Grill,Consumer Discretionary,NYSE,32.97,-41.3,5.4,0.1,False,42291741546,27.5,-43.6,2026-06-30 12:11 UTC
+ROP,ROP,US,Roper Technologies,Information Technology,NASDAQ,334.8,-40.5,12.3,-0.8,False,33787130561,22.0,-41.9,2026-06-30 12:11 UTC
+NKE,NKE,US,"Nike, Inc.",Consumer Discretionary,NYSE,41.48,-40.0,-9.8,-43.5,False,61427193451,19.1,-48.3,2026-06-30 12:11 UTC
+ARB.AX,ARB,ASX,ARB Corporation,Consumer Discretionary,ASX,18.92,-39.9,5.3,-5.0,False,1582848663,16.2,-54.2,2026-06-30 12:11 UTC
+PYPL,PYPL,US,PayPal,Financials,NASDAQ,44.38,-39.8,4.3,26.2,False,39147842722,7.5,-44.2,2026-06-30 12:11 UTC
+TSCO,TSCO,US,Tractor Supply,Consumer Discretionary,NASDAQ,31.2,-39.6,4.3,-0.5,False,16362828419,14.9,-51.2,2026-06-30 12:11 UTC
+VEEV,VEEV,US,Veeva Systems,Health Care,NYSE,176.22,-38.8,16.3,27.3,False,28625756938,31.5,-43.2,2026-06-30 12:11 UTC
+AXON,AXON,US,Axon Enterprise,Industrials,NASDAQ,510.6,-38.3,33.5,-66.9,False,41155421008,330.2,-42.4,2026-06-30 12:11 UTC
+EFX,EFX,US,Equifax,Industrials,NYSE,158.57,-38.2,6.9,9.3,False,19129028930,29.0,-42.5,2026-06-30 12:11 UTC
+ADSK,ADSK,US,Autodesk,Information Technology,NASDAQ,195.24,-36.9,17.5,1.1,False,41223999965,36.7,-40.7,2026-06-30 12:11 UTC
+MOS,MOS,US,Mosaic Company (The),Materials,NYSE,22.44,-36.3,8.4,209.1,False,7132478861,13.2,-41.3,2026-06-30 12:11 UTC
+LDOS,LDOS,US,Leidos,Industrials,NYSE,100.44,-35.7,3.1,15.5,False,12633892512,8.7,-51.2,2026-06-30 12:11 UTC
+ARES,ARES,US,Ares Management,Financials,NYSE,107.6,-35.6,44.2,13.7,False,24265772179,46.0,-44.9,2026-06-30 12:11 UTC
+FICO,FICO,US,Fair Isaac,Information Technology,NYSE,1177.52,-35.6,15.9,27.1,False,27307756086,41.9,-41.1,2026-06-30 12:11 UTC
+ASB.AX,ASB,ASX,Austal,Industrials,ASX,4.05,-35.5,24.1,503.2,False,1709303476,19.0,-54.1,2026-06-30 12:11 UTC
+GDG.AX,GDG,ASX,Generation Development Group,Financials,ASX,3.58,-34.6,88.6,554.9,False,1431704666,37.4,-53.9,2026-06-30 12:11 UTC
+PTC,PTC,US,PTC Inc.,Information Technology,NASDAQ,113.89,-33.9,19.2,95.0,False,13154954466,17.9,-48.2,2026-06-30 12:11 UTC
+DPZ,DPZ,US,Domino's,Consumer Discretionary,NASDAQ,294.05,-33.5,5.0,3.0,False,9780652467,16.3,-40.7,2026-06-30 12:11 UTC
+TRMB,TRMB,US,Trimble Inc.,Information Technology,NASDAQ,50.77,-33.2,-2.6,-71.8,False,11835071926,27.9,-42.0,2026-06-30 12:11 UTC
+KKR,KKR,US,KKR & Co.,Financials,NYSE,88.94,-32.7,-11.2,-22.9,False,79856821565,33.7,-42.2,2026-06-30 12:11 UTC
+ICE,ICE,US,Intercontinental Exchange,Financials,NYSE,122.91,-32.2,7.5,20.4,False,69507142831,21.0,-35.1,2026-06-30 12:11 UTC
+ORCL,ORCL,US,Oracle Corporation,Information Technology,NYSE,147.76,-31.7,17.3,37.3,False,425618379137,24.9,-57.3,2026-06-30 12:11 UTC
+BPT.AX,BPT,ASX,Beach Energy,Energy,ASX,0.86,-31.4,19.3,90.8,False,1950540319,,-39.4,2026-06-30 12:11 UTC
+ABT,ABT,US,Abbott Laboratories,Health Care,NYSE,92.71,-30.4,5.7,-51.3,False,161483495913,24.8,-32.6,2026-06-30 12:11 UTC
+ERIE,ERIE,US,Erie Indemnity,Financials,NASDAQ,237.51,-30.2,7.4,-6.8,False,12419366261,22.2,-37.6,2026-06-30 12:11 UTC
+MKC,MKC,US,McCormick & Company,Consumer Staples,NYSE,52.06,-29.3,1.7,0.1,False,13996412166,17.7,-33.3,2026-06-30 12:11 UTC
+CAR.AX,CAR,ASX,CAR Group,Communication Services,ASX,25.76,-29.2,7.7,10.2,False,9759398833,35.4,-38.8,2026-06-30 12:11 UTC
+PAYX,PAYX,US,Paychex,Industrials,NASDAQ,99.81,-28.6,,,False,35492435132,,-32.9,2026-06-30 12:11 UTC
+AJG,AJG,US,Arthur J. Gallagher & Co.,Financials,NYSE,227.12,-28.3,20.7,2.1,False,58356665785,39.1,-29.7,2026-06-30 12:11 UTC
+BAX,BAX,US,Baxter International,Health Care,NYSE,22.02,-26.7,5.7,-47.5,False,11372647793,,-30.7,2026-06-30 12:11 UTC
+GIS,GIS,US,General Mills,Consumer Staples,NYSE,36.38,-25.8,-1.9,-8.1,False,19415323281,8.5,-32.9,2026-06-30 12:11 UTC
+TMUS,TMUS,US,T-Mobile US,Communication Services,NASDAQ,173.97,-25.6,8.5,-3.1,False,188271155938,17.1,-33.5,2026-06-30 12:11 UTC
+MSFT,MSFT,US,Microsoft,Information Technology,NASDAQ,368.57,-25.3,14.9,15.5,False,2737898233261,26.9,-33.6,2026-06-30 12:11 UTC
+ISRG,ISRG,US,Intuitive Surgical,Health Care,NASDAQ,405.97,-25.3,20.5,23.0,False,143779489399,50.3,-32.8,2026-06-30 12:11 UTC
+DASH,DASH,US,DoorDash,Consumer Discretionary,NASDAQ,184.82,-25.0,27.9,660.2,False,80529537391,86.1,-35.3,2026-06-30 12:11 UTC
+ADP,ADP,US,Automatic Data Processing,Industrials,NASDAQ,224.97,-25.0,7.1,8.7,False,89928221909,22.0,-28.8,2026-06-30 12:11 UTC
+OTIS,OTIS,US,Otis Worldwide,Industrials,NYSE,72.92,-24.9,1.2,-15.9,False,27980575559,20.2,-28.1,2026-06-30 12:11 UTC
+PNR,PNR,US,Pentair,Industrials,NYSE,76.3,-24.9,2.3,4.5,False,12330503271,18.9,-33.0,2026-06-30 12:11 UTC
+CMCSA,CMCSA,US,Comcast,Communication Services,NASDAQ,24.22,-24.4,-0.0,23.5,False,86519373198,4.3,-29.5,2026-06-30 12:11 UTC
+ROL,ROL,US,"Rollins, Inc.",Industrials,NYSE,42.28,-24.1,11.0,12.9,False,20356212772,38.6,-36.1,2026-06-30 12:11 UTC
+META,META,US,Meta Platforms,Communication Services,NASDAQ,562.6,-23.5,22.2,-3.1,False,1428116888857,23.6,-29.3,2026-06-30 12:11 UTC
+CTAS,CTAS,US,Cintas,Industrials,NASDAQ,169.08,-23.4,7.7,15.3,False,67655144572,37.3,-25.4,2026-06-30 12:11 UTC
+JKHY,JKHY,US,Jack Henry & Associates,Financials,NASDAQ,136.73,-23.0,7.2,19.4,False,9714772846,21.3,-29.3,2026-06-30 12:11 UTC
+EXE,EXE,US,Expand Energy,Energy,NASDAQ,87.54,-22.7,188.8,354.8,False,20942093660,11.5,-30.9,2026-06-30 12:11 UTC
+PSKY,PSKY,US,Paramount Skydance Corporation,Communication Services,NASDAQ,9.82,-22.6,-1.5,-918.1,False,10990279088,,-52.9,2026-06-30 12:11 UTC
+BLDR,BLDR,US,Builders FirstSource,Industrials,NYSE,90.51,-22.4,-7.4,-59.6,False,9735244607,22.4,-40.1,2026-06-30 12:11 UTC
+RMD,RMD,US,ResMed,Health Care,NYSE,198.43,-22.3,9.8,37.2,False,28783537215,20.5,-32.5,2026-06-30 12:11 UTC
+MRSH,MRSH,US,Marsh McLennan,Financials,NYSE,166.71,-22.3,10.3,2.5,False,80319964496,19.3,-24.1,2026-06-30 12:11 UTC
+SPGI,SPGI,US,S&P Global,Financials,NYSE,408.56,-21.9,7.9,16.1,False,120933759277,27.0,-29.4,2026-06-30 12:11 UTC
+SBAC,SBAC,US,SBA Communications,Real Estate,NASDAQ,179.5,-21.8,5.1,40.6,False,19038311552,18.1,-26.2,2026-06-30 12:11 UTC
+T,T,US,AT&T,Communication Services,NYSE,21.82,-21.3,2.7,100.5,False,151612751259,6.9,-26.8,2026-06-30 12:11 UTC
+ASX.AX,ASX,ASX,ASX,Financials,ASX,53.32,-20.8,7.3,6.0,False,10419253089,20.7,-26.3,2026-06-30 12:11 UTC
+AMT,AMT,US,American Tower,Real Estate,NYSE,168.67,-20.7,5.1,12.2,False,78582183095,31.1,-28.0,2026-06-30 12:11 UTC
+BKNG,BKNG,US,Booking Holdings,Consumer Discretionary,NASDAQ,182.41,-20.6,13.4,-8.1,False,141345578348,26.2,-21.9,2026-06-30 12:11 UTC
+KR,KR,US,Kroger,Consumer Staples,NYSE,55.91,-20.4,0.4,-61.9,False,34272829906,33.7,-27.0,2026-06-30 12:11 UTC
+BX,BX,US,Blackstone Inc.,Financials,NYSE,114.88,-20.4,13.5,8.7,False,140413454169,46.5,-39.6,2026-06-30 12:11 UTC
+EVT.AX,EVT,ASX,EVT,Communication Services,ASX,12.88,-20.3,0.5,593.4,False,2093288814,62.7,-28.4,2026-06-30 12:11 UTC
+CDW,CDW,US,CDW Corporation,Information Technology,NASDAQ,139.82,-20.2,6.8,-1.0,False,17862488455,16.7,-24.0,2026-06-30 12:11 UTC
+ARE,ARE,US,Alexandria Real Estate Equities,Real Estate,NYSE,55.59,-19.9,-3.4,-542.7,True,9687640420,,-37.0,2026-06-30 12:11 UTC
+DIS,DIS,US,Walt Disney Company (The),Communication Services,NYSE,98.63,-19.9,3.4,149.5,False,171272116980,13.8,-20.8,2026-06-30 12:11 UTC
+CCI,CCI,US,Crown Castle,Real Estate,NYSE,78.63,-19.8,-4.4,111.4,False,34318218225,77.3,-32.1,2026-06-30 12:11 UTC
+DXCM,DXCM,US,Dexcom,Health Care,NASDAQ,69.98,-19.8,15.6,45.1,False,27003392226,32.3,-22.2,2026-06-30 12:11 UTC
+CEG,CEG,US,Constellation Energy,Utilities,NASDAQ,259.32,-19.2,8.3,-38.1,False,92603697664,39.9,-37.2,2026-06-30 12:11 UTC
+UBER,UBER,US,Uber,Industrials,NYSE,75.5,-19.1,18.3,2.0,False,153687725482,15.3,-26.0,2026-06-30 12:11 UTC
+UHS,UHS,US,Universal Health Services,Health Care,NYSE,147.02,-18.5,9.7,30.4,False,8900054583,6.0,-40.3,2026-06-30 12:11 UTC
+APO,APO,US,Apollo Global Management,Financials,NYSE,114.83,-17.8,22.7,-23.7,False,66201507073,19.0,-27.0,2026-06-30 12:11 UTC
+CME,CME,US,CME Group,Financials,NASDAQ,218.58,-17.6,6.4,15.5,False,78977927575,19.4,-33.6,2026-06-30 12:11 UTC
+ZBRA,ZBRA,US,Zebra Technologies,Information Technology,NASDAQ,255.81,-17.0,8.3,-20.6,False,12185097891,29.1,-27.5,2026-06-30 12:11 UTC
+360.AX,360,ASX,Life360,Information Technology,ASX,26.7,-17.0,31.8,3411.4,False,6490638635,43.0,-52.2,2026-06-30 12:11 UTC
+AUB.AX,AUB,ASX,AUB Group,Financials,ASX,28.64,-16.8,10.3,31.4,False,3741544327,20.8,-28.9,2026-06-30 12:11 UTC
+DYL.AX,DYL,ASX,Deep Yellow,Energy,ASX,1.39,-16.5,,,False,1360870909,,-53.0,2026-06-30 12:11 UTC
+LEN,LEN,US,Lennar,Consumer Discretionary,NYSE,90.85,-16.3,-3.5,-47.2,False,22376199816,10.8,-37.0,2026-06-30 12:11 UTC
+NWS,NWS,US,News Corp (Class B),Communication Services,NASDAQ,28.56,-16.2,2.4,343.6,False,15536867961,13.2,-19.7,2026-06-30 12:11 UTC
+VST,VST,US,Vistra Corp.,Utilities,NYSE,162.38,-15.8,3.0,-64.5,False,54751690800,58.0,-26.1,2026-06-30 12:11 UTC
+SYK,SYK,US,Stryker Corporation,Health Care,NYSE,330.52,-15.8,11.2,8.5,False,126708394845,39.0,-18.4,2026-06-30 12:11 UTC
+CLX,CLX,US,Clorox,Consumer Staples,NYSE,97.09,-15.5,0.2,189.3,False,11740253526,14.5,-26.5,2026-06-30 12:11 UTC
+EDV.AX,EDV,ASX,Endeavour Group,Consumer Staples,ASX,3.25,-15.3,-2.0,-16.8,False,5836108437,13.7,-24.0,2026-06-30 12:11 UTC
+AMP,AMP,US,Ameriprise Financial,Financials,NYSE,446.79,-15.2,7.0,4.8,False,40165118929,11.3,-18.8,2026-06-30 12:11 UTC
+PLTR,PLTR,US,Palantir Technologies,Information Technology,NASDAQ,115.7,-15.1,56.2,251.6,False,277368988423,170.7,-44.2,2026-06-30 12:11 UTC
+AZO,AZO,US,AutoZone,Consumer Discretionary,NYSE,3153.62,-15.0,2.4,-6.2,False,51483967948,20.6,-28.1,2026-06-30 12:11 UTC
+BXB.AX,BXB,ASX,Brambles,Industrials,ASX,19.48,-14.6,7.7,10.9,False,26019428025,33.4,-27.7,2026-06-30 12:11 UTC
+IP,IP,US,International Paper,Materials,NYSE,38.23,-14.5,49.3,-731.2,True,20243433674,,-31.9,2026-06-30 12:11 UTC
+NWSA,NWSA,US,News Corp (Class A),Communication Services,NASDAQ,25.26,-14.4,2.4,343.6,False,13741642002,11.6,-20.1,2026-06-30 12:11 UTC
+BOQ.AX,BOQ,ASX,Bank of Queensland,Financials,ASX,6.31,-13.9,-9.0,129.8,False,4148748611,14.6,-21.8,2026-06-30 12:11 UTC
+DXS.AX,DXS,ASX,Dexus,Real Estate,ASX,5.4,-13.9,4.6,109.9,False,5791985908,37.0,-30.1,2026-06-30 12:11 UTC
+CI,CI,US,Cigna,Health Care,NYSE,278.74,-13.8,11.3,73.5,False,73735759708,12.4,-17.7,2026-06-30 12:11 UTC
+TAP,TAP,US,Molson Coors Beverage Company,Consumer Staples,NYSE,39.75,-13.8,-4.2,-290.6,True,7455166560,,-27.5,2026-06-30 12:11 UTC
+GEN,GEN,US,Gen Digital,Information Technology,NASDAQ,25.04,-13.2,27.1,51.3,False,15084944256,15.5,-22.3,2026-06-30 12:11 UTC
+APTV,APTV,US,Aptiv,Consumer Discretionary,NYSE,59.23,-13.2,3.5,-90.8,False,12534283717,76.0,-33.4,2026-06-30 12:11 UTC
+NDAQ,NDAQ,US,"Nasdaq, Inc.",Financials,NASDAQ,76.85,-13.0,11.6,60.1,False,43461809463,24.3,-24.5,2026-06-30 12:11 UTC
+WTW,WTW,US,Willis Towers Watson,Financials,NASDAQ,264.7,-12.9,-2.2,1737.8,False,25000380400,15.6,-25.0,2026-06-30 12:11 UTC
+SNPS,SNPS,US,Synopsys,Information Technology,NASDAQ,447.26,-12.8,15.1,-41.1,False,85641044769,64.3,-31.4,2026-06-30 12:11 UTC
+PGR,PGR,US,Progressive Corporation,Financials,NYSE,219.86,-12.3,16.3,33.3,False,128002492355,11.3,-17.7,2026-06-30 12:11 UTC
+VLTO,VLTO,US,Veralto,Industrials,NYSE,88.32,-12.2,6.0,12.8,False,21691327098,23.1,-19.8,2026-06-30 12:11 UTC
+BEN.AX,BEN,ASX,Bendigo & Adelaide Bank,Financials,ASX,10.55,-12.1,-5.0,-117.8,True,5948795438,,-23.2,2026-06-30 12:11 UTC
+RSG,RSG,US,Republic Services,Industrials,NYSE,214.68,-12.0,3.5,4.7,False,66049323944,30.9,-13.0,2026-06-30 12:11 UTC
+GEHC,GEHC,US,GE HealthCare,Health Care,NASDAQ,65.05,-12.0,4.8,4.6,False,29590712068,14.2,-27.5,2026-06-30 12:11 UTC
+STZ,STZ,US,Constellation Brands,Consumer Staples,NYSE,139.66,-11.8,-10.5,2172.1,False,23950687730,14.2,-21.6,2026-06-30 12:11 UTC
+VRSN,VRSN,US,Verisign,Information Technology,NASDAQ,252.49,-11.5,6.4,5.1,False,22976590500,27.8,-19.2,2026-06-30 12:11 UTC
+CWY.AX,CWY,ASX,Cleanaway,Industrials,ASX,2.35,-11.4,2.4,0.2,False,5266842736,33.6,-20.6,2026-06-30 12:11 UTC
+VICI,VICI,US,Vici Properties,Real Estate,NYSE,27.18,-11.2,4.1,3.6,False,29266885811,10.5,-20.1,2026-06-30 12:11 UTC
+KMB,KMB,US,Kimberly-Clark,Consumer Staples,NASDAQ,109.91,-10.6,-2.1,-20.6,False,36481987876,18.1,-20.0,2026-06-30 12:11 UTC
+STE,STE,US,Steris,Health Care,NYSE,213.24,-10.5,8.7,27.3,False,20781876219,26.6,-20.9,2026-06-30 12:11 UTC
+FOX,FOX,US,Fox Corporation (Class B),Communication Services,NASDAQ,45.71,-10.5,16.6,50.8,False,19193658418,8.5,-33.0,2026-06-30 12:11 UTC
+AIG,AIG,US,American International Group,Financials,NYSE,75.12,-10.1,-1.8,320.5,False,39829092778,12.9,-13.9,2026-06-30 12:11 UTC
+GPN,GPN,US,Global Payments,Financials,NYSE,71.12,-10.0,-0.4,-10.8,False,19454414969,13.9,-21.5,2026-06-30 12:11 UTC
+EQT,EQT,US,EQT Corporation,Energy,NYSE,52.0,-9.8,60.0,784.4,False,32524856000,15.9,-23.8,2026-06-30 12:11 UTC
+AGL.AX,AGL,ASX,AGL Energy,Utilities,ASX,8.35,-9.5,5.5,-113.8,True,5617439652,,-21.4,2026-06-30 12:11 UTC
+FOXA,FOXA,US,Fox Corporation (Class A),Communication Services,NASDAQ,50.39,-9.2,16.6,50.8,False,21158793598,9.3,-34.0,2026-06-30 12:11 UTC
+MCO,MCO,US,Moody's Corporation,Financials,NYSE,452.73,-9.0,8.9,19.5,False,79081265695,32.2,-17.2,2026-06-30 12:11 UTC
+MA,MA,US,Mastercard,Financials,NYSE,509.64,-8.8,16.4,16.3,False,450309688805,30.1,-15.3,2026-06-30 12:11 UTC
+HRL,HRL,US,Hormel Foods,Consumer Staples,NYSE,26.31,-8.7,1.6,-40.6,False,14478786277,30.3,-17.4,2026-06-30 12:11 UTC
+XYL,XYL,US,Xylem Inc.,Industrials,NYSE,116.73,-8.6,5.5,7.5,False,27745962236,29.0,-24.3,2026-06-30 12:11 UTC
+ASK.AX,ASK,ASX,Abacus Storage King,Real Estate,ASX,1.35,-8.5,11.8,109.2,False,1767468523,6.1,-16.7,2026-06-30 12:11 UTC
+MDLZ,MDLZ,US,Mondelez International,Consumer Staples,NASDAQ,60.15,-8.5,5.8,-46.8,False,77211535384,31.5,-15.5,2026-06-30 12:11 UTC
+ALGN,ALGN,US,Align Technology,Health Care,NASDAQ,173.43,-8.4,0.9,-2.6,False,12420731241,30.3,-16.7,2026-06-30 12:11 UTC
+CBA.AX,CBA,ASX,Commonwealth Bank,Financials,ASX,164.62,-8.3,4.3,7.7,False,275264998951,27.2,-11.3,2026-06-30 12:11 UTC
+GMG.AX,GMG,ASX,Goodman Group,Real Estate,ASX,31.13,-8.2,7.6,1784.9,False,63654405495,38.2,-16.6,2026-06-30 12:11 UTC
+AON,AON,US,Aon plc,Financials,NYSE,327.57,-7.7,9.4,39.2,False,69961402748,18.9,-14.0,2026-06-30 12:11 UTC
+NVR,NVR,US,"NVR, Inc.",Consumer Discretionary,NYSE,6821.03,-7.6,-1.9,-20.3,False,18411951131,13.7,-20.9,2026-06-30 12:11 UTC
+BLK,BLK,US,BlackRock,Financials,NYSE,950.17,-7.5,18.7,-12.8,False,147498676675,26.6,-22.1,2026-06-30 12:11 UTC
+TDG,TDG,US,TransDigm Group,Industrials,NYSE,1323.44,-7.0,11.2,21.0,False,74024737808,35.7,-18.5,2026-06-30 12:11 UTC
+AMC.AX,AMC,ASX,Amcor,Materials,ASX,62.56,-6.4,10.0,-30.0,False,28924347001,56.6,-18.1,2026-06-30 12:11 UTC
+MCD,MCD,US,McDonald's,Consumer Discretionary,NYSE,267.18,-6.3,3.7,4.1,False,189832950204,22.2,-21.8,2026-06-30 12:11 UTC
+NRG,NRG,US,NRG Energy,Utilities,NYSE,149.11,-6.1,9.2,-23.2,False,31460192670,36.4,-21.5,2026-06-30 12:11 UTC
+CVNA,CVNA,US,Carvana,Consumer Discretionary,NYSE,63.72,-5.4,48.6,570.0,False,45641896767,32.4,-34.6,2026-06-30 12:11 UTC
+COR,COR,US,Cencora,Health Care,NYSE,281.65,-5.4,9.3,3.0,False,54798121361,35.3,-25.4,2026-06-30 12:11 UTC
+SWKS,SWKS,US,Skyworks Solutions,Information Technology,NASDAQ,67.71,-5.3,-2.2,-19.9,False,10183987617,21.3,-25.5,2026-06-30 12:11 UTC
+A2M.AX,A2M,ASX,a2 Milk Company,Consumer Staples,ASX,7.48,-4.9,13.5,21.1,False,5426187945,26.7,-25.0,2026-06-30 12:11 UTC
+J,J,US,Jacobs Solutions,Industrials,NYSE,123.81,-4.8,4.6,-64.1,False,14619593341,50.5,-26.5,2026-06-30 12:11 UTC
+AVY,AVY,US,Avery Dennison,Materials,NYSE,163.32,-4.8,1.1,-2.4,False,12492410238,18.2,-18.2,2026-06-30 12:11 UTC
+KVUE,KVUE,US,Kenvue,Consumer Staples,NYSE,19.07,-4.6,-2.1,42.7,False,36614564713,24.9,-16.6,2026-06-30 12:11 UTC
+CLW.AX,CLW,ASX,Charter Hall Long WALE REIT,Real Estate,ASX,3.65,-4.5,-16.7,123.2,False,2612294921,22.1,-21.7,2026-06-30 12:11 UTC
+ALL.AX,ALL,ASX,Aristocrat Leisure,Consumer Discretionary,ASX,61.27,-4.2,-4.6,25.8,False,36871834103,22.5,-16.4,2026-06-30 12:11 UTC
+MDT,MDT,US,Medtronic,Health Care,NYSE,80.93,-4.1,8.4,3.0,False,103594057617,21.6,-23.9,2026-06-30 12:11 UTC
+PG,PG,US,Procter & Gamble,Consumer Staples,NYSE,148.45,-4.1,0.3,7.4,False,345680511178,21.6,-11.2,2026-06-30 12:11 UTC
+AOS,AOS,US,A. O. Smith,Industrials,NYSE,61.68,-4.0,0.3,2.4,False,8501269570,15.6,-24.7,2026-06-30 12:11 UTC
+COST,COST,US,Costco,Consumer Staples,NASDAQ,946.68,-3.8,8.2,9.9,False,419832510923,51.8,-13.7,2026-06-30 12:11 UTC
+AMCR,AMCR,US,Amcor,Materials,NYSE,42.94,-3.7,10.0,-30.0,False,19853123294,38.9,-15.7,2026-06-30 12:11 UTC
+CYL.AX,CYL,ASX,Catalyst Metals,Materials,ASX,5.03,-3.6,395.8,251.0,False,1312553445,55.7,-48.7,2026-06-30 12:11 UTC
+CIA.AX,CIA,ASX,Champion Iron,Materials,ASX,3.92,-3.5,10.2,18.8,False,2195383977,13.0,-41.4,2026-06-30 12:11 UTC
+COF,COF,US,Capital One,Financials,NYSE,202.28,-3.5,36.6,-48.4,False,124608419865,50.8,-22.1,2026-06-30 12:11 UTC
+FPH.AX,FPH,ASX,Fisher & Paykel Healthcare,Healthcare,ASX,32.05,-3.4,80.3,24.2,False,18822612290,40.2,-9.2,2026-06-30 12:11 UTC
+IBM,IBM,US,IBM,Information Technology,NYSE,278.0,-3.3,7.6,75.9,False,261288107840,24.7,-16.4,2026-06-30 12:11 UTC
+V,V,US,Visa Inc.,Financials,NYSE,341.65,-3.0,11.3,1.6,False,649730757663,32.4,-5.0,2026-06-30 12:11 UTC
+CBRE,CBRE,US,CBRE Group,Real Estate,NYSE,136.09,-2.9,13.4,19.5,False,39849407164,34.4,-21.9,2026-06-30 12:11 UTC
+DRI,DRI,US,Darden Restaurants,Consumer Discretionary,NYSE,205.7,-2.7,6.0,2.1,False,23559849768,22.4,-7.6,2026-06-30 12:11 UTC
+HPQ,HPQ,US,HP Inc.,Information Technology,NYSE,22.64,-2.7,3.2,-8.9,False,20704793143,8.2,-23.6,2026-06-30 12:11 UTC
+INVH,INVH,US,Invitation Homes,Real Estate,NYSE,30.59,-2.6,4.2,29.5,False,18171743525,30.9,-7.9,2026-06-30 12:11 UTC
+CEN.AX,CEN,ASX,Contact Energy,Utilities,ASX,7.83,-2.5,20.1,40.9,False,7786340494,23.5,-8.8,2026-06-30 12:11 UTC
+AVB,AVB,US,AvalonBay Communities,Real Estate,NYSE,192.64,-2.5,4.4,-2.8,False,27330235286,26.0,-6.7,2026-06-30 12:11 UTC
+IR,IR,US,Ingersoll Rand,Industrials,NYSE,80.98,-2.5,5.7,-30.7,False,31690458131,54.5,-19.8,2026-06-30 12:11 UTC
+ALLE,ALLE,US,Allegion,Industrials,NYSE,139.65,-2.3,7.8,7.7,False,12000942464,18.6,-23.7,2026-06-30 12:11 UTC
+AWK,AWK,US,American Water Works,Utilities,NYSE,132.5,-2.2,9.7,5.7,False,25874669032,23.3,-10.4,2026-06-30 12:11 UTC
+ULTA,ULTA,US,Ulta Beauty,Consumer Discretionary,NASDAQ,459.12,-1.9,9.7,-4.0,False,19737252256,17.1,-35.8,2026-06-30 12:11 UTC
+MSCI,MSCI,US,MSCI Inc.,Financials,NYSE,558.0,-1.9,9.7,8.4,False,40581996336,33.8,-13.4,2026-06-30 12:11 UTC
+HD,HD,US,Home Depot (The),Consumer Discretionary,NYSE,350.81,-1.8,3.2,-4.4,False,349798500778,24.7,-17.8,2026-06-30 12:11 UTC
+DHR,DHR,US,Danaher Corporation,Health Care,NYSE,192.78,-1.7,2.9,-7.3,False,136444020609,37.8,-20.6,2026-06-30 12:11 UTC
+DECK,DECK,US,Deckers Brands,Consumer Discretionary,NYSE,101.28,-1.7,9.8,6.0,False,14065863155,13.7,-19.9,2026-06-30 12:11 UTC
+RJF,RJF,US,Raymond James Financial,Financials,NYSE,149.08,-1.5,9.5,3.2,False,29053163066,13.6,-16.1,2026-06-30 12:11 UTC
+CPU.AX,CPU,ASX,Computershare,Information Technology,ASX,38.28,-1.2,5.1,72.1,False,22140656334,36.5,-9.5,2026-06-30 12:11 UTC
+APD,APD,US,Air Products,Materials,NYSE,271.35,-1.2,-0.5,-110.3,True,60424405505,,-11.9,2026-06-30 12:11 UTC
+FDXF,FDXF,US,FedEx Freight,Industrials,NYSE,149.69,-0.9,-5.7,-31.4,False,22289763304,20.7,-25.2,2026-06-30 12:11 UTC
+MSI,MSI,US,Motorola Solutions,Information Technology,NYSE,412.6,-0.8,8.0,36.6,False,68489778146,31.8,-16.2,2026-06-30 12:11 UTC
+FLT.AX,FLT,ASX,Flight Centre Travel Group,Consumer Discretionary,ASX,11.96,-0.8,2.7,-21.6,False,2465628842,22.5,-27.8,2026-06-30 12:11 UTC
+WM,WM,US,Waste Management,Industrials,NYSE,223.37,-0.8,14.2,-1.4,False,89699973763,33.1,-10.0,2026-06-30 12:11 UTC
+WY,WY,US,Weyerhaeuser,Real Estate,NYSE,24.62,-0.8,-3.1,-18.2,False,17752069639,54.8,-11.3,2026-06-30 12:11 UTC
+WRB,WRB,US,W. R. Berkley Corporation,Financials,NYSE,71.01,-0.7,6.9,1.3,False,26435371535,14.9,-10.1,2026-06-30 12:11 UTC
+MAA,MAA,US,Mid-America Apartment Communities,Real Estate,NYSE,140.65,-0.6,0.8,-15.3,False,16369521691,36.6,-8.6,2026-06-30 12:11 UTC
+CBOE,CBOE,US,Cboe Global Markets,Financials,BTS,231.51,-0.3,15.1,43.8,False,24228396959,22.0,-37.6,2026-06-30 12:11 UTC
+EL,EL,US,Estée Lauder Companies (The),Consumer Staples,NYSE,79.37,-0.3,-8.2,-390.5,True,28715663397,,-34.8,2026-06-30 12:11 UTC
+AIA.AX,AIA,ASX,Auckland International Airport Limited,Industrials,ASX,6.97,-0.2,11.1,7549.1,False,11815052977,28.1,-10.1,2026-06-30 12:11 UTC
+LYB,LYB,US,LyondellBasell,Materials,NYSE,53.62,-0.2,-9.7,-154.8,True,17307719183,,-36.1,2026-06-30 12:11 UTC
+IDXX,IDXX,US,Idexx Laboratories,Health Care,NASDAQ,535.93,-0.1,10.4,19.3,False,42275764004,39.9,-30.4,2026-06-30 12:11 UTC
+KHC,KHC,US,Kraft Heinz,Consumer Staples,NASDAQ,24.19,-0.0,-3.5,-313.0,True,28683961696,,-17.1,2026-06-30 12:11 UTC
+LII,LII,US,Lennox International,Industrials,NYSE,568.83,0.0,-2.7,-0.7,False,19795266392,24.6,-17.5,2026-06-30 12:11 UTC
+ORLY,ORLY,US,O’Reilly Automotive,Consumer Discretionary,NASDAQ,90.16,0.0,6.4,6.3,False,74716954557,29.4,-17.1,2026-06-30 12:11 UTC
+GPC,GPC,US,Genuine Parts Company,Consumer Discretionary,NYSE,117.18,0.1,3.5,-92.7,False,16302328658,247.2,-22.7,2026-06-30 12:11 UTC
+COO,COO,US,Cooper Companies (The),Health Care,NASDAQ,71.39,0.3,5.1,-4.4,False,13923236557,37.1,-20.5,2026-06-30 12:11 UTC
+SCHW,SCHW,US,Charles Schwab Corporation,Financials,NYSE,90.55,0.5,22.0,49.0,False,157478725466,17.8,-15.8,2026-06-30 12:11 UTC
+AFI.AX,AFI,ASX,Australian Foundation Investment Company,Financials,ASX,7.05,0.5,-2.6,-3.8,False,8711337424,30.6,-8.2,2026-06-30 12:11 UTC
+NOC,NOC,US,Northrop Grumman,Industrials,NYSE,496.02,0.8,2.2,0.2,False,70451443205,16.8,-35.9,2026-06-30 12:11 UTC
+LOW,LOW,US,Lowe's,Consumer Discretionary,NYSE,219.65,0.9,3.1,-4.4,False,123159298133,18.5,-25.0,2026-06-30 12:11 UTC
+ZBH,ZBH,US,Zimmer Biomet,Health Care,NYSE,91.24,1.1,7.2,-22.0,False,17651516444,25.0,-15.7,2026-06-30 12:11 UTC
+CPAY,CPAY,US,Corpay,Financials,NYSE,335.34,1.1,13.9,6.6,False,21918465678,20.5,-8.7,2026-06-30 12:11 UTC
+SHW,SHW,US,Sherwin-Williams,Materials,NYSE,344.3,1.2,2.1,-4.2,False,84916641300,33.1,-9.3,2026-06-30 12:11 UTC
+PEG,PEG,US,Public Service Enterprise Group,Utilities,NYSE,82.43,1.2,18.3,19.1,False,41076633319,19.5,-9.7,2026-06-30 12:11 UTC
+CARR,CARR,US,Carrier Global,Industrials,NYSE,73.43,1.8,-3.3,-73.5,False,60989520714,41.1,-9.4,2026-06-30 12:11 UTC
+TTWO,TTWO,US,Take-Two Interactive,Communication Services,NASDAQ,247.15,1.8,18.2,93.3,False,45887514627,,-6.7,2026-06-30 12:11 UTC
+ELV,ELV,US,Elevance Health,Health Care,NYSE,388.03,1.9,12.6,-5.3,False,84265518046,14.9,-9.1,2026-06-30 12:11 UTC
+BRK-B,BRK.B,US,Berkshire Hathaway,Financials,NYSE,496.0,2.1,-3.2,-24.8,False,1069799483312,16.0,-4.0,2026-06-30 12:11 UTC
+MCK,MCK,US,McKesson Corporation,Health Care,NYSE,747.53,2.4,12.4,44.5,False,87519130150,18.4,-25.2,2026-06-30 12:11 UTC
+BA,BA,US,Boeing,Industrials,NYSE,214.69,2.5,34.5,118.9,False,169240629367,75.7,-15.6,2026-06-30 12:11 UTC
+FBU.AX,FBU,ASX,Fletcher Building,Industrials,ASX,2.77,2.6,-9.0,-84.6,False,2977465700,,-19.5,2026-06-30 12:11 UTC
+CIP.AX,CIP,ASX,Centuria Industrial REIT,Real Estate,ASX,3.04,2.7,5.5,176.4,False,1898139712,14.3,-15.3,2026-06-30 12:11 UTC
+BXP,BXP,US,"BXP, Inc.",Real Estate,NYSE,67.07,2.8,2.2,1839.5,False,10696148566,38.6,-15.5,2026-06-30 12:11 UTC
+UDR,UDR,US,"UDR, Inc.",Real Estate,NYSE,40.13,3.0,2.4,321.6,False,13038865502,34.5,-3.5,2026-06-30 12:11 UTC
+HCA,HCA,US,HCA Healthcare,Health Care,NYSE,392.33,3.1,7.1,17.8,False,87034405755,12.8,-29.5,2026-06-30 12:11 UTC
+CHD,CHD,US,Church & Dwight,Consumer Staples,NYSE,97.9,3.2,1.6,25.9,False,23196778997,31.5,-7.7,2026-06-30 12:11 UTC
+SOLV,SOLV,US,Solventum,Health Care,NYSE,78.24,3.2,0.9,224.8,False,13549189097,8.7,-11.3,2026-06-30 12:11 UTC
+PM,PM,US,Philip Morris International,Consumer Staples,NYSE,182.87,4.0,7.3,60.8,False,285013648558,25.1,-5.3,2026-06-30 12:11 UTC
+CL,CL,US,Colgate-Palmolive,Consumer Staples,NYSE,92.4,4.2,1.4,-26.2,False,73937493465,34.7,-7.0,2026-06-30 12:11 UTC
+RCL,RCL,US,Royal Caribbean Group,Consumer Discretionary,NYSE,321.44,4.4,8.8,48.3,False,86208594383,20.2,-12.3,2026-06-30 12:11 UTC
+ECL,ECL,US,Ecolab,Materials,NYSE,278.6,4.5,2.2,-1.7,False,78408489775,37.8,-9.9,2026-06-30 12:11 UTC
+KDP,KDP,US,Keurig Dr Pepper,Consumer Staples,NASDAQ,33.5,4.7,8.2,44.3,False,45578742278,21.9,-6.8,2026-06-30 12:11 UTC
+DG,DG,US,Dollar General,Consumer Staples,NYSE,117.52,4.8,5.2,34.4,False,25923342015,17.1,-25.7,2026-06-30 12:11 UTC
+CCL,CCL,US,Carnival Corporation,Consumer Discretionary,NYSE,29.19,4.9,6.4,44.1,False,40048680733,14.5,-14.2,2026-06-30 12:11 UTC
+EXR,EXR,US,Extra Space Storage,Real Estate,NYSE,148.26,5.2,3.7,14.0,False,31321545211,32.2,-4.5,2026-06-30 12:11 UTC
+GPT.AX,GPT,ASX,GPT Group,Real Estate,ASX,4.88,5.6,4.4,588.8,False,9348018078,9.5,-15.1,2026-06-30 12:11 UTC
+WAT,WAT,US,Waters Corporation,Health Care,NYSE,368.87,5.7,7.0,0.8,False,36217815854,56.4,-10.9,2026-06-30 12:11 UTC
+EQR,EQR,US,Equity Residential,Real Estate,NYSE,68.34,5.8,3.8,8.1,False,25607826549,22.9,-1.0,2026-06-30 12:11 UTC
+ARG.AX,ARG,ASX,Argo Investments,Financials,ASX,9.29,5.9,3.1,2.7,False,6990199102,26.9,-3.1,2026-06-30 12:11 UTC
+DRO.AX,DRO,ASX,Droneshield,Industrials,ASX,2.42,6.1,276.4,366.7,False,2236299753,635.1,-63.9,2026-06-30 12:11 UTC
+GNE.AX,GNE,ASX,Genesis Energy,Utilities,ASX,2.09,6.3,22.7,29.0,False,2353701747,13.9,-7.1,2026-06-30 12:11 UTC
+MLM,MLM,US,Martin Marietta Materials,Materials,NYSE,581.23,6.4,8.6,-43.0,False,34900477284,30.7,-18.2,2026-06-30 12:11 UTC
+IFF,IFF,US,International Flavors & Fragrances,Materials,NYSE,76.5,6.5,-5.2,-237.3,True,19530715684,,-9.4,2026-06-30 12:11 UTC
+BF-B,BF.B,US,Brown–Forman,Consumer Staples,NYSE,27.72,6.5,-1.2,-17.7,False,12719717111,17.8,-13.2,2026-06-30 12:11 UTC
+WFC,WFC,US,Wells Fargo,Financials,NYSE,83.51,6.5,1.7,8.2,False,255556431181,12.0,-14.6,2026-06-30 12:11 UTC
+CPT,CPT,US,Camden Property Trust,Real Estate,NYSE,116.74,6.8,1.9,135.4,False,11567835965,30.1,-0.0,2026-06-30 12:11 UTC
+OMC,OMC,US,Omnicom Group,Communication Services,NYSE,73.93,6.9,10.1,-103.7,True,21070508157,,-15.2,2026-06-30 12:11 UTC
+WYNN,WYNN,US,Wynn Resorts,Consumer Discretionary,NASDAQ,99.42,7.1,0.1,-34.7,False,10318476407,31.5,-26.2,2026-06-30 12:11 UTC
+HIG,HIG,US,Hartford (The),Financials,NYSE,133.49,7.1,6.4,23.3,False,36593724668,9.5,-7.6,2026-06-30 12:11 UTC
+PRU,PRU,US,Prudential Financial,Financials,NYSE,109.2,7.2,-13.7,31.1,False,37927900624,10.6,-8.8,2026-06-30 12:11 UTC
+MTD,MTD,US,Mettler Toledo,Health Care,NYSE,1258.82,7.2,4.0,0.7,False,25437731205,29.3,-17.5,2026-06-30 12:11 UTC
+ANN.AX,ANN,ASX,Ansell,Healthcare,ASX,31.74,7.3,23.7,32.8,False,4482343367,44.1,-15.5,2026-06-30 12:11 UTC
+EG,EG,US,Everest Group,Financials,NYSE,360.79,7.5,0.8,15.9,False,14277038624,9.0,-2.0,2026-06-30 12:11 UTC
+LH,LH,US,Labcorp,Health Care,NYSE,279.58,7.6,7.2,17.5,False,22925558899,26.2,-4.8,2026-06-30 12:11 UTC
+ESS,ESS,US,Essex Property Trust,Real Estate,NYSE,295.93,7.6,6.4,-9.7,False,19016975952,28.4,-0.0,2026-06-30 12:11 UTC
+PFE,PFE,US,Pfizer,Health Care,NYSE,24.37,7.6,-1.6,-3.2,False,138895459182,17.9,-15.2,2026-06-30 12:11 UTC
+ACGL,ACGL,US,Arch Capital Group,Financials,NASDAQ,98.06,7.7,14.0,2.0,False,34261142146,7.8,-5.2,2026-06-30 12:11 UTC
+AXP,AXP,US,American Express,Financials,NYSE,340.88,8.0,9.5,7.0,False,232591441222,21.5,-12.0,2026-06-30 12:11 UTC
+NCLH,NCLH,US,Norwegian Cruise Line Holdings,Consumer Discretionary,NYSE,21.92,8.1,3.7,-53.5,False,10063694304,23.8,-19.4,2026-06-30 12:11 UTC
+TSN,TSN,US,Tyson Foods,Consumer Staples,NYSE,58.65,8.5,2.1,-40.8,False,20652389965,43.6,-15.6,2026-06-30 12:11 UTC
+LVS,LVS,US,Las Vegas Sands,Consumer Discretionary,NYSE,46.37,8.7,15.2,12.5,False,30726492052,18.9,-34.2,2026-06-30 12:11 UTC
+MMM,MMM,US,3M,Industrials,NYSE,162.43,8.7,1.5,-22.1,False,84718166384,26.1,-8.4,2026-06-30 12:11 UTC
+YUM,YUM,US,Yum! Brands,Consumer Discretionary,NYSE,158.24,8.8,8.8,4.9,False,43614300519,28.0,-6.6,2026-06-30 12:11 UTC
+SO,SO,US,Southern Company,Utilities,NYSE,96.75,8.8,10.6,-1.4,False,109066381232,25.1,-4.1,2026-06-30 12:11 UTC
+VZ,VZ,US,Verizon,Communication Services,NYSE,44.1,8.8,2.5,-1.9,False,184142141560,10.7,-14.7,2026-06-30 12:11 UTC
+CQR.AX,CQR,ASX,Charter Hall Retail REIT,Real Estate,ASX,3.92,8.8,-8.3,1143.0,False,2278420112,10.7,-9.0,2026-06-30 12:11 UTC
+HOOD,HOOD,US,Robinhood Markets,Financials,NASDAQ,101.83,8.8,51.6,33.5,False,91698431603,48.7,-33.8,2026-06-30 12:11 UTC
+EMR,EMR,US,Emerson Electric,Industrials,NYSE,142.82,8.9,3.0,16.5,False,79993486102,34.9,-13.5,2026-06-30 12:11 UTC
+ALX.AX,ALX,ASX,Atlas Arteria,Industrials,ASX,5.1,9.0,9.6,-22.7,False,7400249521,28.5,-7.9,2026-06-30 12:11 UTC
+PPG,PPG,US,PPG Industries,Materials,NYSE,120.91,9.1,0.2,41.2,False,26950839816,17.1,-9.4,2026-06-30 12:11 UTC
+PEP,PEP,US,PepsiCo,Consumer Staples,NASDAQ,138.68,9.2,2.3,-14.0,False,189567363153,23.0,-19.1,2026-06-30 12:11 UTC
+AMZN,AMZN,US,Amazon,Consumer Discretionary,NASDAQ,240.14,9.5,12.4,31.1,False,2583212253395,33.3,-13.8,2026-06-30 12:11 UTC
+BFL.AX,BFL,ASX,BSP Financial Group,Financials,ASX,8.2,9.6,13.5,12.9,False,3829399911,3.3,-13.7,2026-06-30 12:11 UTC
+HONA,HONA,US,Honeywell Aerospace,Industrials,NASDAQ,220.19,10.1,12.7,-36.8,False,69786964326,39.2,-26.0,2026-06-30 12:11 UTC
+BGA.AX,BGA,ASX,Bega Cheese,Consumer Staples,ASX,5.88,10.1,0.5,-127.9,True,1796768758,,-12.5,2026-06-30 12:11 UTC
+MET,MET,US,MetLife,Financials,NYSE,85.99,10.1,7.9,-23.7,False,55329127252,16.4,-4.1,2026-06-30 12:11 UTC
+ITW,ITW,US,Illinois Tool Works,Industrials,NYSE,267.47,10.2,0.9,-12.1,False,76951119351,25.1,-11.8,2026-06-30 12:11 UTC
+SW,SW,US,Smurfit Westrock,Materials,NYSE,46.17,10.3,47.7,119.1,False,24214505521,34.6,-12.3,2026-06-30 12:11 UTC
+HBAN,HBAN,US,Huntington Bancshares,Financials,NASDAQ,17.82,10.3,10.1,14.0,False,36123466442,16.3,-8.4,2026-06-30 12:11 UTC
+LIN,LIN,US,Linde plc,Materials,NASDAQ,511.06,10.4,3.0,5.1,False,236287215120,34.3,-3.2,2026-06-30 12:11 UTC
+TT,TT,US,Trane Technologies,Industrials,NYSE,480.35,10.6,7.5,13.7,False,106183999726,36.4,-5.0,2026-06-30 12:11 UTC
+BRG.AX,BRG,ASX,Breville Group,Consumer Discretionary,ASX,32.26,10.8,10.9,14.6,False,4672491735,34.4,-13.1,2026-06-30 12:11 UTC
+DOW,DOW,US,Dow Inc.,Materials,NYSE,27.92,11.0,-7.0,-335.0,True,20123101004,,-34.7,2026-06-30 12:11 UTC
+CNU.AX,CNU,ASX,Chorus,Communication Services,ASX,8.22,11.0,-5.9,144.4,False,3566553673,891.6,-8.3,2026-06-30 12:11 UTC
+ABNB,ABNB,US,Airbnb,Consumer Discretionary,NASDAQ,147.17,11.2,10.3,-5.2,False,87346118431,34.8,-2.0,2026-06-30 12:11 UTC
+LMT,LMT,US,Lockheed Martin,Industrials,NYSE,502.07,11.3,5.6,-6.0,False,115759072357,23.1,-27.4,2026-06-30 12:11 UTC
+PPL,PPL,US,PPL Corporation,Utilities,NYSE,36.74,11.9,6.9,33.0,False,27641353563,23.4,-8.4,2026-06-30 12:11 UTC
+BALL,BALL,US,Ball Corporation,Materials,NYSE,62.02,12.2,11.6,-77.2,False,16512608734,18.1,-9.2,2026-06-30 12:11 UTC
+VRTX,VRTX,US,Vertex Pharmaceuticals,Health Care,NASDAQ,499.65,12.2,8.9,838.1,False,126813875055,32.1,-1.6,2026-06-30 12:11 UTC
+TXT,TXT,US,Textron,Industrials,NYSE,90.15,12.4,8.0,11.8,False,15676091902,17.0,-11.2,2026-06-30 12:11 UTC
+EXC,EXC,US,Exelon,Utilities,NASDAQ,47.15,12.5,5.3,12.5,False,48244265457,17.4,-6.9,2026-06-30 12:11 UTC
+DLR,DLR,US,Digital Realty,Real Estate,NYSE,190.58,12.5,10.0,117.2,False,66970969464,51.2,-8.4,2026-06-30 12:11 UTC
+DUK,DUK,US,Duke Energy,Utilities,NYSE,128.33,12.6,6.2,9.8,False,100045583955,20.1,-4.6,2026-06-30 12:11 UTC
+HSY,HSY,US,Hershey Company (The),Consumer Staples,NYSE,181.58,12.7,4.4,-60.2,False,36832299859,41.7,-24.2,2026-06-30 12:11 UTC
+CTVA,CTVA,US,Corteva,Materials,NYSE,83.37,12.9,2.9,20.6,False,55759525237,51.0,-2.6,2026-06-30 12:11 UTC
+BWP.AX,BWP,ASX,BWP Trust,Real Estate,ASX,3.79,13.1,16.7,47.4,False,2975670144,11.2,-8.0,2026-06-30 12:11 UTC
+SYY,SYY,US,Sysco,Consumer Staples,NYSE,83.4,13.3,3.2,-6.5,False,39880430237,21.8,-9.2,2026-06-30 12:11 UTC
+A,A,US,Agilent Technologies,Health Care,NYSE,132.83,13.5,6.7,1.1,False,37515435639,28.8,-17.1,2026-06-30 12:11 UTC
+GRMN,GRMN,US,Garmin,Consumer Discretionary,NYSE,233.76,13.8,15.1,17.9,False,45082065655,27.1,-14.5,2026-06-30 12:11 UTC
+EOG,EOG,US,EOG Resources,Energy,NYSE,131.93,14.2,-3.4,-22.2,False,70269678062,14.1,-13.1,2026-06-30 12:11 UTC
+KMI,KMI,US,Kinder Morgan,Energy,NYSE,32.27,14.3,12.2,17.0,False,71795128197,23.5,-7.3,2026-06-30 12:11 UTC
+FRW.AX,FRW,ASX,Freightways Group,Industrials,ASX,11.41,14.4,6.6,12.9,False,2042331360,25.6,-8.9,2026-06-30 12:11 UTC
+UPS,UPS,US,United Parcel Service,Industrials,NYSE,108.01,14.4,-2.6,-3.6,False,91809180011,16.5,-11.8,2026-06-30 12:11 UTC
+OKE,OKE,US,Oneok,Energy,NYSE,88.73,14.7,55.0,11.8,False,55902817073,16.5,-7.6,2026-06-30 12:11 UTC
+XYZ,XYZ,US,"Block, Inc.",Financials,NYSE,78.02,14.9,0.3,-54.9,False,46436019622,35.6,-5.4,2026-06-30 12:11 UTC
+FAST,FAST,US,Fastenal,Industrials,NASDAQ,47.4,15.2,8.7,9.4,False,54416863643,43.2,-6.4,2026-06-30 12:11 UTC
+PSA,PSA,US,Public Storage,Real Estate,NYSE,324.45,15.2,2.7,-13.9,False,56966821533,31.9,-2.2,2026-06-30 12:11 UTC
+RVTY,RVTY,US,Revvity,Health Care,NYSE,111.21,15.3,3.7,-10.8,False,12406562253,51.4,-6.0,2026-06-30 12:11 UTC
+HSIC,HSIC,US,Henry Schein,Health Care,NASDAQ,84.29,15.4,4.0,2.1,False,9602043552,24.1,-5.6,2026-06-30 12:11 UTC
+O,O,US,Realty Income,Real Estate,NYSE,63.04,15.5,9.1,23.0,False,58784329945,55.5,-7.2,2026-06-30 12:11 UTC
+ED,ED,US,Consolidated Edison,Utilities,NYSE,112.29,15.6,10.9,11.2,False,41382200912,20.5,-3.4,2026-06-30 12:11 UTC
+ETN,ETN,US,Eaton Corporation,Industrials,NYSE,408.26,15.7,10.3,7.7,False,158527361792,38.8,-6.5,2026-06-30 12:11 UTC
+JPM,JPM,US,JPMorgan Chase,Financials,NYSE,329.39,15.8,7.3,-2.4,False,882604305226,15.5,-4.1,2026-06-30 12:11 UTC
+CMS,CMS,US,CMS Energy,Utilities,NYSE,77.93,15.9,13.6,6.8,False,24074104678,22.5,-3.0,2026-06-30 12:11 UTC
+CTD.AX,CTD,ASX,Corporate Travel Management,Consumer Discretionary,ASX,16.07,16.0,8.8,8.9,False,2351454694,27.8,-2.8,2026-06-30 12:11 UTC
+ATO,ATO,US,Atmos Energy,Utilities,NYSE,174.84,16.0,12.9,14.9,False,29184261067,24.3,-9.2,2026-06-30 12:11 UTC
+AFL,AFL,US,Aflac,Financials,NYSE,120.08,16.3,-9.3,-33.0,False,61118908204,16.8,-0.2,2026-06-30 12:11 UTC
+SBUX,SBUX,US,Starbucks,Consumer Discretionary,NASDAQ,104.06,16.6,2.8,-50.6,False,118597179218,63.9,-4.4,2026-06-30 12:11 UTC
+EW,EW,US,Edwards Lifesciences,Health Care,NYSE,91.18,16.6,11.5,-74.3,False,52501444176,48.9,-1.8,2026-06-30 12:11 UTC
+HII,HII,US,Huntington Ingalls Industries,Industrials,NYSE,277.39,16.8,8.2,10.0,False,10930284182,18.1,-39.7,2026-06-30 12:11 UTC
+FTV,FTV,US,Fortive,Industrials,NYSE,60.67,16.9,1.9,-30.5,False,18495917586,31.9,-4.3,2026-06-30 12:11 UTC
+GILD,GILD,US,Gilead Sciences,Health Care,NASDAQ,126.33,16.9,2.4,1672.9,False,156847524456,18.4,-19.7,2026-06-30 12:11 UTC
+CF,CF,US,CF Industries,Materials,NYSE,105.4,17.0,19.3,19.5,False,16192525714,11.1,-25.8,2026-06-30 12:11 UTC
+LHX,LHX,US,L3Harris,Industrials,NYSE,289.38,17.2,2.5,6.9,False,53910033830,33.6,-23.7,2026-06-30 12:11 UTC
+VMC,VMC,US,Vulcan Materials Company,Materials,NYSE,303.82,17.3,7.1,18.1,False,39422130111,36.6,-8.2,2026-06-30 12:11 UTC
+BDX,BDX,US,Becton Dickinson,Health Care,NYSE,155.19,17.4,8.2,-1.6,False,42761119539,25.5,-17.2,2026-06-30 12:11 UTC
+WEC,WEC,US,WEC Energy Group,Utilities,NYSE,118.44,17.5,14.0,2.0,False,38578950098,24.8,-1.0,2026-06-30 12:11 UTC
+TKO,TKO,US,TKO Group Holdings,Communication Services,NYSE,211.62,18.1,-3.1,1977.0,False,15864658594,81.2,-6.8,2026-06-30 12:11 UTC
+WMT,WMT,US,Walmart,Consumer Staples,NASDAQ,114.6,18.2,4.7,12.6,False,911995859020,41.7,-15.2,2026-06-30 12:11 UTC
+HAS,HAS,US,Hasbro,Consumer Discretionary,NASDAQ,84.44,18.2,13.7,-183.6,True,11947474378,,-21.1,2026-06-30 12:11 UTC
+REG,REG,US,Regency Centers,Real Estate,NASDAQ,81.3,18.8,6.9,31.7,False,14885769586,28.2,-0.8,2026-06-30 12:11 UTC
+TEL,TEL,US,TE Connectivity,Information Technology,NYSE,198.3,18.8,8.9,-42.3,False,57882937832,31.4,-21.5,2026-06-30 12:11 UTC
+CNC,CNC,US,Centene Corporation,Health Care,NYSE,64.54,18.9,19.4,-301.9,True,31869658832,,-3.0,2026-06-30 12:11 UTC
+CB,CB,US,Chubb Limited,Financials,NYSE,343.29,19.2,6.7,11.2,False,133148499103,12.9,-0.7,2026-06-30 12:11 UTC
+OXY,OXY,US,Occidental Petroleum,Energy,NYSE,49.09,19.3,-1.9,-23.9,False,48826617624,21.0,-27.2,2026-06-30 12:11 UTC
+CRH,CRH,US,CRH plc,Materials,NYSE,108.87,19.4,5.3,7.9,False,72746959351,19.5,-17.2,2026-06-30 12:11 UTC
+SYF,SYF,US,Synchrony Financial,Financials,NYSE,78.37,19.4,-0.5,1.5,False,26361336789,7.4,-11.7,2026-06-30 12:11 UTC
+TPL,TPL,US,Texas Pacific Land Corporation,Energy,NYSE,419.98,20.0,13.1,6.0,False,28967881449,60.2,-23.2,2026-06-30 12:11 UTC
+COP,COP,US,ConocoPhillips,Energy,NYSE,104.2,20.0,7.7,-13.6,False,126946231811,15.9,-23.3,2026-06-30 12:11 UTC
+DTE,DTE,US,DTE Energy,Utilities,NYSE,154.02,20.1,26.9,4.1,False,32040521657,21.9,-0.7,2026-06-30 12:11 UTC
+KO,KO,US,Coca-Cola Company (The),Consumer Staples,NYSE,82.65,20.1,1.9,23.3,False,355600178413,27.1,-1.7,2026-06-30 12:11 UTC
+DGX,DGX,US,Quest Diagnostics,Health Care,NYSE,212.64,20.5,11.8,13.9,False,23538488595,23.7,-0.4,2026-06-30 12:11 UTC
+LYV,LYV,US,Live Nation Entertainment,Communication Services,NYSE,182.56,20.7,8.8,-44.7,False,42484048017,85.7,-0.5,2026-06-30 12:11 UTC
+COL.AX,COL,ASX,Coles Group,Consumer Staples,ASX,24.37,20.9,1.8,-3.5,False,32732407272,30.3,-0.9,2026-06-30 12:11 UTC
+QCOM,QCOM,US,Qualcomm,Information Technology,NASDAQ,188.72,21.0,13.7,-45.4,False,198910881287,35.9,-27.4,2026-06-30 12:11 UTC
+REGN,REGN,US,Regeneron Pharmaceuticals,Health Care,NASDAQ,631.81,21.0,1.0,2.1,False,66238348552,14.7,-23.1,2026-06-30 12:11 UTC
+CDNS,CDNS,US,Cadence Design Systems,Information Technology,NASDAQ,372.72,21.0,14.1,5.1,False,102802139857,92.7,-10.6,2026-06-30 12:11 UTC
+GMD.AX,GMD,ASX,Genesis Minerals,Materials,ASX,5.21,21.2,109.8,163.3,False,5951529929,26.9,-38.1,2026-06-30 12:11 UTC
+UNP,UNP,US,Union Pacific Corporation,Industrials,NYSE,272.7,21.2,1.1,5.8,False,161905600433,22.7,-2.5,2026-06-30 12:11 UTC
+ES,ES,US,Eversource Energy,Utilities,NYSE,73.77,21.3,13.8,108.5,False,27743422182,16.4,-3.5,2026-06-30 12:11 UTC
+GD,GD,US,General Dynamics,Industrials,NYSE,348.07,21.5,10.1,11.3,False,94128637170,22.4,-5.9,2026-06-30 12:11 UTC
+CHC.AX,CHC,ASX,Charter Hall,Real Estate,ASX,22.86,21.7,-11.1,247.5,False,10809532706,33.0,-11.9,2026-06-30 12:11 UTC
+BBY,BBY,US,Best Buy,Consumer Discretionary,NYSE,77.64,22.1,0.4,15.3,False,16363959534,15.3,-8.6,2026-06-30 12:11 UTC
+ALL,ALL,US,Allstate,Financials,NYSE,241.38,22.3,5.6,120.3,False,62136265340,6.0,-0.2,2026-06-30 12:11 UTC
+NI,NI,US,NiSource,Utilities,NYSE,48.15,22.5,21.8,22.2,False,23085000378,24.8,-2.2,2026-06-30 12:11 UTC
+IQV,IQV,US,IQVIA,Health Care,NYSE,193.28,22.6,5.9,-0.9,False,32258431796,23.7,-21.8,2026-06-30 12:11 UTC
+CVX,CVX,US,Chevron Corporation,Energy,NYSE,168.47,22.6,-4.6,-30.4,False,335524472341,27.3,-21.5,2026-06-30 12:11 UTC
+AEE,AEE,US,Ameren,Utilities,NYSE,114.59,22.7,15.4,23.2,False,31712966664,21.8,-3.2,2026-06-30 12:11 UTC
+SJM,SJM,US,J.M. Smucker Company (The),Consumer Staples,NYSE,115.89,22.9,3.7,88.7,False,12386403099,,-2.9,2026-06-30 12:11 UTC
+TFC,TFC,US,Truist Financial,Financials,NYSE,50.58,23.0,53.0,10.1,False,63016576011,11.9,-10.0,2026-06-30 12:11 UTC
+WMB,WMB,US,Williams Companies,Energy,NYSE,75.06,23.3,13.8,17.7,False,91798246785,35.1,-6.3,2026-06-30 12:11 UTC
+DOV,DOV,US,Dover Corporation,Industrials,NYSE,224.0,23.5,4.5,-59.4,False,30164156736,27.6,-5.7,2026-06-30 12:11 UTC
+NVDA,NVDA,US,Nvidia,Information Technology,NASDAQ,194.97,23.6,65.5,64.7,False,4722368399567,39.3,-17.6,2026-06-30 12:11 UTC
+DLTR,DLTR,US,Dollar Tree,Consumer Staples,NASDAQ,122.62,23.8,10.4,142.3,False,23564448508,18.4,-13.9,2026-06-30 12:11 UTC
+TJX,TJX,US,TJX Companies,Consumer Discretionary,NYSE,151.23,24.0,7.1,13.0,False,167064448649,30.4,-11.0,2026-06-30 12:11 UTC
+XEL,XEL,US,Xcel Energy,Utilities,NASDAQ,81.98,24.1,9.1,4.2,False,51177620624,25.4,-2.7,2026-06-30 12:11 UTC
+FE,FE,US,FirstEnergy,Utilities,NYSE,48.06,24.2,12.0,4.3,False,27799403065,27.3,-8.2,2026-06-30 12:11 UTC
+L,L,US,Loews Corporation,Financials,NYSE,113.69,24.3,5.4,17.9,False,23393863674,14.0,-1.1,2026-06-30 12:11 UTC
+DE,DE,US,Deere & Company,Industrials,NYSE,626.63,24.5,-11.6,-29.2,False,169150889946,33.6,-7.1,2026-06-30 12:11 UTC
+PCG,PCG,US,PG&E Corporation,Utilities,NYSE,17.24,24.6,2.1,7.6,False,37966353807,14.0,-10.0,2026-06-30 12:11 UTC
+TROW,TROW,US,T. Rowe Price,Financials,NASDAQ,114.38,24.7,3.1,-0.6,False,24507813806,11.7,-3.2,2026-06-30 12:11 UTC
+CNP,CNP,US,CenterPoint Energy,Utilities,NYSE,44.79,24.7,8.3,3.2,False,29300251608,27.9,-1.0,2026-06-30 12:11 UTC
+BAC,BAC,US,Bank of America,Financials,NYSE,57.88,25.0,6.8,13.1,False,410750674460,13.5,-2.2,2026-06-30 12:11 UTC
+HLT,HLT,US,Hilton Worldwide,Consumer Discretionary,NYSE,332.54,25.1,7.7,-5.1,False,75702191570,52.0,-7.1,2026-06-30 12:11 UTC
+TDY,TDY,US,Teledyne Technologies,Information Technology,NYSE,641.22,25.2,7.9,9.2,False,29707168511,33.2,-7.5,2026-06-30 12:11 UTC
+PNW,PNW,US,Pinnacle West Capital,Utilities,NYSE,107.86,25.3,4.2,1.3,False,13071247799,21.2,-0.5,2026-06-30 12:11 UTC
+TMO,TMO,US,Thermo Fisher Scientific,Health Care,NYSE,506.42,25.4,3.9,5.8,False,188196547295,28.1,-21.4,2026-06-30 12:11 UTC
+APE.AX,APE,ASX,Eagers Automotive,Consumer Discretionary,ASX,21.26,25.8,16.5,10.5,False,6003034001,26.5,-40.3,2026-06-30 12:11 UTC
+NSC,NSC,US,Norfolk Southern,Industrials,NYSE,316.65,26.0,0.5,9.6,False,71117689046,24.8,-2.9,2026-06-30 12:11 UTC
+TRV,TRV,US,Travelers Companies (The),Financials,NYSE,331.88,26.0,5.2,25.8,False,70572521751,11.2,-0.0,2026-06-30 12:11 UTC
+ANZ.AX,ANZ,ASX,Australia & New Zealand Banking Group,Financials,ASX,35.35,26.7,9.6,-9.9,False,106439917642,18.1,-13.8,2026-06-30 12:11 UTC
+MTB,MTB,US,M&T Bank,Financials,NYSE,239.2,27.0,4.3,10.2,False,35029657905,12.3,-0.3,2026-06-30 12:11 UTC
+MAS,MAS,US,Masco,Industrials,NYSE,80.5,27.4,-3.4,-1.5,False,16390370342,20.2,-0.4,2026-06-30 12:11 UTC
+HUBB,HUBB,US,Hubbell Incorporated,Industrials,NYSE,514.71,27.5,3.8,13.9,False,27198192201,30.7,-9.0,2026-06-30 12:11 UTC
+SRE,SRE,US,Sempra,Utilities,NYSE,93.91,27.5,3.9,-35.8,False,61389664422,33.4,-7.1,2026-06-30 12:11 UTC
+D,D,US,Dominion Energy,Utilities,NYSE,69.18,27.8,14.2,47.4,False,60844673912,20.3,-1.4,2026-06-30 12:11 UTC
+CINF,CINF,US,Cincinnati Financial,Financials,NASDAQ,186.16,27.8,11.4,4.4,False,28796484457,12.0,-0.1,2026-06-30 12:11 UTC
+CGF.AX,CGF,ASX,Challenger,Financials,ASX,10.0,28.1,16.0,48.0,False,6838167610,35.6,-0.2,2026-06-30 12:11 UTC
+KIM,KIM,US,Kimco Realty,Real Estate,NYSE,25.83,28.7,5.1,42.3,False,17419488276,29.8,-1.0,2026-06-30 12:11 UTC
+WAB,WAB,US,Wabtec,Industrials,NYSE,268.3,28.8,7.5,10.8,False,45524429861,38.9,-5.8,2026-06-30 12:11 UTC
+EA,EA,US,Electronic Arts,Communication Services,NASDAQ,205.05,28.9,0.9,-20.9,False,51416592559,58.0,-0.3,2026-06-30 12:11 UTC
+DHI,DHI,US,D. R. Horton,Consumer Discretionary,NYSE,164.23,28.9,-6.9,-24.6,False,46572278631,13.0,-11.0,2026-06-30 12:11 UTC
+PCAR,PCAR,US,Paccar,Industrials,NASDAQ,119.6,29.0,-15.5,-42.9,False,62943832185,26.5,-9.3,2026-06-30 12:11 UTC
+PKG,PKG,US,Packaging Corporation of America,Materials,NYSE,237.65,29.2,7.2,-3.9,False,21174292916,27.4,-4.8,2026-06-30 12:11 UTC
+TSLA,TSLA,US,"Tesla, Inc.",Consumer Discretionary,NASDAQ,411.84,29.6,-2.9,-46.8,False,1546757305279,407.7,-17.4,2026-06-30 12:11 UTC
+NXPI,NXPI,US,NXP Semiconductors,Information Technology,NASDAQ,278.37,29.7,-2.7,-19.5,False,70280373028,34.8,-18.1,2026-06-30 12:11 UTC
+MCHP,MCHP,US,Microchip Technology,Information Technology,NASDAQ,89.06,30.0,7.1,46100.0,False,48277579442,209.9,-15.9,2026-06-30 12:11 UTC
+XOM,XOM,US,ExxonMobil,Energy,NYSE,136.06,30.2,-4.5,-14.4,False,563961500742,19.6,-22.9,2026-06-30 12:11 UTC
+RTX,RTX,US,RTX Corporation,Industrials,NYSE,187.33,30.3,9.7,41.0,False,252274209033,37.5,-12.7,2026-06-30 12:11 UTC
+IEX,IEX,US,IDEX Corporation,Industrials,NYSE,225.96,30.7,5.8,-4.3,False,16724441647,34.6,-1.8,2026-06-30 12:11 UTC
+EVRG,EVRG,US,Evergy,Utilities,NASDAQ,87.01,30.8,2.0,-2.0,False,20056938798,23.4,-0.6,2026-06-30 12:11 UTC
+AMP.AX,AMP,ASX,AMP,Financials,ASX,1.61,30.8,1.5,-11.3,False,3904631429,29.4,-20.1,2026-06-30 12:11 UTC
+IRM,IRM,US,Iron Mountain,Real Estate,NYSE,129.97,31.0,12.2,-19.7,False,38669283153,267.4,-3.5,2026-06-30 12:11 UTC
+GWW,GWW,US,W. W. Grainger,Industrials,NYSE,1353.29,31.2,4.5,-10.6,False,63893043656,37.5,-2.7,2026-06-30 12:11 UTC
+NEE,NEE,US,NextEra Energy,Utilities,NYSE,88.66,31.4,10.7,-1.6,False,184909778678,27.1,-10.2,2026-06-30 12:11 UTC
+SNA,SNA,US,Snap-on,Industrials,NYSE,398.36,31.5,0.9,-2.6,False,20635810499,20.3,-1.2,2026-06-30 12:11 UTC
+APA.AX,APA,ASX,APA Group,Utilities,ASX,10.14,31.6,5.0,-89.9,False,13422839782,135.6,-8.6,2026-06-30 12:11 UTC
+LNT,LNT,US,Alliant Energy,Utilities,NASDAQ,77.18,31.6,9.6,17.4,False,19933821794,24.6,-0.2,2026-06-30 12:11 UTC
+PHM,PHM,US,PulteGroup,Consumer Discretionary,NYSE,137.94,31.8,-3.5,-28.0,False,26275687998,11.8,-4.5,2026-06-30 12:11 UTC
+ALD.AX,ALD,ASX,Ampol,Energy,ASX,32.9,32.1,-10.1,-32.7,False,7840139421,95.1,-11.4,2026-06-30 12:11 UTC
+DOW.AX,DOW,ASX,Downer Group,Industrials,ASX,8.05,32.1,-4.5,97.8,False,5306035193,38.8,-7.0,2026-06-30 12:11 UTC
+AME,AME,US,Ametek,Industrials,NYSE,237.72,32.2,6.6,7.6,False,54486137915,36.8,-2.9,2026-06-30 12:11 UTC
+DRR.AX,DRR,ASX,Deterra Royalties,Materials,ASX,4.7,32.6,9.5,0.5,False,2488445477,16.0,-0.8,2026-06-30 12:11 UTC
+BMY,BMY,US,Bristol Myers Squibb,Health Care,NYSE,58.56,32.8,-0.2,178.8,False,119583695029,17.0,-6.9,2026-06-30 12:11 UTC
+CMM.AX,CMM,ASX,Capricorn Metals,Materials,ASX,12.64,32.9,12.2,1880.9,False,5773797810,66.3,-23.3,2026-06-30 12:11 UTC
+AMGN,AMGN,US,Amgen,Health Care,NASDAQ,360.55,33.0,10.0,88.5,False,194591811602,25.2,-7.9,2026-06-30 12:11 UTC
+FMG.AX,FMG,ASX,Fortescue,Materials,ASX,19.15,33.3,-14.8,-40.6,False,58962177024,17.5,-18.1,2026-06-30 12:11 UTC
+JCI,JCI,US,Johnson Controls,Industrials,NYSE,140.47,33.8,2.8,93.0,False,85702939498,26.0,-6.0,2026-06-30 12:11 UTC
+DOC,DOC,US,Healthpeak Properties,Real Estate,NYSE,21.87,33.8,4.5,-70.7,False,15077609461,211.3,-0.2,2026-06-30 12:11 UTC
+RF,RF,US,Regions Financial Corporation,Financials,NYSE,30.27,33.9,6.3,13.9,False,25831799006,12.0,-4.0,2026-06-30 12:11 UTC
+FANG,FANG,US,Diamondback Energy,Energy,NASDAQ,180.54,34.8,35.4,-50.1,False,50788300752,30.5,-15.8,2026-06-30 12:11 UTC
+MO,MO,US,Altria,Consumer Staples,NYSE,74.05,34.9,-1.5,-38.3,False,123655451048,17.8,-0.7,2026-06-30 12:11 UTC
+BGL.AX,BGL,ASX,Bellevue Gold,Materials,ASX,1.22,35.0,69.5,-160.8,True,1811146626,,-39.2,2026-06-30 12:11 UTC
+DVN,DVN,US,Devon Energy,Energy,NYSE,41.99,35.4,7.8,-8.6,False,48431398399,18.3,-20.3,2026-06-30 12:11 UTC
+F,F,US,Ford Motor Company,Consumer Discretionary,NYSE,14.02,35.6,1.2,-239.2,True,55865392497,,-21.1,2026-06-30 12:11 UTC
+AVGO,AVGO,US,Broadcom,Information Technology,NASDAQ,372.45,36.1,23.9,292.3,False,1771960802821,76.6,-24.8,2026-06-30 12:11 UTC
+ODFL,ODFL,US,Old Dominion,Industrials,NASDAQ,219.69,36.2,-5.5,-13.7,False,45688552600,44.6,-12.8,2026-06-30 12:11 UTC
+PLD,PLD,US,Prologis,Real Estate,NYSE,138.89,36.4,7.2,-10.8,False,129492424251,38.9,-7.5,2026-06-30 12:11 UTC
+PNC,PNC,US,PNC Financial Services,Financials,NYSE,246.73,36.8,10.9,17.8,False,99078039938,14.3,-0.9,2026-06-30 12:11 UTC
+AEP,AEP,US,American Electric Power,Utilities,NASDAQ,137.97,37.2,10.9,20.7,False,75070171929,21.0,-1.1,2026-06-30 12:11 UTC
+ALQ.AX,ALQ,ASX,ALS,Industrials,ASX,22.84,37.8,10.7,24.4,False,11592271988,36.4,-12.7,2026-06-30 12:11 UTC
+AIZ,AIZ,US,Assurant,Financials,NYSE,267.98,37.8,7.9,14.8,False,13277776308,15.2,-0.3,2026-06-30 12:11 UTC
+AAPL,AAPL,US,Apple Inc.,Information Technology,NASDAQ,281.74,37.9,6.4,19.5,False,4138015536009,36.9,-11.2,2026-06-30 12:11 UTC
+FRT,FRT,US,Federal Realty Investment Trust,Real Estate,NYSE,125.42,38.1,6.4,39.2,False,10834932930,26.4,-0.8,2026-06-30 12:11 UTC
+UNH,UNH,US,UnitedHealth Group,Health Care,NYSE,419.82,38.2,11.8,-16.3,False,381257190339,31.6,-1.9,2026-06-30 12:11 UTC
+MAR,MAR,US,Marriott International,Consumer Discretionary,NASDAQ,374.88,38.4,4.3,9.5,False,98851592278,38.0,-8.8,2026-06-30 12:11 UTC
+KEY,KEY,US,KeyCorp,Financials,NYSE,23.15,38.5,65.7,1236.0,False,24987383697,13.7,-2.4,2026-06-30 12:11 UTC
+TECH,TECH,US,Bio-Techne,Health Care,NASDAQ,70.9,38.6,5.2,-56.3,False,11046975465,150.5,-1.7,2026-06-30 12:11 UTC
+PH,PH,US,Parker Hannifin,Industrials,NYSE,963.79,39.2,-0.4,24.2,False,121520798084,34.4,-6.9,2026-06-30 12:11 UTC
+EQIX,EQIX,US,Equinix,Real Estate,NASDAQ,1085.17,39.5,5.4,65.6,False,107024079536,79.3,-3.9,2026-06-30 12:11 UTC
+FFIV,FFIV,US,"F5, Inc.",Information Technology,NASDAQ,410.56,39.5,9.7,22.2,False,23163485911,33.5,-0.8,2026-06-30 12:11 UTC
+USB,USB,US,U.S. Bancorp,Financials,NYSE,61.28,39.6,4.4,20.2,False,95457798390,12.6,-1.0,2026-06-30 12:11 UTC
+BG,BG,US,Bunge Global,Consumer Staples,NYSE,109.1,39.7,32.4,-28.2,False,21167376050,25.9,-19.1,2026-06-30 12:11 UTC
+EMR.AX,EMR,ASX,Emerald Resources,Materials,ASX,5.49,40.1,17.6,8.6,False,3627659232,41.4,-32.3,2026-06-30 12:11 UTC
+FSLR,FSLR,US,First Solar,Information Technology,NASDAQ,232.8,40.6,24.1,18.3,False,25015143234,16.4,-27.5,2026-06-30 12:11 UTC
+SLB,SLB,US,Schlumberger,Energy,NYSE,46.38,41.0,-1.6,-24.4,False,69340775914,20.6,-21.1,2026-06-30 12:11 UTC
+NTRS,NTRS,US,Northern Trust,Financials,NASDAQ,174.91,41.1,-2.5,-14.5,False,32366616574,18.6,-2.1,2026-06-30 12:11 UTC
+TXN,TXN,US,Texas Instruments,Information Technology,NASDAQ,285.48,41.4,13.0,4.2,False,259813299973,52.0,-14.5,2026-06-30 12:11 UTC
+ABBV,ABBV,US,AbbVie,Health Care,NYSE,254.31,41.5,8.6,-1.2,False,449313077995,106.3,-0.7,2026-06-30 12:11 UTC
+PFG,PFG,US,Principal Financial Group,Financials,NASDAQ,108.51,41.6,-3.1,-24.6,False,23439504249,19.8,-3.5,2026-06-30 12:11 UTC
+FITB,FITB,US,Fifth Third Bancorp,Financials,NYSE,56.78,41.7,6.6,9.0,False,51460368589,20.4,-0.3,2026-06-30 12:11 UTC
+TGT,TGT,US,Target Corporation,Consumer Staples,NYSE,133.92,41.7,-1.7,-9.4,False,60825272887,16.4,-6.2,2026-06-30 12:11 UTC
+CSC.AX,CSC,ASX,Capstone Copper,Materials,ASX,13.38,42.0,47.6,281.0,False,10219529046,32.4,-25.0,2026-06-30 12:11 UTC
+CAH,CAH,US,Cardinal Health,Health Care,NYSE,236.22,42.2,-1.9,83.2,False,55324107354,35.4,-2.0,2026-06-30 12:11 UTC
+APP,APP,US,AppLovin,Information Technology,NASDAQ,498.76,42.5,70.0,111.0,False,167553198775,50.3,-33.1,2026-06-30 12:11 UTC
+DBI.AX,DBI,ASX,Dalrymple Bay Infrastructure,Industrials,ASX,5.75,42.5,-2.9,-64.2,False,2850629585,97.4,-4.3,2026-06-30 12:11 UTC
+AKAM,AKAM,US,Akamai Technologies,Information Technology,NASDAQ,113.8,42.7,5.4,-10.5,False,16544864767,36.6,-31.2,2026-06-30 12:11 UTC
+NDSN,NDSN,US,Nordson Corporation,Industrials,NASDAQ,302.16,42.8,3.8,3.7,False,16835735372,34.8,-1.8,2026-06-30 12:11 UTC
+EXPD,EXPD,US,Expeditors International,Industrials,NYSE,161.97,43.2,4.4,0.0,False,21184239972,26.1,-3.9,2026-06-30 12:11 UTC
+ETR,ETR,US,Entergy,Utilities,NYSE,116.33,43.5,9.0,67.1,False,54279007674,30.6,-1.8,2026-06-30 12:11 UTC
+FCX,FCX,US,Freeport-McMoRan,Materials,NYSE,61.62,43.8,1.8,16.7,False,88582437346,40.2,-14.7,2026-06-30 12:11 UTC
+VTR,VTR,US,Ventas,Real Estate,NYSE,89.3,44.2,18.5,209.8,False,43414957748,172.7,-1.9,2026-06-30 12:11 UTC
+SWK,SWK,US,Stanley Black & Decker,Industrials,NYSE,93.65,44.5,-1.5,36.6,False,14558413806,36.2,-0.1,2026-06-30 12:11 UTC
+MGM,MGM,US,MGM Resorts,Consumer Discretionary,NYSE,49.69,44.5,1.7,-72.4,False,12713247516,61.8,-3.7,2026-06-30 12:11 UTC
+HWM,HWM,US,Howmet Aerospace,Industrials,NYSE,268.57,44.6,11.1,30.6,False,107456869640,71.3,-7.6,2026-06-30 12:11 UTC
+AZJ.AX,AZJ,ASX,Aurizon,Industrials,ASX,4.18,45.2,3.0,-25.4,False,7036224154,23.2,-5.4,2026-06-30 12:11 UTC
+GL,GL,US,Globe Life,Financials,NYSE,179.25,45.4,3.7,8.4,False,13917823409,12.0,-1.0,2026-06-30 12:11 UTC
+CRWD,CRWD,US,CrowdStrike,Information Technology,NASDAQ,742.91,45.9,21.7,-966.2,False,189118743590,,-5.4,2026-06-30 12:11 UTC
+GE,GE,US,GE Aerospace,Industrials,NYSE,373.71,46.0,18.5,32.8,False,390463262009,44.9,-1.6,2026-06-30 12:11 UTC
+AES,AES,US,AES Corporation,Utilities,NYSE,14.63,46.2,-0.4,-45.8,False,10433497423,11.5,-17.1,2026-06-30 12:11 UTC
+BEN,BEN,US,Franklin Resources,Financials,NYSE,33.17,46.5,3.5,12.9,False,17236363712,32.8,-3.6,2026-06-30 12:11 UTC
+RL,RL,US,Ralph Lauren Corporation,Consumer Discretionary,NYSE,397.61,46.5,14.6,26.7,False,23664293461,25.1,-5.7,2026-06-30 12:11 UTC
+FTNT,FTNT,US,Fortinet,Information Technology,NASDAQ,155.42,47.0,14.2,6.2,False,113868211588,61.4,-2.3,2026-06-30 12:11 UTC
+GS,GS,US,Goldman Sachs,Financials,NYSE,1020.21,47.1,8.9,20.3,False,300969527461,17.5,-9.3,2026-06-30 12:11 UTC
+ROK,ROK,US,Rockwell Automation,Industrials,NYSE,482.33,47.3,0.9,-8.8,False,53670764256,61.8,-0.9,2026-06-30 12:11 UTC
+BSL.AX,BSL,ASX,BlueScope,Materials,ASX,31.87,47.6,-4.4,-89.6,False,13961528094,166.6,-6.6,2026-06-30 12:11 UTC
+SPG,SPG,US,Simon Property Group,Real Estate,NYSE,227.56,48.3,6.7,95.2,False,73795411583,15.9,-0.4,2026-06-30 12:11 UTC
+NTAP,NTAP,US,NetApp,Information Technology,NASDAQ,155.06,48.3,5.4,7.6,False,30379343402,23.8,-19.6,2026-06-30 12:11 UTC
+CRL,CRL,US,Charles River Laboratories,Health Care,NYSE,225.57,48.7,-0.9,-1501.7,True,10865195209,,-1.4,2026-06-30 12:11 UTC
+WSM,WSM,US,"Williams-Sonoma, Inc.",Consumer Discretionary,NYSE,240.17,49.2,1.2,-3.3,False,28279203348,26.0,-1.8,2026-06-30 12:11 UTC
+CSX,CSX,US,CSX Corporation,Industrials,NASDAQ,48.01,49.2,-3.1,-16.7,False,89209243358,30.9,-0.8,2026-06-30 12:11 UTC
+BKR,BKR,US,Baker Hughes,Energy,NASDAQ,56.31,49.4,-0.3,-13.1,False,55863389690,21.6,-20.0,2026-06-30 12:11 UTC
+ADM,ADM,US,Archer Daniels Midland,Consumer Staples,NYSE,76.87,50.2,-6.2,-40.1,False,37047999554,34.4,-10.0,2026-06-30 12:11 UTC
+URI,URI,US,United Rentals,Industrials,NYSE,1122.67,50.3,4.9,-3.1,False,70331412900,28.2,-1.8,2026-06-30 12:11 UTC
+WELL,WELL,US,Welltower,Real Estate,NYSE,227.73,50.4,35.8,-1.6,False,160757894683,171.6,-0.4,2026-06-30 12:11 UTC
+EBAY,EBAY,US,eBay Inc.,Consumer Discretionary,NASDAQ,110.8,50.7,7.9,2.8,False,49195201355,24.2,-7.1,2026-06-30 12:11 UTC
+PSX,PSX,US,Phillips 66,Energy,NYSE,174.05,50.9,-7.5,108.0,False,69782741455,15.8,-8.7,2026-06-30 12:11 UTC
+DNL.AX,DNL,ASX,Dyno Nobel,Materials,ASX,3.92,51.7,-29.7,82.9,False,6875977870,,0.0,2026-06-30 12:11 UTC
+EME,EME,US,Emcor,Industrials,NYSE,814.41,52.5,16.6,26.4,False,36267766695,28.5,-14.4,2026-06-30 12:11 UTC
+CASY,CASY,US,Casey's,Consumer Staples,NASDAQ,780.24,53.5,10.2,30.7,False,28872713738,40.4,-15.9,2026-06-30 12:11 UTC
+MS,MS,US,Morgan Stanley,Financials,NYSE,211.72,53.9,14.5,25.9,False,333942743381,19.8,-8.1,2026-06-30 12:11 UTC
+DVA,DVA,US,DaVita,Health Care,NYSE,219.7,54.2,6.5,-20.2,False,14101444304,18.9,-0.9,2026-06-30 12:11 UTC
+EVN.AX,EVN,ASX,Evolution Mining,Materials,ASX,11.75,54.8,,,False,23865313868,,-33.8,2026-06-30 12:11 UTC
+EIX,EIX,US,Edison International,Utilities,NYSE,75.46,54.9,9.8,204.1,False,29036550436,6.2,-1.0,2026-06-30 12:11 UTC
+CVS,CVS,US,CVS Health,Health Care,NYSE,103.58,55.7,7.8,-61.7,False,132160552795,74.8,-2.4,2026-06-30 12:11 UTC
+MNST,MNST,US,Monster Beverage,Consumer Staples,NASDAQ,97.64,55.9,10.7,26.3,False,95492711263,50.1,-0.2,2026-06-30 12:11 UTC
+EXPE,EXPE,US,Expedia Group,Consumer Discretionary,NASDAQ,265.28,58.5,7.6,4.9,False,31839456440,24.6,-12.7,2026-06-30 12:11 UTC
+GM,GM,US,General Motors,Consumer Discretionary,NYSE,77.34,58.6,-1.3,-55.1,False,69734782879,25.9,-11.7,2026-06-30 12:11 UTC
+LLY,LLY,US,Lilly (Eli),Health Care,NYSE,1229.93,58.9,44.7,94.9,False,1096779555378,53.1,-0.7,2026-06-30 12:11 UTC
+MPC,MPC,US,Marathon Petroleum,Energy,NYSE,259.22,59.1,-4.4,17.5,False,75675814881,18.7,-4.9,2026-06-30 12:11 UTC
+TRGP,TRGP,US,Targa Resources,Energy,NYSE,271.35,59.4,3.9,46.6,False,58243624389,30.3,-3.1,2026-06-30 12:11 UTC
+IBKR,IBKR,US,Interactive Brokers,Financials,NASDAQ,88.2,59.9,9.7,30.3,False,39291754825,39.9,-9.9,2026-06-30 12:11 UTC
+ANET,ANET,US,Arista Networks,Information Technology,NYSE,164.1,60.4,28.6,23.1,False,206629712461,58.8,-8.7,2026-06-30 12:11 UTC
+DD,DD,US,DuPont,Materials,NYSE,135.74,60.6,1.9,-210.8,True,18327534233,,-14.1,2026-06-30 12:11 UTC
+BNY,BNY,US,BNY Mellon,Financials,NYSE,143.8,60.8,8.2,22.5,False,98701308766,17.8,-3.2,2026-06-30 12:11 UTC
+GGP.AX,GGP,ASX,Greatland Resources,Materials,ASX,11.45,61.0,,,False,7704779354,,-25.8,2026-06-30 12:11 UTC
+HUM,HUM,US,Humana,Health Care,NYSE,388.9,61.4,10.1,-1.6,False,46691916617,39.3,-0.3,2026-06-30 12:11 UTC
+LUV,LUV,US,Southwest Airlines,Industrials,NYSE,51.6,62.1,2.1,-5.2,False,25220722845,57.2,-6.4,2026-06-30 12:11 UTC
+PANW,PANW,US,Palo Alto Networks,Information Technology,NASDAQ,332.0,62.2,14.9,-56.0,False,270580000000,238.6,-0.3,2026-06-30 12:11 UTC
+CFG,CFG,US,Citizens Financial Group,Financials,NYSE,70.43,62.5,5.6,21.3,False,29783575304,16.3,-1.1,2026-06-30 12:11 UTC
+WST,WST,US,West Pharmaceutical Services,Health Care,NYSE,354.68,62.6,6.3,0.2,False,25057288477,50.8,-0.1,2026-06-30 12:11 UTC
+NEM,NEM,US,Newmont,Materials,NYSE,94.51,63.9,21.3,111.6,False,100894414006,14.2,-29.9,2026-06-30 12:11 UTC
+STT,STT,US,State Street Corporation,Financials,NYSE,170.18,64.5,8.1,9.6,False,47100211649,16.0,-3.0,2026-06-30 12:11 UTC
+ROST,ROST,US,Ross Stores,Consumer Discretionary,NASDAQ,208.83,65.2,7.7,2.6,False,66988712688,31.2,-14.0,2026-06-30 12:11 UTC
+Q,Q,US,Qnity Electronics,Information Technology,NYSE,158.23,66.3,9.7,-0.1,False,33123741829,47.9,-10.7,2026-06-30 12:11 UTC
+ADI,ADI,US,Analog Devices,Information Technology,NASDAQ,391.78,66.8,16.9,38.7,False,190830959937,84.2,-12.1,2026-06-30 12:11 UTC
+BHP.AX,BHP,ASX,BHP,Materials,ASX,59.4,68.4,-7.9,14.2,False,301793004682,33.5,-10.0,2026-06-30 12:11 UTC
+INCY,INCY,US,Incyte,Health Care,NASDAQ,114.66,68.4,21.2,3845.0,False,22907022624,17.8,-0.8,2026-06-30 12:11 UTC
+MRK,MRK,US,Merck & Co.,Health Care,NYSE,129.38,68.9,1.3,6.6,False,319545894872,17.5,-0.5,2026-06-30 12:11 UTC
+ON,ON,US,ON Semiconductor,Information Technology,NASDAQ,88.57,69.0,-15.3,-92.3,False,34470168650,284.9,-34.4,2026-06-30 12:11 UTC
+TPR,TPR,US,"Tapestry, Inc.",Consumer Discretionary,NYSE,146.56,69.1,5.1,-77.5,False,29611672791,161.6,-9.5,2026-06-30 12:11 UTC
+HST,HST,US,Host Hotels & Resorts,Real Estate,NASDAQ,24.92,69.1,7.6,9.8,False,17067191735,22.3,-1.9,2026-06-30 12:11 UTC
+APH,APH,US,Amphenol,Information Technology,NYSE,166.42,69.7,51.7,76.2,False,204735614084,47.9,-1.4,2026-06-30 12:11 UTC
+UAL,UAL,US,United Airlines Holdings,Industrials,NASDAQ,135.19,69.8,3.5,6.5,False,43878582321,13.1,-2.3,2026-06-30 12:11 UTC
+HAL,HAL,US,Halliburton,Energy,NYSE,34.09,71.2,-3.3,-48.7,False,28478708914,22.2,-21.8,2026-06-30 12:11 UTC
+C,C,US,Citigroup,Financials,NYSE,142.49,71.2,5.6,12.8,False,243027669687,17.0,-3.7,2026-06-30 12:11 UTC
+JBL,JBL,US,Jabil,Information Technology,NYSE,373.58,71.5,3.2,-52.7,False,39413668110,60.0,-12.9,2026-06-30 12:11 UTC
+BIIB,BIIB,US,Biogen,Health Care,NASDAQ,216.63,72.5,2.2,-20.8,False,31982629377,24.7,-1.4,2026-06-30 12:11 UTC
+IVZ,IVZ,US,Invesco,Financials,NYSE,26.3,72.6,5.1,-136.4,True,11658701004,,-11.8,2026-06-30 12:11 UTC
+AAI.AX,AAI,ASX,Alcoa,Materials,ASX,77.38,73.0,7.9,1828.3,False,20419797803,17.6,-34.4,2026-06-30 12:11 UTC
+JNJ,JNJ,US,Johnson & Johnson,Health Care,NYSE,258.51,73.5,6.0,90.6,False,622289682681,23.2,-0.0,2026-06-30 12:11 UTC
+CSCO,CSCO,US,Cisco,Information Technology,NASDAQ,117.7,73.6,5.3,-1.4,False,463906848042,45.6,-9.7,2026-06-30 12:11 UTC
+NUE,NUE,US,Nucor,Materials,NYSE,228.58,78.4,5.7,-14.0,False,52057026768,29.8,-15.6,2026-06-30 12:11 UTC
+MPWR,MPWR,US,Monolithic Power Systems,Information Technology,NASDAQ,1312.77,80.5,26.4,-61.0,False,64495428799,103.8,-23.4,2026-06-30 12:11 UTC
+FDX,FDX,US,FedEx,Industrials,NYSE,325.4,81.1,0.3,-5.5,False,77642636946,19.0,-5.8,2026-06-30 12:11 UTC
+STLD,STLD,US,Steel Dynamics,Materials,NASDAQ,234.22,84.7,3.6,-22.9,False,33777517742,28.5,-18.9,2026-06-30 12:11 UTC
+DDOG,DDOG,US,Datadog,Information Technology,NASDAQ,248.57,85.0,27.7,-41.4,False,88481026787,821.2,-10.8,2026-06-30 12:11 UTC
+APA,APA,US,APA Corporation,Energy,NASDAQ,32.96,87.7,-8.4,78.4,False,11650378358,8.1,-27.8,2026-06-30 12:11 UTC
+VTRS,VTRS,US,Viatris,Health Care,NASDAQ,16.23,88.9,-3.0,-454.2,False,18900689041,,-7.4,2026-06-30 12:11 UTC
+PWR,PWR,US,Quanta Services,Industrials,NYSE,714.45,89.1,20.3,13.7,False,107210475285,104.3,-9.4,2026-06-30 12:11 UTC
+ALK.AX,ALK,ASX,Alkane Resources,Materials,ASX,1.37,91.6,-9.2,-58.4,False,1871700611,105.9,-27.5,2026-06-30 12:11 UTC
+DAL,DAL,US,Delta Air Lines,Industrials,NYSE,93.17,91.7,2.8,44.8,False,61212161455,12.2,-2.1,2026-06-30 12:11 UTC
+CHRW,CHRW,US,C.H. Robinson,Industrials,NASDAQ,184.75,95.6,-8.4,26.1,False,21777044510,37.1,-9.1,2026-06-30 12:11 UTC
+GNRC,GNRC,US,Generac,Industrials,NYSE,283.81,98.2,-2.0,-50.9,False,16707520211,104.7,-4.3,2026-06-30 12:11 UTC
+GOOG,GOOG,US,Alphabet Inc. (Class C),Communication Services,NASDAQ,351.28,98.6,15.1,32.0,False,4286519873859,32.4,-13.2,2026-06-30 12:11 UTC
+GOOGL,GOOGL,US,Alphabet Inc. (Class A),Communication Services,NASDAQ,353.65,101.2,15.1,32.0,False,4315439912592,32.7,-13.5,2026-06-30 12:11 UTC
+JBHT,JBHT,US,J.B. Hunt,Industrials,NASDAQ,287.89,102.4,-0.7,4.8,False,27147798933,45.4,-1.9,2026-06-30 12:11 UTC
+VLO,VLO,US,Valero Energy,Energy,NYSE,266.32,103.2,-5.5,-15.2,False,79079140677,33.7,-2.1,2026-06-30 12:11 UTC
+KEYS,KEYS,US,Keysight Technologies,Information Technology,NYSE,340.13,107.6,8.0,38.4,False,58126642352,68.4,-9.3,2026-06-30 12:11 UTC
+GEV,GEV,US,GE Vernova,Industrials,NYSE,1102.51,108.9,9.0,214.7,False,296266484312,60.7,-6.7,2026-06-30 12:11 UTC
+ALB,ALB,US,Albemarle Corporation,Materials,NYSE,129.72,109.8,-4.4,56.7,False,15298483072,,-41.3,2026-06-30 12:11 UTC
+CMI,CMI,US,Cummins,Industrials,NYSE,691.09,114.4,-1.3,-28.0,False,95362868019,33.5,-6.3,2026-06-30 12:11 UTC
+HPE,HPE,US,Hewlett Packard Enterprise,Information Technology,NYSE,44.41,121.7,13.8,-97.8,False,58807878166,1031.7,-30.9,2026-06-30 12:11 UTC
+CDA.AX,CDA,ASX,Codan,Information Technology,ASX,44.14,121.9,22.5,27.2,False,8027976514,77.6,-0.9,2026-06-30 12:11 UTC
+WBD,WBD,US,Warner Bros. Discovery,Communication Services,NASDAQ,27.13,136.7,-5.1,106.4,False,68018616621,93.6,-9.6,2026-06-30 12:11 UTC
+VRT,VRT,US,Vertiv,Industrials,NYSE,306.97,139.3,27.7,168.8,False,117909883716,88.5,-19.2,2026-06-30 12:11 UTC
+MRNA,MRNA,US,Moderna,Health Care,NASDAQ,69.7,152.6,-39.9,20.8,False,27656001041,,-0.3,2026-06-30 12:11 UTC
+CAT,CAT,US,Caterpillar Inc.,Industrials,NYSE,1033.19,169.0,4.3,-17.7,False,475879003928,53.6,-2.3,2026-06-30 12:11 UTC
+KLAC,KLAC,US,KLA Corporation,Information Technology,NASDAQ,278.39,212.8,23.9,47.1,False,363653974847,89.5,-0.3,2026-06-30 12:11 UTC
+FLEX,FLEX,US,Flex Ltd.,Information Technology,NASDAQ,159.56,219.6,8.1,5.0,False,58461116342,66.4,-4.4,2026-06-30 12:11 UTC
+DELL,DELL,US,Dell Technologies,Information Technology,NYSE,414.61,243.3,18.8,29.3,False,267897102608,45.1,-11.7,2026-06-30 12:11 UTC
+MRVL,MRVL,US,Marvell Technology,Information Technology,NASDAQ,277.75,259.8,42.1,401.7,False,242975700000,91.0,-15.8,2026-06-30 12:11 UTC
+EOS.AX,EOS,ASX,Electro Optic Systems Holdings,Industrials,ASX,10.3,261.4,-27.2,199.4,False,2232032310,119.9,-18.1,2026-06-30 12:11 UTC
+ECHO,ECHO,US,EchoStar,Communication Services,NASDAQ,100.84,264.0,-5.2,-12026.9,False,29224791069,,-31.5,2026-06-30 12:11 UTC
+FIX,FIX,US,Comfort Systems USA,Industrials,NYSE,1948.69,264.2,29.5,95.7,False,68562642592,67.1,-6.0,2026-06-30 12:11 UTC
+AMD,AMD,US,Advanced Micro Devices,Information Technology,NASDAQ,539.49,280.2,34.3,164.2,False,879692722810,202.9,-4.2,2026-06-30 12:11 UTC
+AMAT,AMAT,US,Applied Materials,Information Technology,NASDAQ,694.64,282.2,4.4,-2.5,False,551515990085,78.8,-2.0,2026-06-30 12:11 UTC
+LRCX,LRCX,US,Lam Research,Information Technology,NASDAQ,410.91,324.5,23.7,40.0,False,513858985070,95.9,-1.0,2026-06-30 12:11 UTC
+COHR,COHR,US,Coherent Corp.,Information Technology,NYSE,391.22,338.5,23.4,131.6,False,76538015400,1550.5,-11.1,2026-06-30 12:11 UTC
+GLW,GLW,US,Corning Inc.,Information Technology,NYSE,255.69,391.5,19.1,215.4,False,220056487575,137.9,-1.2,2026-06-30 12:11 UTC
+TER,TER,US,Teradyne,Information Technology,NASDAQ,463.21,416.5,13.1,2.2,False,72511893522,130.9,-1.9,2026-06-30 12:11 UTC
+INTC,INTC,US,Intel,Information Technology,NASDAQ,131.72,488.0,-0.5,98.6,False,662024726135,,-6.9,2026-06-30 12:11 UTC
+CIEN,CIEN,US,Ciena,Information Technology,NYSE,478.93,488.9,18.8,46.9,False,67793939897,549.7,-24.9,2026-06-30 12:11 UTC
+STX,STX,US,Seagate Technology,Information Technology,NASDAQ,968.53,576.6,38.9,338.5,False,219131968538,149.2,-15.4,2026-06-30 12:11 UTC
+LITE,LITE,US,Lumentum,Information Technology,NASDAQ,851.4,795.6,21.0,104.7,False,66238921899,2557.5,-21.6,2026-06-30 12:11 UTC
+MU,MU,US,Micron Technology,Information Technology,NASDAQ,1145.28,831.5,48.9,997.6,False,1293471421065,151.5,-8.7,2026-06-30 12:11 UTC
+WDC,WDC,US,Western Digital,Information Technology,NASDAQ,651.88,921.5,50.7,333.2,False,224691389239,120.7,-18.5,2026-06-30 12:11 UTC
+4DX.AX,4DX,ASX,4DMedical,Healthcare,ASX,4.53,1787.5,89.5,16.4,False,2706942944,,-40.0,2026-06-30 12:11 UTC
+SNDK,SNDK,US,Sandisk,Information Technology,NASDAQ,2050.39,4421.3,10.4,-144.2,False,303641742998,,-12.9,2026-06-30 12:11 UTC
+HON,HON,US,Honeywell Technologies,Industrials,NASDAQ,,,7.8,-17.1,False,72173090140,15.3,,2026-06-30 12:11 UTC

@@ -12,15 +12,32 @@ stock dropped — it only compares price vs. financial-statement trends.
 Always read the news on anything it flags before drawing conclusions. Not
 financial advice.
 
-## Setup
+## Web app
+
+Live at: https://stock-screener-kfjsu665yee3yhbtwwfdfx.streamlit.app/
+
+`app.py` is a Streamlit UI on top of the same data: a filterable, sortable
+table plus a drill-down panel (live price chart + key stats) for any
+selected company. It reads `data/latest.csv`, which is regenerated every 4
+hours by `.github/workflows/update-data.yml` (GitHub Actions runs
+`update_data.py` and commits the result, which auto-redeploys the app).
+
+To run it locally:
 
 ```
 pip install -r requirements.txt
+streamlit run app.py
 ```
 
-## Usage
+Besides the core filters (market, sector, price drop %, revenue/earnings
+tolerance), the sidebar has an **Additional filters** section, off by
+default, for standard metrics: minimum market cap, maximum P/E ratio, and
+minimum % below the 52-week high.
+
+## CLI
 
 ```
+pip install -r requirements.txt
 python screener.py
 ```
 
@@ -52,10 +69,17 @@ For each ticker:
    - Net income is not down more than `--income-tolerance`% YoY (default 25%)
      and did not flip from profitable to a loss.
 
+Each ticker also carries market cap, trailing P/E (market cap / latest
+annual net income), exchange (NASDAQ / NYSE / ASX), and % below its
+52-week high — used as optional filters in the web app, and included as
+extra columns in the CLI's CSV output.
+
 ## Notes / limitations
 
 - Ticker universes are scraped live from Wikipedia's S&P 500 and S&P/ASX 200
-  pages, so they reflect current index membership, not a fixed snapshot.
+  pages, so they reflect current index membership, not a fixed snapshot. The
+  S&P 500 isn't exchange-specific — it already includes both NASDAQ and NYSE
+  listings (e.g. AAPL on NASDAQ, JPM on NYSE).
 - Data comes from Yahoo Finance via `yfinance`. It's free but occasionally
   flaky/rate-limited — failed tickers are skipped and logged to stderr, not
   treated as fatal.

@@ -54,6 +54,9 @@ st.sidebar.header("Filters")
 markets = sorted(raw_df["market"].dropna().unique())
 selected_markets = st.sidebar.multiselect("Market", markets, default=markets)
 
+exchanges = sorted(raw_df["exchange"].dropna().unique()) if "exchange" in raw_df.columns else []
+selected_exchanges = st.sidebar.multiselect("Exchange", exchanges, default=exchanges)
+
 sectors = sorted(raw_df["sector"].dropna().unique())
 selected_sectors = st.sidebar.multiselect("Sector", sectors, default=sectors)
 
@@ -72,9 +75,33 @@ exclude_turned_unprofitable = st.sidebar.checkbox(
     "Exclude companies that swung from profit to loss", value=True,
 )
 
+st.sidebar.header("Additional filters")
+st.sidebar.caption("Off by default — turn on the ones you want.")
+
+use_market_cap_filter = st.sidebar.checkbox("Filter by minimum market cap")
+min_market_cap_b = None
+if use_market_cap_filter:
+    min_market_cap_b = st.sidebar.slider(
+        "Min. market cap ($B)", min_value=0.0, max_value=500.0, value=10.0, step=1.0,
+    )
+
+use_pe_filter = st.sidebar.checkbox("Filter by maximum P/E ratio")
+max_pe = None
+if use_pe_filter:
+    max_pe = st.sidebar.slider("Max. P/E ratio", min_value=1, max_value=100, value=25, step=1)
+
+use_52wk_filter = st.sidebar.checkbox("Filter by distance from 52-week high")
+min_below_52wk_high = None
+if use_52wk_filter:
+    min_below_52wk_high = st.sidebar.slider(
+        "Min. % below 52-week high", min_value=0, max_value=90, value=40, step=5,
+    )
+
 # --- Apply filters ---
 df = raw_df.copy()
 df = df[df["market"].isin(selected_markets)]
+if exchanges:
+    df = df[df["exchange"].isin(selected_exchanges)]
 df = df[df["sector"].isin(selected_sectors)]
 if search:
     needle = search.lower()
@@ -87,24 +114,37 @@ df = df[df["revenue_yoy_pct"].isna() | (df["revenue_yoy_pct"] >= -revenue_tolera
 df = df[df["net_income_yoy_pct"].isna() | (df["net_income_yoy_pct"] >= -income_tolerance)]
 if exclude_turned_unprofitable:
     df = df[~df["net_income_turned_negative"].fillna(False)]
+if use_market_cap_filter:
+    df = df[df["market_cap"].notna() & (df["market_cap"] >= min_market_cap_b * 1e9)]
+if use_pe_filter:
+    df = df[df["pe_ratio"].notna() & (df["pe_ratio"] > 0) & (df["pe_ratio"] <= max_pe)]
+if use_52wk_filter:
+    df = df[df["pct_from_52wk_high"].notna() & (df["pct_from_52wk_high"] <= -min_below_52wk_high)]
 
 df = df.sort_values("price_return_pct")
 
 st.subheader(f"{len(df)} candidates")
 
+display_df = df.copy()
+display_df["market_cap_b"] = display_df["market_cap"] / 1e9
+
 display_cols = [
-    "code", "market", "company", "sector", "current_price",
+    "code", "exchange", "company", "sector", "current_price",
     "price_return_pct", "revenue_yoy_pct", "net_income_yoy_pct",
+    "market_cap_b", "pe_ratio", "pct_from_52wk_high",
 ]
-display_df = df[display_cols].rename(columns={
+display_df = display_df[display_cols].rename(columns={
     "code": "Ticker",
-    "market": "Market",
+    "exchange": "Exchange",
     "company": "Company",
     "sector": "Sector",
     "current_price": "Price",
     "price_return_pct": "12mo Return %",
     "revenue_yoy_pct": "Revenue YoY %",
     "net_income_yoy_pct": "Net Income YoY %",
+    "market_cap_b": "Market Cap ($B)",
+    "pe_ratio": "P/E",
+    "pct_from_52wk_high": "% From 52wk High",
 })
 
 event = st.dataframe(
@@ -126,13 +166,18 @@ else:
 
 if selected is not None:
     st.divider()
-    st.subheader(f"{selected['company']} ({selected['code']}.{selected['market']})")
+    st.subheader(f"{selected['company']} ({selected['code']}.{selected['market']}, {selected.get('exchange', 'n/a')})")
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Price", f"{selected['current_price']:.2f}")
     c2.metric("12mo Return", f"{selected['price_return_pct']:.1f}%")
     c3.metric("Revenue YoY", f"{selected['revenue_yoy_pct']:.1f}%" if pd.notna(selected['revenue_yoy_pct']) else "n/a")
     c4.metric("Net Income YoY", f"{selected['net_income_yoy_pct']:.1f}%" if pd.notna(selected['net_income_yoy_pct']) else "n/a")
+
+    c5, c6, c7 = st.columns(3)
+    c5.metric("Market Cap", f"${selected['market_cap'] / 1e9:.1f}B" if pd.notna(selected.get('market_cap')) else "n/a")
+    c6.metric("P/E Ratio", f"{selected['pe_ratio']:.1f}" if pd.notna(selected.get('pe_ratio')) else "n/a")
+    c7.metric("% From 52wk High", f"{selected['pct_from_52wk_high']:.1f}%" if pd.notna(selected.get('pct_from_52wk_high')) else "n/a")
 
     with st.spinner("Loading live price history..."):
         try:
