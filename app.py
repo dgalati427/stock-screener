@@ -16,7 +16,7 @@ st.set_page_config(page_title="Sentiment Drop Screener", layout="wide")
 
 
 @st.cache_data(ttl=600)
-def load_data():
+def load_data(_data_mtime):
     df = pd.read_csv(DATA_PATH)
     return df
 
@@ -43,7 +43,7 @@ if not os.path.exists(DATA_PATH):
     )
     st.stop()
 
-raw_df = load_data()
+raw_df = load_data(os.path.getmtime(DATA_PATH))
 
 if "last_updated_utc" in raw_df.columns and not raw_df.empty:
     st.caption(f"Data last updated: {raw_df['last_updated_utc'].iloc[0]}")
