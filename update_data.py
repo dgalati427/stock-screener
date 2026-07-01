@@ -15,7 +15,7 @@ DATA_PATH = os.path.join(DATA_DIR, "latest.csv")
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
     print("Scanning US + ASX universe...")
-    df = core.scan_all(markets=["us", "asx"], workers=6,
+    df = core.scan_all(markets=["us", "asx"], workers=3,
                         progress=lambda done, total: print(f"  {done}/{total}", end="\r"))
     df["last_updated_utc"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     df.to_csv(DATA_PATH, index=False)

@@ -3,6 +3,7 @@ Shared data-fetching logic used by both the CLI (screener.py) and the
 Streamlit app (app.py) / scheduled scan (update_data.py).
 """
 
+import random
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -110,10 +111,12 @@ def _first_matching_row(df, candidates):
     return None
 
 
-def fetch_metrics(entry, retries=2, sleep_between_retries=1.5):
+def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
     """Fetch 1y price return and YoY revenue/net income change for one ticker.
     Returns a dict of metrics, or None if data could not be retrieved."""
     ticker_yf = entry["ticker_yf"]
+    # Stagger requests so parallel workers don't burst Yahoo Finance's rate limit.
+    time.sleep(random.uniform(0.5, 1.5))
     last_error = None
     for attempt in range(retries + 1):
         try:
