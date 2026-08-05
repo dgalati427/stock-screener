@@ -1,6 +1,8 @@
-yfinance>=0.2.40
-pandas>=2.0
-lxml>=5.0
-requests>=2.31
-tqdm>=4.66
-streamlit>=1.38
+streamlit==1.40.1
+pandas==2.2.3
+numpy==1.26.4
+pyarrow==17.0.0
+yfinance==0.2.50
+lxml==5.3.0
+requests==2.32.3
+tqdm==4.67.1
