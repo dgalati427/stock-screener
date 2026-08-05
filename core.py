@@ -19,9 +19,8 @@ SP500_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 ASX200_URL = "https://en.wikipedia.org/wiki/S%26P/ASX_200"
 
 EXCHANGE_LABELS = {
-    "NMS": "NASDAQ", "NGM": "NASDAQ", "NCM": "NASDAQ", "NAS": "NASDAQ",
-    "NYQ": "NYSE", "ASE": "NYSE American", "PCX": "NYSE Arca",
-    "BTS": "Cboe BZX", "BATS": "Cboe BZX",
+    "NMS": "NASDAQ", "NGM": "NASDAQ", "NCM": "NASDAQ",
+    "NYQ": "NYSE", "ASE": "NYSE American",
     "ASX": "ASX",
 }
 
