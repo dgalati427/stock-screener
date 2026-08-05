@@ -48,6 +48,25 @@ raw_df = load_data(os.path.getmtime(DATA_PATH))
 if "last_updated_utc" in raw_df.columns and not raw_df.empty:
     st.caption(f"Data last updated: {raw_df['last_updated_utc'].iloc[0]}")
 
+with st.expander("How to read this / methodology"):
+    st.markdown(
+        "- **What it does:** flags stocks down a lot over 12 months whose "
+        "revenue and net income (latest annual report vs. the year before) "
+        "held roughly flat or grew. The idea is to surface drops that look "
+        "*sentiment- or headline-driven* rather than caused by a real decline "
+        "in the business.\n"
+        "- **What it does NOT do:** it doesn't know *why* a stock dropped. It "
+        "has no view on news, lawsuits, guidance, debt, cash flow, or "
+        "valuation beyond a crude P/E. A flagged name can still be a value "
+        "trap.\n"
+        "- **How to use it daily:** treat the list as a *research queue*, not "
+        "a buy list. For each name you're interested in, open the drill-down, "
+        "read recent news on Yahoo Finance, and check the actual financial "
+        "statements before forming a view.\n"
+        "- **Not financial advice.** You are responsible for your own "
+        "investment decisions; consider a licensed adviser for anything real."
+    )
+
 # --- Sidebar filters ---
 st.sidebar.header("Filters")
 
@@ -97,6 +116,16 @@ if use_52wk_filter:
         "Min. % below 52-week high", min_value=0, max_value=90, value=40, step=5,
     )
 
+st.sidebar.header("Sort")
+SORT_OPTIONS = {
+    "Biggest 12mo drop": ("price_return_pct", True),
+    "Furthest below 52wk high": ("pct_from_52wk_high", True),
+    "Lowest P/E": ("pe_ratio", True),
+    "Largest market cap": ("market_cap", False),
+    "Strongest revenue growth": ("revenue_yoy_pct", False),
+}
+sort_choice = st.sidebar.selectbox("Sort candidates by", list(SORT_OPTIONS.keys()))
+
 # --- Apply filters ---
 df = raw_df.copy()
 df = df[df["market"].isin(selected_markets)]
@@ -121,9 +150,19 @@ if use_pe_filter:
 if use_52wk_filter:
     df = df[df["pct_from_52wk_high"].notna() & (df["pct_from_52wk_high"] <= -min_below_52wk_high)]
 
-df = df.sort_values("price_return_pct")
+sort_col, sort_ascending = SORT_OPTIONS[sort_choice]
+# Keep rows with a value for the chosen metric ahead of NaNs regardless of order.
+df = df.sort_values(sort_col, ascending=sort_ascending, na_position="last").reset_index(drop=True)
 
+# --- Summary strip ---
 st.subheader(f"{len(df)} candidates")
+if not df.empty:
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Candidates", len(df))
+    m2.metric("Median 12mo drop", f"{df['price_return_pct'].median():.0f}%")
+    m3.metric("Sectors", df["sector"].nunique())
+    median_pe = df.loc[df["pe_ratio"] > 0, "pe_ratio"].median()
+    m4.metric("Median P/E", f"{median_pe:.1f}" if pd.notna(median_pe) else "n/a")
 
 display_df = df.copy()
 display_df["market_cap_b"] = display_df["market_cap"] / 1e9
@@ -154,6 +193,15 @@ event = st.dataframe(
     on_select="rerun",
     selection_mode="single-row",
 )
+
+if not df.empty:
+    st.download_button(
+        "Download these candidates (CSV)",
+        data=display_df.to_csv(index=False).encode("utf-8"),
+        file_name="screener_candidates.csv",
+        mime="text/csv",
+    )
+    st.caption("Tip: click any column header to sort, or a row to drill in below.")
 
 # --- Drill-down panel ---
 selected_rows = event.selection.rows if event and event.selection else []
