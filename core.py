@@ -112,6 +112,100 @@ def _first_matching_row(df, candidates):
     return None
 
 
+def _clean_series(row):
+    """A financial-statement row as a list of floats, newest-first, with
+    non-numeric entries turned into None. yfinance orders columns newest→oldest."""
+    if row is None:
+        return []
+    out = []
+    for v in row.tolist():
+        try:
+            f = float(v)
+            out.append(f if f == f else None)  # f != f filters NaN
+        except (TypeError, ValueError):
+            out.append(None)
+    return out
+
+
+def _cagr_pct(newest, oldest, years):
+    """Compound annual growth rate as a percent. Needs positive endpoints."""
+    if newest is None or oldest is None or years <= 0:
+        return None
+    if newest <= 0 or oldest <= 0:
+        return None
+    return ((newest / oldest) ** (1.0 / years) - 1.0) * 100.0
+
+
+def _compute_growth_metrics(income_stmt, revenue_row, current_ni, market_cap,
+                            pe_ratio, net_income_yoy_pct):
+    """Analyst-style growth metrics derived from the annual income statement we
+    already fetched (no extra API calls). Everything is null-safe: any piece we
+    can't compute comes back as None rather than raising."""
+    g = {
+        "revenue_cagr_pct": None,
+        "revenue_accelerating": None,
+        "gross_margin_pct": None,
+        "gross_margin_trend_pp": None,
+        "net_margin_pct": None,
+        "peg_ratio": None,
+        "rule_of_40": None,
+    }
+
+    rev = _clean_series(revenue_row)
+    # Multi-year revenue CAGR across all available years (newest -> oldest).
+    if len(rev) >= 2 and rev[0] is not None:
+        oldest_idx = next((i for i in range(len(rev) - 1, -1, -1) if rev[i] is not None), None)
+        if oldest_idx is not None and oldest_idx >= 1:
+            g["revenue_cagr_pct"] = _cagr_pct(rev[0], rev[oldest_idx], oldest_idx)
+
+    # Revenue growth acceleration: is the most recent YoY faster than the one before?
+    if len(rev) >= 3 and all(v is not None for v in rev[:3]):
+        latest_yoy = _pct_change(rev[0], rev[1])
+        prior_yoy = _pct_change(rev[1], rev[2])
+        if latest_yoy is not None and prior_yoy is not None:
+            g["revenue_accelerating"] = latest_yoy > prior_yoy
+
+    latest_rev = rev[0] if rev else None
+
+    # Gross margin (quality/scalability): Gross Profit / Revenue, falling back to
+    # (Revenue - Cost of Revenue) if the gross-profit line isn't reported.
+    gross_profit_row = _first_matching_row(income_stmt, ["Gross Profit", "GrossProfit"])
+    gp = _clean_series(gross_profit_row)
+    if (not gp or gp[0] is None):
+        cost_row = _first_matching_row(
+            income_stmt, ["Cost Of Revenue", "CostOfRevenue", "Cost of Revenue", "Reconciled Cost Of Revenue"]
+        )
+        cost = _clean_series(cost_row)
+        if latest_rev and cost and cost[0] is not None:
+            gp = [latest_rev - cost[0]] + gp[1:] if gp else [latest_rev - cost[0]]
+    if latest_rev and gp and gp[0] is not None and latest_rev != 0:
+        g["gross_margin_pct"] = gp[0] / latest_rev * 100.0
+        # Margin expansion vs prior year (percentage points).
+        if len(gp) >= 2 and len(rev) >= 2 and gp[1] is not None and rev[1]:
+            prior_gm = gp[1] / rev[1] * 100.0
+            g["gross_margin_trend_pp"] = g["gross_margin_pct"] - prior_gm
+
+    # Net margin.
+    if latest_rev and current_ni is not None and latest_rev != 0:
+        g["net_margin_pct"] = current_ni / latest_rev * 100.0
+
+    # PEG: P/E relative to earnings growth (growth-at-a-reasonable-price). Only
+    # meaningful when both the multiple and the growth rate are positive.
+    if pe_ratio and net_income_yoy_pct and net_income_yoy_pct > 0:
+        g["peg_ratio"] = pe_ratio / net_income_yoy_pct
+
+    # Rule of 40 (popular for growth companies): revenue growth % + profit margin %.
+    latest_rev_yoy = _pct_change(rev[0], rev[1]) if len(rev) >= 2 else None
+    if latest_rev_yoy is not None and g["net_margin_pct"] is not None:
+        g["rule_of_40"] = latest_rev_yoy + g["net_margin_pct"]
+
+    return g
+
+
+def _round_opt(x, n=1):
+    return round(x, n) if x is not None else None
+
+
 def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
     """Fetch 1y price return and YoY revenue/net income change for one ticker.
     Returns a dict of metrics, or None if data could not be retrieved."""
@@ -168,6 +262,19 @@ def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
             if year_high:
                 pct_from_52wk_high = (end_price - year_high) / year_high * 100.0
 
+            # Growth metrics are best-effort: never let them fail a whole ticker.
+            try:
+                growth = _compute_growth_metrics(
+                    income_stmt, revenue_row, current_ni, market_cap,
+                    pe_ratio, net_income_yoy_pct,
+                )
+            except Exception:
+                growth = {
+                    "revenue_cagr_pct": None, "revenue_accelerating": None,
+                    "gross_margin_pct": None, "gross_margin_trend_pp": None,
+                    "net_margin_pct": None, "peg_ratio": None, "rule_of_40": None,
+                }
+
             return {
                 **entry,
                 "exchange": EXCHANGE_LABELS.get(exchange_raw, exchange_raw),
@@ -179,6 +286,13 @@ def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
                 "market_cap": round(market_cap) if market_cap else None,
                 "pe_ratio": round(pe_ratio, 1) if pe_ratio is not None else None,
                 "pct_from_52wk_high": round(pct_from_52wk_high, 1) if pct_from_52wk_high is not None else None,
+                "revenue_cagr_pct": _round_opt(growth["revenue_cagr_pct"]),
+                "revenue_accelerating": growth["revenue_accelerating"],
+                "gross_margin_pct": _round_opt(growth["gross_margin_pct"]),
+                "gross_margin_trend_pp": _round_opt(growth["gross_margin_trend_pp"]),
+                "net_margin_pct": _round_opt(growth["net_margin_pct"]),
+                "peg_ratio": _round_opt(growth["peg_ratio"], 2),
+                "rule_of_40": _round_opt(growth["rule_of_40"]),
             }
         except Exception as e:  # yfinance/network calls are flaky; retry then give up
             last_error = e
@@ -222,7 +336,9 @@ def scan_all(markets, limit=None, workers=6, progress=None):
             "code", "market", "company", "sector", "exchange", "current_price",
             "price_return_pct", "revenue_yoy_pct", "net_income_yoy_pct",
             "net_income_turned_negative", "market_cap", "pe_ratio",
-            "pct_from_52wk_high", "ticker_yf",
+            "pct_from_52wk_high", "revenue_cagr_pct", "revenue_accelerating",
+            "gross_margin_pct", "gross_margin_trend_pp", "net_margin_pct",
+            "peg_ratio", "rule_of_40", "ticker_yf",
         ])
 
     df = pd.DataFrame(results)

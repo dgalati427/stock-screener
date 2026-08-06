@@ -70,8 +70,10 @@ def run_screen(args):
         "code", "market", "exchange", "company", "sector", "current_price",
         "price_return_pct", "revenue_yoy_pct", "net_income_yoy_pct",
         "market_cap", "pe_ratio", "pct_from_52wk_high",
+        "revenue_cagr_pct", "gross_margin_pct", "net_margin_pct",
+        "rule_of_40", "peg_ratio",
     ]
-    df = df[columns]
+    df = df[[c for c in columns if c in df.columns]]
 
     output_path = args.output or f"results_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
     df.to_csv(output_path, index=False)
