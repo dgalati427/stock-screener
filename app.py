@@ -45,6 +45,16 @@ if not os.path.exists(DATA_PATH):
 
 raw_df = load_data(os.path.getmtime(DATA_PATH))
 
+REQUIRED_COLS = {"market", "sector", "price_return_pct"}
+if raw_df.empty or not REQUIRED_COLS.issubset(raw_df.columns):
+    st.warning(
+        "The latest data file is empty or missing expected columns. This "
+        "usually means the most recent scheduled scan was rate-limited by "
+        "the data provider. The next scan should restore it -- please check "
+        "back shortly."
+    )
+    st.stop()
+
 if "last_updated_utc" in raw_df.columns and not raw_df.empty:
     st.caption(f"Data last updated: {raw_df['last_updated_utc'].iloc[0]}")
 
