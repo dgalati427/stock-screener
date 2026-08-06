@@ -2,7 +2,8 @@ name: Update stock data
 
 on:
   schedule:
-    - cron: "0 8,20 * * *"
+    # Once daily at 20:00 UTC (06:00 AEST) so data is fresh each morning.
+    - cron: "0 20 * * *"
   workflow_dispatch: {}
 
 permissions:
