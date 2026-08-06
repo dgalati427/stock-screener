@@ -185,6 +185,13 @@ def _compute_growth_metrics(income_stmt, revenue_row, current_ni, market_cap,
             prior_gm = gp[1] / rev[1] * 100.0
             g["gross_margin_trend_pp"] = g["gross_margin_pct"] - prior_gm
 
+    # A gross margin of ~100% means Yahoo didn't report a cost-of-revenue line
+    # (common for airports, REITs, some miners) -- it's a data gap, not a real
+    # margin. Drop it so it can't spuriously pass a "high margin = quality" gate.
+    if g["gross_margin_pct"] is not None and g["gross_margin_pct"] >= 99.5:
+        g["gross_margin_pct"] = None
+        g["gross_margin_trend_pp"] = None
+
     # Net margin.
     if latest_rev and current_ni is not None and latest_rev != 0:
         g["net_margin_pct"] = current_ni / latest_rev * 100.0

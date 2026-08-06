@@ -280,7 +280,10 @@ def render_growth_screen(raw_df):
             "compounders at a sane price.\n\n"
             "⚠️ This universe is the **S&P 500 + ASX 200** (large/established firms), "
             "so true pre-growth micro-caps aren't here — 'Emerging' finds the "
-            "*smaller, faster-growing constituents*. **Not financial advice.**"
+            "*smaller, faster-growing constituents*.\n\n"
+            "⚠️ **Watch the sector:** commodity/resource names (miners, energy) can "
+            "post huge revenue CAGR from a *production ramp or price spike*, not "
+            "durable software-style growth. Judge those differently. **Not financial advice.**"
         )
 
     df = common_filters(raw_df, "growth")
