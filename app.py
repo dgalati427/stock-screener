@@ -47,7 +47,9 @@ st.set_page_config(page_title="Stock Screener", layout="wide")
 
 
 @st.cache_data(ttl=600)
-def load_data(_data_mtime):
+def load_data(data_mtime):
+    # data_mtime is part of the cache key (no leading underscore) so a changed
+    # data file busts the cache and a fresh CSV is read.
     return pd.read_csv(DATA_PATH)
 
 
