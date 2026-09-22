@@ -18,6 +18,30 @@ import yfinance as yf
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "latest.csv")
 
 GROWTH_COLS = {"revenue_cagr_pct", "gross_margin_pct", "rule_of_40"}
+QUALITY_COLS = {"roe_pct", "operating_margin_pct", "debt_to_equity"}
+TECH_COLS = {"rsi_14", "pct_vs_50dma", "pct_vs_200dma"}
+
+
+def rsi_label(v):
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return "n/a"
+    if v >= 70:
+        return f"{v:.0f} · overbought"
+    if v <= 30:
+        return f"{v:.0f} · oversold"
+    return f"{v:.0f} · neutral"
+
+
+def trend_label(row):
+    """Simple trend read from price vs the 50/200-day moving averages."""
+    a, b = row.get("pct_vs_50dma"), row.get("pct_vs_200dma")
+    if a is None or b is None or pd.isna(a) or pd.isna(b):
+        return "n/a"
+    if a > 0 and b > 0:
+        return "Uptrend"
+    if a < 0 and b < 0:
+        return "Downtrend"
+    return "Mixed"
 
 st.set_page_config(page_title="Stock Screener", layout="wide")
 
@@ -71,6 +95,22 @@ def render_drilldown(selected):
         h3.metric("PEG", _fmt(selected.get("peg_ratio"), dp=2))
         accel = selected.get("revenue_accelerating")
         h4.metric("Rev. accelerating", "Yes" if accel is True else ("No" if accel is False else "n/a"))
+
+    # Quality row.
+    if QUALITY_COLS.issubset(selected.index):
+        q1, q2, q3, q4 = st.columns(4)
+        q1.metric("ROE", _fmt(selected.get("roe_pct"), pct=True))
+        q2.metric("Operating Margin", _fmt(selected.get("operating_margin_pct"), pct=True))
+        q3.metric("Debt / Equity", _fmt(selected.get("debt_to_equity"), dp=2))
+        q4.metric("Net Margin", _fmt(selected.get("net_margin_pct"), pct=True))
+
+    # Technical / momentum row.
+    if TECH_COLS.issubset(selected.index):
+        t1, t2, t3, t4 = st.columns(4)
+        t1.metric("RSI (14)", rsi_label(selected.get("rsi_14")))
+        t2.metric("Trend", trend_label(selected))
+        t3.metric("vs 50-day MA", _fmt(selected.get("pct_vs_50dma"), pct=True))
+        t4.metric("3mo Return", _fmt(selected.get("return_3mo_pct"), pct=True))
 
     with st.spinner("Loading live price history..."):
         try:
@@ -362,6 +402,240 @@ def render_growth_screen(raw_df):
 
 
 # ---------------------------------------------------------------------------
+# Screen 3: Quality (core fundamentals for durable businesses)
+# ---------------------------------------------------------------------------
+QUALITY_PRESETS = {
+    "Durable compounder (Coca-Cola-style)": dict(
+        min_roe=15, min_opmargin=15, max_de=2.0, min_cagr=3, require_profit=True,
+    ),
+    "Custom": dict(min_roe=0, min_opmargin=0, max_de=10.0, min_cagr=-100, require_profit=False),
+}
+
+
+def quality_score(df):
+    """Transparent 0-100 ranking blend of the quality metrics (relative to the
+    current list). A sorting aid, not a rating."""
+    def pr(col, invert=False):
+        if col not in df.columns:
+            return pd.Series(0.5, index=df.index)
+        s = -df[col] if invert else df[col]
+        return s.rank(pct=True).fillna(0.5)
+
+    return ((
+        0.30 * pr("roe_pct")
+        + 0.25 * pr("operating_margin_pct")
+        + 0.15 * pr("gross_margin_pct")
+        + 0.15 * pr("revenue_cagr_pct")
+        + 0.15 * pr("debt_to_equity", invert=True)
+    ) * 100.0).clip(upper=100).round(1)
+
+
+def render_quality_screen(raw_df):
+    st.title("🏆 Quality Screener")
+    st.caption(
+        "Durable, high-return businesses — the Coca-Cola / Costco type — screened "
+        "on the fundamentals that signal a real moat: high **return on equity**, "
+        "fat **operating margins**, low **debt**, and consistent profitable growth. "
+        "**Heuristic, not financial advice.**"
+    )
+
+    if not QUALITY_COLS.issubset(raw_df.columns):
+        st.info(
+            "📊 Quality metrics (ROE, operating margin, debt/equity) aren't in the "
+            "data file yet — they populate on the next full scan with the updated "
+            "code. Reload once that's run."
+        )
+        return
+
+    with st.expander("How quality screening works (metrics & preset)"):
+        st.markdown(
+            "- **ROE (return on equity)** — profit generated per dollar of "
+            "shareholder capital. Sustained high ROE is the classic mark of a "
+            "great business.\n"
+            "- **Operating margin** — profit from core operations; fat, stable "
+            "margins signal pricing power / a moat.\n"
+            "- **Debt-to-equity** — balance-sheet strength. Lower = safer.\n"
+            "- **Revenue CAGR** — durable (not necessarily explosive) growth.\n"
+            "- **Quality Score** — a transparent 0–100 *ranking* blend of the "
+            "above (relative to the current list). A sorting aid, not a rating.\n\n"
+            "⚠️ ROE and debt/equity are shown as **n/a** for companies with "
+            "negative book equity (often from heavy buybacks — e.g. some blue "
+            "chips); lean on margins and growth there. **Not financial advice.**"
+        )
+
+    df = common_filters(raw_df, "quality")
+
+    st.sidebar.header("Quality preset")
+    preset_name = st.sidebar.radio("Preset", list(QUALITY_PRESETS.keys()), key="quality_preset")
+    p = QUALITY_PRESETS[preset_name]
+    k = preset_name
+
+    st.sidebar.header("Quality filters")
+    min_roe = st.sidebar.slider("Min. ROE (%)", 0, 50, p["min_roe"], 1, key=f"roe_{k}")
+    min_opm = st.sidebar.slider("Min. operating margin (%)", 0, 50, p["min_opmargin"], 1, key=f"opm_{k}")
+    max_de = st.sidebar.slider("Max. debt / equity", 0.0, 10.0, p["max_de"], 0.1, key=f"de_{k}")
+    min_cagr = st.sidebar.slider("Min. revenue CAGR (%)", -20, 40, p["min_cagr"], 1, key=f"qcagr_{k}")
+    require_profit = st.sidebar.checkbox("Profitable only (positive net margin)",
+                                         value=p["require_profit"], key=f"prof_{k}")
+
+    if min_roe > 0:
+        df = df[df["roe_pct"].notna() & (df["roe_pct"] >= min_roe)]
+    if min_opm > 0:
+        df = df[df["operating_margin_pct"].notna() & (df["operating_margin_pct"] >= min_opm)]
+    # Debt filter keeps rows with no reported D/E (e.g. negative-equity blue chips).
+    df = df[df["debt_to_equity"].isna() | (df["debt_to_equity"] <= max_de)]
+    if min_cagr > -20:
+        df = df[df["revenue_cagr_pct"].notna() & (df["revenue_cagr_pct"] >= min_cagr)]
+    if require_profit:
+        df = df[df["net_margin_pct"].notna() & (df["net_margin_pct"] > 0)]
+
+    df = df.reset_index(drop=True)
+    if not df.empty:
+        df["q_score"] = quality_score(df)
+        df = df.sort_values("q_score", ascending=False, na_position="last").reset_index(drop=True)
+
+    st.subheader(f"{len(df)} quality candidates — {preset_name.split(' (')[0]}")
+    if not df.empty:
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Candidates", len(df))
+        med_roe = df["roe_pct"].median()
+        m2.metric("Median ROE", f"{med_roe:.0f}%" if pd.notna(med_roe) else "n/a")
+        med_opm = df["operating_margin_pct"].median()
+        m3.metric("Median op. margin", f"{med_opm:.0f}%" if pd.notna(med_opm) else "n/a")
+        med_de = df["debt_to_equity"].median()
+        m4.metric("Median debt/equity", f"{med_de:.2f}" if pd.notna(med_de) else "n/a")
+
+    disp = df.copy()
+    if not disp.empty:
+        disp["market_cap_b"] = disp["market_cap"] / 1e9
+        cols = ["code", "exchange", "company", "sector", "current_price", "q_score",
+                "roe_pct", "operating_margin_pct", "net_margin_pct", "gross_margin_pct",
+                "debt_to_equity", "revenue_cagr_pct", "market_cap_b", "pe_ratio"]
+        disp = disp[cols].rename(columns={
+            "code": "Ticker", "exchange": "Exchange", "company": "Company", "sector": "Sector",
+            "current_price": "Price", "q_score": "Quality Score", "roe_pct": "ROE %",
+            "operating_margin_pct": "Op Margin %", "net_margin_pct": "Net Margin %",
+            "gross_margin_pct": "Gross Margin %", "debt_to_equity": "Debt/Equity",
+            "revenue_cagr_pct": "Rev CAGR %", "market_cap_b": "Market Cap ($B)", "pe_ratio": "P/E",
+        })
+
+    event = st.dataframe(disp, use_container_width=True, hide_index=True,
+                         on_select="rerun", selection_mode="single-row")
+    if not df.empty:
+        st.download_button("Download these candidates (CSV)",
+                           data=disp.to_csv(index=False).encode("utf-8"),
+                           file_name="quality_candidates.csv", mime="text/csv")
+        st.caption("Sorted by Quality Score. Click a column header to re-sort, or a row to drill in below.")
+
+    rows = event.selection.rows if event and event.selection else []
+    selected = df.iloc[rows[0]] if rows else (df.iloc[0] if not df.empty else None)
+    render_drilldown(selected)
+
+
+# ---------------------------------------------------------------------------
+# Screen 4: Momentum & signals (is it trending / oversold?)
+# ---------------------------------------------------------------------------
+def render_momentum_screen(raw_df):
+    st.title("🚀 Momentum & Signals")
+    st.caption(
+        "Where is the price action? This screen reads **RSI** (overbought/oversold), "
+        "and price vs the **50 & 200-day moving averages** (trend). Two modes: ride "
+        "existing strength, or hunt beaten-down names for a possible bounce. "
+        "**Signals, not predictions. Not financial advice.**"
+    )
+
+    if not TECH_COLS.issubset(raw_df.columns):
+        st.info(
+            "📊 Technical signals (RSI, moving-average trend) aren't in the data "
+            "file yet — they populate on the next full scan with the updated code. "
+            "Reload once that's run."
+        )
+        return
+
+    with st.expander("How to read these signals"):
+        st.markdown(
+            "- **RSI (14)** — momentum oscillator. **>70 = overbought** (extended, "
+            "may cool off), **<30 = oversold** (beaten down, may bounce).\n"
+            "- **Trend** — price above both the 50- and 200-day moving averages = "
+            "**uptrend**; below both = downtrend.\n"
+            "- **Uptrend mode** → stocks already trending up (buy strength). This is "
+            "how you'd systematically hold winners like META *while* they run — but "
+            "note a high RSI means it's already extended.\n"
+            "- **Oversold-bounce mode** → stocks that have sold off hard (low RSI). "
+            "Higher risk: 'oversold' can stay oversold if something is genuinely "
+            "wrong. Cross-check with the Quality screen.\n\n"
+            "⚠️ These are **timing signals, not forecasts** — no screen predicts a "
+            "move before it happens. **Not financial advice.**"
+        )
+
+    df = common_filters(raw_df, "mom")
+
+    st.sidebar.header("Mode")
+    mode = st.sidebar.radio("Momentum mode",
+                            ["Uptrend (buy strength)", "Oversold bounce (buy weakness)"],
+                            key="mom_mode")
+
+    st.sidebar.header("Signal filters")
+    if mode.startswith("Uptrend"):
+        min_3mo = st.sidebar.slider("Min. 3-month return (%)", -20, 60, 5, 5, key="mom_3mo")
+        max_rsi = st.sidebar.slider("Max. RSI (avoid over-extended)", 40, 90, 80, 5, key="mom_maxrsi")
+        df = df[(df["pct_vs_50dma"].notna()) & (df["pct_vs_50dma"] > 0)]
+        df = df[(df["pct_vs_200dma"].notna()) & (df["pct_vs_200dma"] > 0)]
+        df = df[df["return_3mo_pct"].notna() & (df["return_3mo_pct"] >= min_3mo)]
+        df = df[df["rsi_14"].isna() | (df["rsi_14"] <= max_rsi)]
+        df = df.reset_index(drop=True)
+        if not df.empty:
+            df = df.sort_values("return_3mo_pct", ascending=False, na_position="last").reset_index(drop=True)
+    else:
+        max_rsi_os = st.sidebar.slider("Max. RSI (how oversold)", 10, 50, 35, 1, key="mom_osrsi")
+        above_200 = st.sidebar.checkbox("Still above 200-day MA (quality dip)", value=False, key="mom_above200")
+        df = df[df["rsi_14"].notna() & (df["rsi_14"] <= max_rsi_os)]
+        if above_200:
+            df = df[df["pct_vs_200dma"].notna() & (df["pct_vs_200dma"] > 0)]
+        df = df.reset_index(drop=True)
+        if not df.empty:
+            df = df.sort_values("rsi_14", ascending=True, na_position="last").reset_index(drop=True)
+
+    st.subheader(f"{len(df)} candidates — {mode.split(' (')[0]}")
+    if not df.empty:
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Candidates", len(df))
+        med_rsi = df["rsi_14"].median()
+        m2.metric("Median RSI", f"{med_rsi:.0f}" if pd.notna(med_rsi) else "n/a")
+        med_3mo = df["return_3mo_pct"].median()
+        m3.metric("Median 3mo return", f"{med_3mo:.0f}%" if pd.notna(med_3mo) else "n/a")
+        upt = int((df.get("pct_vs_200dma", pd.Series(dtype=float)) > 0).sum())
+        m4.metric("Above 200-day MA", upt)
+
+    disp = df.copy()
+    if not disp.empty:
+        disp["market_cap_b"] = disp["market_cap"] / 1e9
+        disp["trend"] = disp.apply(trend_label, axis=1)
+        cols = ["code", "exchange", "company", "sector", "current_price", "rsi_14", "trend",
+                "pct_vs_50dma", "pct_vs_200dma", "return_3mo_pct", "price_return_pct",
+                "market_cap_b", "pct_from_52wk_high"]
+        disp = disp[cols].rename(columns={
+            "code": "Ticker", "exchange": "Exchange", "company": "Company", "sector": "Sector",
+            "current_price": "Price", "rsi_14": "RSI", "trend": "Trend",
+            "pct_vs_50dma": "vs 50d MA %", "pct_vs_200dma": "vs 200d MA %",
+            "return_3mo_pct": "3mo Return %", "price_return_pct": "12mo Return %",
+            "market_cap_b": "Market Cap ($B)", "pct_from_52wk_high": "% From 52wk High",
+        })
+
+    event = st.dataframe(disp, use_container_width=True, hide_index=True,
+                         on_select="rerun", selection_mode="single-row")
+    if not df.empty:
+        st.download_button("Download these candidates (CSV)",
+                           data=disp.to_csv(index=False).encode("utf-8"),
+                           file_name="momentum_candidates.csv", mime="text/csv")
+        st.caption("Click a column header to re-sort, or a row to drill in below.")
+
+    rows = event.selection.rows if event and event.selection else []
+    selected = df.iloc[rows[0]] if rows else (df.iloc[0] if not df.empty else None)
+    render_drilldown(selected)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 if not os.path.exists(DATA_PATH):
@@ -382,10 +656,18 @@ if raw_df.empty or not REQUIRED_COLS.issubset(raw_df.columns):
 if "last_updated_utc" in raw_df.columns:
     st.sidebar.caption(f"Data updated: {raw_df['last_updated_utc'].iloc[0]}")
 
-screen = st.sidebar.radio("Screen", ["📉 Sentiment drop", "📈 Growth"], key="screen")
+screen = st.sidebar.radio(
+    "Screen",
+    ["📉 Sentiment drop", "📈 Growth", "🏆 Quality", "🚀 Momentum"],
+    key="screen",
+)
 st.sidebar.divider()
 
 if screen == "📉 Sentiment drop":
     render_drop_screen(raw_df)
-else:
+elif screen == "📈 Growth":
     render_growth_screen(raw_df)
+elif screen == "🏆 Quality":
+    render_quality_screen(raw_df)
+else:
+    render_momentum_screen(raw_df)

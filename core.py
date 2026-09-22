@@ -213,6 +213,89 @@ def _round_opt(x, n=1):
     return round(x, n) if x is not None else None
 
 
+def _compute_quality_metrics(t, income_stmt, current_ni, revenue_row):
+    """Core quality/fundamentals: operating margin (from the income statement we
+    already have) plus ROE and debt-to-equity (needs one balance-sheet call).
+    Null-safe; ROE/D-E are dropped when book equity is <= 0 (usually heavy
+    buybacks), where those ratios become misleading rather than informative."""
+    q = {"operating_margin_pct": None, "roe_pct": None, "debt_to_equity": None}
+
+    rev = _clean_series(revenue_row)
+    latest_rev = rev[0] if rev else None
+
+    op_row = _first_matching_row(
+        income_stmt, ["Operating Income", "OperatingIncome", "Total Operating Income As Reported"]
+    )
+    op = _clean_series(op_row)
+    if latest_rev and op and op[0] is not None and latest_rev != 0:
+        q["operating_margin_pct"] = op[0] / latest_rev * 100.0
+
+    try:
+        bs = t.balance_sheet
+    except Exception:
+        bs = None
+    if bs is not None and not getattr(bs, "empty", True):
+        eq_row = _first_matching_row(
+            bs, ["Stockholders Equity", "Total Stockholder Equity", "Common Stock Equity"]
+        )
+        debt_row = _first_matching_row(bs, ["Total Debt"])
+        eq = _clean_series(eq_row)
+        equity = eq[0] if eq else None
+        if equity is not None and equity > 0:
+            if current_ni is not None:
+                q["roe_pct"] = current_ni / equity * 100.0
+            debt = _clean_series(debt_row)
+            if debt and debt[0] is not None:
+                q["debt_to_equity"] = debt[0] / equity
+    return q
+
+
+def _rsi(close, period=14):
+    """Wilder's RSI on a close-price Series. Returns the latest value or None."""
+    if close is None or len(close) < period + 1:
+        return None
+    delta = close.diff()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+    avg_gain = gain.ewm(alpha=1.0 / period, min_periods=period, adjust=False).mean()
+    avg_loss = loss.ewm(alpha=1.0 / period, min_periods=period, adjust=False).mean()
+    last_gain = avg_gain.iloc[-1]
+    last_loss = avg_loss.iloc[-1]
+    if last_loss == 0:
+        return 100.0
+    rs = last_gain / last_loss
+    val = 100.0 - 100.0 / (1.0 + rs)
+    return val if val == val else None  # filter NaN
+
+
+def _compute_technicals(hist):
+    """Momentum/'is it oversold or popular' signals from the price history we
+    already fetched: RSI(14), distance from the 50/200-day moving averages, and
+    the 3-month return."""
+    tech = {"rsi_14": None, "pct_vs_50dma": None, "pct_vs_200dma": None, "return_3mo_pct": None}
+    try:
+        close = hist["Close"].dropna()
+        if close.empty:
+            return tech
+        px = float(close.iloc[-1])
+        tech["rsi_14"] = _rsi(close)
+        if len(close) >= 50:
+            ma50 = float(close.rolling(50).mean().iloc[-1])
+            if ma50:
+                tech["pct_vs_50dma"] = (px / ma50 - 1.0) * 100.0
+        if len(close) >= 200:
+            ma200 = float(close.rolling(200).mean().iloc[-1])
+            if ma200:
+                tech["pct_vs_200dma"] = (px / ma200 - 1.0) * 100.0
+        if len(close) >= 63:  # ~3 trading months
+            past = float(close.iloc[-63])
+            if past:
+                tech["return_3mo_pct"] = (px / past - 1.0) * 100.0
+    except Exception:
+        pass
+    return tech
+
+
 def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
     """Fetch 1y price return and YoY revenue/net income change for one ticker.
     Returns a dict of metrics, or None if data could not be retrieved."""
@@ -282,6 +365,17 @@ def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
                     "net_margin_pct": None, "peg_ratio": None, "rule_of_40": None,
                 }
 
+            try:
+                quality = _compute_quality_metrics(t, income_stmt, current_ni, revenue_row)
+            except Exception:
+                quality = {"operating_margin_pct": None, "roe_pct": None, "debt_to_equity": None}
+
+            try:
+                tech = _compute_technicals(hist)
+            except Exception:
+                tech = {"rsi_14": None, "pct_vs_50dma": None,
+                        "pct_vs_200dma": None, "return_3mo_pct": None}
+
             return {
                 **entry,
                 "exchange": EXCHANGE_LABELS.get(exchange_raw, exchange_raw),
@@ -300,6 +394,13 @@ def fetch_metrics(entry, retries=3, sleep_between_retries=3.0):
                 "net_margin_pct": _round_opt(growth["net_margin_pct"]),
                 "peg_ratio": _round_opt(growth["peg_ratio"], 2),
                 "rule_of_40": _round_opt(growth["rule_of_40"]),
+                "operating_margin_pct": _round_opt(quality["operating_margin_pct"]),
+                "roe_pct": _round_opt(quality["roe_pct"]),
+                "debt_to_equity": _round_opt(quality["debt_to_equity"], 2),
+                "rsi_14": _round_opt(tech["rsi_14"]),
+                "pct_vs_50dma": _round_opt(tech["pct_vs_50dma"]),
+                "pct_vs_200dma": _round_opt(tech["pct_vs_200dma"]),
+                "return_3mo_pct": _round_opt(tech["return_3mo_pct"]),
             }
         except Exception as e:  # yfinance/network calls are flaky; retry then give up
             last_error = e
@@ -345,7 +446,9 @@ def scan_all(markets, limit=None, workers=6, progress=None):
             "net_income_turned_negative", "market_cap", "pe_ratio",
             "pct_from_52wk_high", "revenue_cagr_pct", "revenue_accelerating",
             "gross_margin_pct", "gross_margin_trend_pp", "net_margin_pct",
-            "peg_ratio", "rule_of_40", "ticker_yf",
+            "peg_ratio", "rule_of_40", "operating_margin_pct", "roe_pct",
+            "debt_to_equity", "rsi_14", "pct_vs_50dma", "pct_vs_200dma",
+            "return_3mo_pct", "ticker_yf",
         ])
 
     df = pd.DataFrame(results)
